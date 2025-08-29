@@ -7,97 +7,107 @@ from pathlib import Path
 import pandas as pd
 
 
-row_list = []
-cell_list = []
+def scrape_month(year, month):
+    """Scrape data for a specific year and month."""
+    url = f'https://umpd.umd.edu/statistics-reports/daily-crime-and-incident-logs/{year}/{month:02d}'
+    response = requests.get(url, headers={'User-Agent': 'Rachel Logan'})
+    response.raise_for_status()
+    html = response.content
+    soup = BeautifulSoup(html, features="html.parser")
+    return soup
 
-THIS_MONTH = str(date.today().month)
-THIS_YEAR = date.today().year
 
-first = True
+def parse_table(soup, row_list, first):
+    """Parse the HTML table and append rows to row_list."""
+    table = soup.find('table')
+    if not table:
+        return first
 
-for YEAR in range(THIS_YEAR -1,THIS_YEAR +1):
-    YEAR = str(YEAR)
-    for MONTH in range(1,13):
-        MONTH = str(MONTH)
-        
+    rows = table.find_all('tr')
+    for row_index in range(len(rows)):
+        if first:
+            first = False
+            header_row = [cell.text.strip() for cell in rows[0].find_all('th')]
+            header_row.append('LOCATION')
+            row_list.append(header_row)
+        elif row_index % 2 == 1:
+            cell_list = [cell.text.strip() for cell in rows[row_index].find_all('td')]
+        elif row_index > 0:
+            cell_list.append(rows[row_index].find('td').text.strip())
+            row_list.append(cell_list)
+            cell_list = []
+    return first
 
-        url = 'https://www.umpd.umd.edu/stats/incident_logs.cfm?year=' + YEAR + '&month=' + MONTH
-        #url = 'https://www.umpd.umd.edu/stats/incident_logs.cfm?year=2022&month=2
-        response = requests.get(url, headers={'User-Agent': 'Rachel Logan'}) 
-        html = response.content 
 
-        soup = BeautifulSoup(html, features="html.parser")
-        #print(soup.prettify())
+def process_and_save_data(row_list, data_dir):
+    """Process scraped data and save to CSV files."""
+    data_dir.mkdir(parents=True, exist_ok=True)
+    path = data_dir / 'all-police-activity.csv'
 
-        table = soup.find('table').find_all('tr')
+    if not path.is_file():
+        with open(path, "w", newline="") as outfile:
+            writer = csv.writer(outfile)
+            writer.writerows(row_list)
+        return
 
-        for row_index in range(0,len(table)):
-            #print(table[row_index],'\n')
-            if (first): 
-                first = False
-                header_row = [cell.text.strip() for cell in table[0].find_all('th')]
-                header_row.append('LOCATION')
-                #print(header_row)
-                row_list.append(header_row)
-            elif (row_index % 2):
-                cell_list = [cell.text.strip() for cell in table[row_index].find_all('td')]
-            elif row_index:
-                cell_list.append(table[row_index].find('td').text.strip())
-                row_list.append(cell_list)
-                cell_list = []
-                
-        #should split data and time for report and incident
-
-path = Path('./data/all-police-activity.csv')
-
-if not path.is_file():
-    outfile = open(path,"w",newline="")
-    writer = csv.writer(outfile)
-    writer.writerows(row_list)
-
-else:
     with open(path, 'r') as prev_data_stream:
         csv_reader = reader(prev_data_stream)
         prev_data = list(csv_reader)
-    
-    everything = pd.DataFrame(row_list + prev_data)
-    
-    pd_all_data = everything.drop_duplicates(subset=0,keep = 'first')
-    pd_all_data.to_csv(path, index = False, index_label = False, header = False)
-    
-    open_cases = pd.DataFrame(everything.loc[everything[4] != "CBE"])
-    print("open cases\n",open_cases)
-    case_filter = open_cases.duplicated(subset = 0, keep = 'last')
-    rescrape_only_filter = open_cases.duplicated(keep = 'last')
-    update_filter = [ (tup[0] and not tup[1]) for tup in zip(case_filter,rescrape_only_filter)]
-    #[case_filter[i] and not(rescrape_only_filter[i]) for i in range(len(case_filter))]
-    #print("update_filter\n",update_filter)
-    
-    
-    new_all_data = everything.loc[everything.duplicated(subset = 0, keep = False) == False]
-    new_now_list = []
-    for row in new_all_data.itertuples():
-        row = row[1:]
-        year = row[2].split('/')[2].split()[0]
-        if (len(year)== 4 and int(year) >= (THIS_YEAR - 1)) or (len(year)== 2 and int(year) >= (THIS_YEAR - 2001)):
-            new_now_list.append(row)
-            
-    new_now_data = pd.DataFrame(new_now_list)
-    print("new cases: ",new_now_data)
 
-    
+    everything = pd.DataFrame(row_list + prev_data)
+    pd_all_data = everything.drop_duplicates(subset=0, keep='first')
+    pd_all_data.to_csv(path, index=False, header=False)
+
+    open_cases = everything[everything[4] != "CBE"]
+    case_filter = open_cases.duplicated(subset=0, keep='last')
+    rescrape_only_filter = open_cases.duplicated(keep='last')
+    update_filter = [(tup[0] and not tup[1]) for tup in zip(case_filter, rescrape_only_filter)]
+
+    new_all_data = everything[~everything.duplicated(subset=0, keep=False)]
+    new_now_list = []
+    this_year = date.today().year
+    for row in new_all_data.itertuples():
+        row_data = row[1:]
+        date_str = row_data[2]
+        if '/' in date_str:
+            year_part = date_str.split('/')[2].split()[0]
+            if (len(year_part) == 4 and int(year_part) >= (this_year - 1)) or \
+               (len(year_part) == 2 and int(year_part) >= (this_year - 2001)):
+                new_now_list.append(row_data)
+
+    new_now_data = pd.DataFrame(new_now_list)
     if len(new_now_data) > 0:
-        new_now_data.to_csv('./data/new_cases.csv', index = False, header = False, sep = ";")
+        new_now_data.to_csv(data_dir / 'new_cases.csv', index=False, header=False, sep=";")
     else:
-        pd.DataFrame().to_csv('./data/new_cases.csv',index = False, header = False)
-    
-    dupes = pd.DataFrame(open_cases).loc[update_filter]
-    print("dupes\n",dupes)
-    #open_cases & open_cases.duplicated(subset = 0, keep = 'first')
-    
+        pd.DataFrame().to_csv(data_dir / 'new_cases.csv', index=False, header=False)
+
+    dupes = open_cases.iloc[update_filter]
     if len(dupes) > 0:
-        dupe_path = ('./data/updated-activities.csv')
-        dupes.to_csv(dupe_path, index = False, header = False)
+        dupes.to_csv(data_dir / 'updated-activities.csv', index=False, header=False)
     else:
-        pd.DataFrame().to_csv('./data/updated-activities.csv',index = False, header = False, sep = ";")
+        pd.DataFrame().to_csv(data_dir / 'updated-activities.csv', index=False, header=False, sep=";")
+
+
+def main():
+    """Main scraping function."""
+    row_list = []
+    this_year = date.today().year
+    first = True
+    data_dir = Path('./data')
+
+    for year in range(this_year - 1, this_year + 1):
+        for month in range(1, 13):
+            try:
+                soup = scrape_month(year, month)
+                first = parse_table(soup, row_list, first)
+            except Exception as e:
+                print(f"Error scraping {year}-{month}: {e}")
+                continue
+
+    if row_list:
+        process_and_save_data(row_list, data_dir)
+
+
+if __name__ == "__main__":
+    main()
     
