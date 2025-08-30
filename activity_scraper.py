@@ -55,7 +55,29 @@ def process_and_save_data(row_list, data_dir):
         prev_data = list(csv_reader)
 
     everything = pd.DataFrame(row_list + prev_data)
+
+    # Normalize common date/time columns (if present) to a consistent ISO-like format
+    def _normalize_col(col_series):
+        # attempt to parse using pandas (handles many common formats); leave non-parseable values alone
+        parsed = pd.to_datetime(col_series.astype(str).str.replace(' - ', ' ', regex=False), errors='coerce', infer_datetime_format=True)
+        try:
+            formatted = parsed.dt.strftime('%Y-%m-%d %H:%M:%S')
+        except Exception:
+            # if parsed is all NaT this will fail; just return original series
+            return col_series
+        mask = parsed.notna()
+        # work on a copy to avoid SettingWithCopy warnings
+        out = col_series.astype(object).copy()
+        out.loc[mask] = formatted.loc[mask]
+        return out
+
+    # Column indexes expected from scraped table:
+    # 0: UMPD Case Number, 1: Date Occurred, 2: Report Date, ...
+    for idx in (1, 2):
+        if idx in everything.columns:
+            everything[idx] = _normalize_col(everything[idx])
     pd_all_data = everything.drop_duplicates(subset=0, keep='first')
+    # write the canonical aggregated CSV (rows are positional so header=False preserves original layout)
     pd_all_data.to_csv(path, index=False, header=False)
 
     open_cases = everything[everything[4] != "CBE"]
