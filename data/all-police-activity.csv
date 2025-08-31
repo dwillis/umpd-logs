@@ -2835,7 +2835,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00159519,2025-07-17 14:37:00,2025-07-17 14:37:00,Injured/Sick Person,CBE,3800 block of Golf Course Rd
 2025-00159526,2025-07-16 18:09:00,2025-07-17 15:13:00,Theft,Investigation Pending,Lot 11b
 2025-00159531,2025-06-12 23:00:00,2025-07-17 15:26:00,Theft,Warrant Issued,3400 block of Tulane Dr
-2025-00159532,2025-06-09 15:30:00,2025-07-17 15:28:00,Domestic,CBE,3800 block of Golf Course Rd
+2025-00159532,2025-06-09 15:30:00,2025-07-17 15:28:00,Assault,CBE,3800 block of Golf Course Rd
 2025-00159535,2025-07-17 16:33:00,2025-07-17 16:33:00,Assist Other Agency,CBE,7200 block of Baltimore Ave
 2025-00159645,2025-07-17 20:00:00,2025-07-17 20:00:00,Warrant/Summons Service,Arrest,Baltimore Ave
 2025-00160185,2025-05-24 15:02:00,2025-07-18 17:19:00,Theft,Investigation Pending,7000 block of Preinkert Dr
@@ -2963,11 +2963,23 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00184714,2025-08-24 01:17:00,2025-08-24 01:17:00,Injured/Sick Person,CBE,7200 block of Dartmouth Ave
 2025-00185207,2025-08-24 17:00:00,2025-08-24 18:23:00,Extortion,Active/Pending,7500 block of Mowatt Ln
 2025-00185404,2025-08-25 01:53:00,2025-08-25 01:53:00,Other Incident,CBE,Lot C1
+2025-00185694,2025-08-21 15:00:00,2025-08-25 11:41:00,Other Incident,CBE,7000 block of Preinkert Dr
 2025-00185705,2025-08-25 11:50:00,2025-08-25 12:02:00,Emergency Petition,CBE,4100 block of Valley Dr
 2025-00185712,2025-08-22 12:34:00,2025-08-25 12:28:00,Theft,Active/Pending,4200 block of Valley Dr
+2025-00186060,2025-08-26 02:50:00,2025-08-26 02:50:00,CDS Violation,Arrest,"Frat 13, Zeta Psi Fraternity at 13 Fraternity Row"
+2025-00186062,2025-08-25 12:00:00,2025-08-26 03:11:00,Theft from Auto,Active/Pending,3400 block of Tulane Dr
 2025-00186065,2025-08-26 04:04:00,2025-08-26 04:04:00,Suspicious Person/Auto,CBE,University Blvd
+2025-00186279,2025-08-26 07:43:00,2025-08-26 15:44:00,Telephone/EMail Misuse,Active/Pending,3900 block of Denton Service Ln
+2025-00186342,2025-08-26 16:35:00,2025-08-26 16:35:00,Assist Other Agency,CBE,8400 block of Baltimore Ave
+2025-00186891,2025-08-27 16:11:00,2025-08-27 16:11:00,CDS Violation,CBE,3900 block of Denton Service Ln
 2025-00186920,2025-08-27 14:12:00,2025-08-27 17:12:00,Suspicious Activity,CBE,8000 block of Regents Dr
+2025-00187102,2025-08-27 21:31:00,2025-08-27 21:31:00,CDS Violation,CBE,4200 block of Valley Dr
 2025-00187226,2025-08-28 00:29:00,2025-08-28 00:29:00,Injured/Sick Person,CBE,8200 block of Paint Branch Dr
+2025-00188003,2025-08-28 23:45:00,2025-08-28 23:45:00,Alcohol Violation,Arrest,Knox Rd
+2025-00188136,2025-08-29 01:17:00,2025-08-29 01:17:00,Alcohol Violation,Arrest,4300 block of Hartwick Rd
+2025-00188382,2025-08-04 06:00:00,2025-08-29 07:22:00,Lost Property,CBE,4000 block of Campus Dr
+2025-00188413,2025-08-29 08:16:00,2025-08-29 08:16:00,Hazardous Condition,CBE,4600 block of Norwich Rd
+2025-00188569,2025-08-29 13:27:00,2025-08-29 13:27:00,Injured/Sick Person,CBE,8000 block of Greenmead Dr
 UMPD CASENUMBER,OCCURRED DATE TIMELOCATION,REPORT DATE TIME,TYPE,DISPOSITION,LOCATION
 2024-00200716,2024-11-13 12:14:00,2024-11-14 12:14:00,Check on the  Welfare,CBE,"76, Symons Hall at 7998  Regents  Dr"
 2024-00209815,2024-11-05 00:00:00,2024-11-25 14:35:00,Other Incident,CBE,8000 block of  Regents  Dr
