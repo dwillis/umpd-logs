@@ -2644,8 +2644,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00120365,2025-05-18 10:00:00,2025-05-19 09:20:00,Theft,Investigation Pending,4600 block of Rossborough Ln
 2025-00103454,2025-05-17 12:00:00,2025-05-19 14:21:00,Theft,Active/Pending,4300 block of Chapel Ln
 2025-00103455,2025-05-19 08:00:00,2025-05-19 14:33:00,Theft,Active/Pending,Lot 1b
-2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
 2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
+2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
 2025-00120934,2025-05-10 00:00:00,2025-05-19 23:03:00,Damage to State Property,CBE,3900 block of Campus Dr
 2025-00121280,2025-05-20 03:13:00,2025-05-20 06:56:00,Theft,Investigation Pending,Lot 4a
 2025-00121421,2023-06-08 12:00:00,2025-05-20 09:51:00,Fraud,Active/Pending,5600 block of Rivertech Ct
@@ -2842,7 +2842,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00160386,2025-07-18 23:36:00,2025-07-18 23:36:00,DWI/DUI,Arrest,University Blvd
 2025-00160457,2025-07-19 00:43:00,2025-07-19 00:43:00,Warrant/Summons Service,Arrest,University Blvd
 2025-00160768,2025-07-19 09:45:00,2025-07-19 10:46:00,Police Information,CBE,7100 block of Baltimore Ave
-2025-00160852,2025-07-19 13:53:00,2025-07-19 14:10:00,Suspicious Person/Auto,Active/Pending,8000 block of Regents Dr
+2025-00160852,2025-07-19 13:53:00,2025-07-19 14:10:00,Indecent Exposure,Active/Pending,8000 block of Regents Dr
 2025-00161158,2025-07-20 02:05:00,2025-07-20 02:05:00,DWI/DUI,Arrest,Baltimore Ave
 2025-00161159,2025-07-20 02:19:00,2025-07-20 02:19:00,DWI/DUI,Arrest,University Blvd
 2025-00161162,2025-07-20 02:50:00,2025-07-20 03:37:00,Assist Other Agency,CBE,7500 block of Baltimore Ave
