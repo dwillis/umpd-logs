@@ -2243,7 +2243,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00055243,2025-03-08 01:50:00,2025-03-08 01:57:00,Pedestrian Struck,Investigation Pending,7300 block of Baltimore Ave
 2025-00055246,2025-03-08 00:30:00,2025-03-08 02:05:00,Injured/Sick Person,CBE,8300 block of Baltimore Ave
 2025-00055583,2025-03-08 04:00:00,2025-03-08 09:34:00,Assist Other Agency,Active/Pending,8100 block of 48th Ave
-2025-00055613,2025-03-07 20:00:00,2025-03-08 10:43:00,Theft,Summons Issued,4200 block of Lehigh Rd
+2025-00055613,2025-03-07 20:00:00,2025-03-08 10:43:00,Theft,Arrest,4200 block of Lehigh Rd
 2025-00055611,2025-03-08 10:19:00,2025-03-08 10:45:00,Assist Other Agency,CBE,University Blvd
 2025-00055619,2025-03-08 11:09:00,2025-03-08 11:09:00,Suspicious Activity,CBE,8500 block of Paint Branch Dr
 2025-00055860,2025-03-08 19:15:00,2025-03-08 19:23:00,Injured/Sick Person,CBE,4100 block of Valley Dr
@@ -2297,8 +2297,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00063012,2025-03-14 21:00:00,2025-03-16 12:52:00,Assist Other Agency,CBE,4300 block of Knox Rd
 2025-00063172,2025-03-16 16:04:00,2025-03-16 16:04:00,Recovered Stolen Property,Arrest,7500 block of Mowatt Ln
 2025-00063422,2025-03-16 21:24:00,2025-03-16 23:10:00,Dept Property Damage/Loss,CBE,Stanley R. Zupnick Hall at 8184 Paint Branch Dr
-2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
 2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
+2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
 2025-00063978,2025-03-17 12:43:00,2025-03-17 12:43:00,Damage to State Property,CBE,7500 block of Baltimore Ave
 2025-00064495,2025-03-17 22:54:00,2025-03-17 22:54:00,DWI/DUI,Arrest,University Blvd
 2025-00065844,2025-03-19 11:38:00,2025-03-19 11:41:00,Injured/Sick Person,CBE,7300 block of Baltimore Ave
@@ -2684,7 +2684,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00124835,2025-05-24 22:39:00,2025-05-24 22:39:00,DWI/DUI,Arrest,University Blvd
 2025-00125033,2025-05-25 02:44:00,2025-05-25 02:44:00,DWI/DUI,Arrest,Metzerott Rd
 2025-00125700,2025-05-25 23:50:00,2025-05-25 23:55:00,Suspicious Person/Auto,Active/Pending,Harvard Rd
-2025-00126089,2025-05-20 14:30:00,2025-05-26 13:50:00,Theft,Summons Issued,4000 block of Fieldhouse Dr
+2025-00126089,2025-05-20 14:30:00,2025-05-26 13:50:00,Theft,Arrest,4000 block of Fieldhouse Dr
 2025-00126348,2025-05-26 22:40:00,2025-05-26 22:40:00,Vandalism,Unfounded,4100 block of Campus Dr
 2025-00127110,2025-05-27 17:00:00,2025-05-27 17:04:00,Fire,CBE,3400 block of Tulane Dr
 2025-00127140,2025-05-27 17:52:00,2025-05-27 17:52:00,Dept Property Damage/Loss,CBE,5100 block of Campus Dr
@@ -2783,7 +2783,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00147421,2025-06-28 04:15:00,2025-06-30 06:42:00,Theft,Investigation Pending,7500 block of Mowatt Ln
 2025-00147752,2025-06-30 15:14:00,2025-06-30 15:14:00,Other Incident,CBE,5000 block of College Ave
 2025-00148338,2025-07-01 08:30:00,2025-07-01 09:54:00,Fraud,Warrant Issued,3900 block of Campus Dr
-2025-00148421,2025-06-29 12:51:00,2025-07-01 12:45:00,Theft,Summons Issued,5200 block of Greenbelt Rd
+2025-00148421,2025-06-29 12:51:00,2025-07-01 12:45:00,Theft,Arrest,5200 block of Greenbelt Rd
 2025-00148436,2025-06-20 08:30:00,2025-07-01 13:19:00,Burglary,Summons Issued,8200 block of Paint Branch Dr
 2025-00148503,2025-06-30 09:30:00,2025-07-01 14:52:00,Burglary,Active/Pending,8200 block of Paint Branch Dr
 2025-00148910,2025-07-02 07:58:00,2025-07-02 07:58:00,Trespassing,Active/Pending,8200 block of Paint Branch Dr
@@ -3095,12 +3095,12 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00196805,2025-06-01 17:19:00,2025-09-08 17:19:00,Lost Property,CBE,8100 block of Baltimore Ave
 2025-00197014,2025-09-08 22:22:00,2025-09-08 22:22:00,Assist Other Agency,CBE,8400 block of Baltimore Ave
 2025-00197378,2025-09-09 10:04:00,2025-09-09 10:05:00,Injured/Sick Person,CBE,3800 block of Golf Course Rd
-2025-00197418,2025-09-09 09:30:00,2025-09-09 11:16:00,Theft,Active/Pending,4700 block of Rossborough Ln
+2025-00197418,2025-09-09 09:30:00,2025-09-09 11:16:00,Theft,Investigation Pending,4700 block of Rossborough Ln
 2025-00197441,2025-09-09 11:25:00,2025-09-09 12:26:00,Injured/Sick Person,CBE,4200 block of Stadium Dr
 2025-00197519,2025-09-09 08:00:00,2025-09-09 14:44:00,Other Incident,CBE,"Capital One Field, Football Stadium, SECU Stadium"
 2025-00197545,2025-09-09 04:52:00,2025-09-09 15:37:00,Assist Other Agency,CBE,4700 block of Norwich Rd
 2025-00197629,2025-09-09 18:10:00,2025-09-09 18:10:00,Injured/Sick Person,CBE,3900 block of Campus Dr
-2025-00197636,2025-09-09 16:00:00,2025-09-09 18:27:00,Theft,Active/Pending,4300 block of Stadium Dr
+2025-00197636,2025-09-09 16:00:00,2025-09-09 18:27:00,Theft,Warrant Issued,4300 block of Stadium Dr
 2025-00197642,2025-09-07 11:45:00,2025-09-09 18:38:00,Theft,Active/Pending,4300 block of Rowalt Dr
 2025-00197659,2025-09-09 19:21:00,2025-09-09 19:21:00,Emergency Petition,CBE,8100 block of Baltimore Ave
 2025-00197665,2025-09-09 20:52:00,2025-09-09 20:52:00,Assist Other Agency,CBE,8400 block of Baltimore Ave
@@ -3168,7 +3168,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00203704,2025-09-16 22:19:00,2025-09-16 22:19:00,Injured/Sick Person,CBE,7500 block of Yale Ave
 2025-00203980,2025-09-17 05:49:00,2025-09-17 05:49:00,CDS Violation,Arrest,8100 block of Baltimore Ave
 2025-00204217,2025-09-17 10:19:00,2025-09-17 12:27:00,Theft,Active/Pending,7200 block of Preinkert Dr
-2025-00204218,2025-09-11 09:30:00,2025-09-17 12:41:00,Theft,Active/Pending,4100 block of Stadium Dr
+2025-00204218,2025-09-11 09:30:00,2025-09-17 12:41:00,Theft,Investigation Pending,4100 block of Stadium Dr
 2025-00204233,2025-09-17 13:35:00,2025-09-17 13:35:00,Injured/Sick Person,CBE,4200 block of Stadium Dr
 2025-00204273,2025-09-17 14:45:00,2025-09-17 14:54:00,Injured/Sick Person,CBE,4100 block of Stadium Dr
 2025-00204448,2025-09-17 17:53:00,2025-09-17 17:53:00,Emergency Petition,CBE,4100 block of Guilford Dr
@@ -3202,7 +3202,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00207858,2025-09-20 23:38:00,2025-09-20 23:38:00,Alcohol Violation,Arrest,College Ave
 2025-00207900,2025-09-21 01:16:00,2025-09-21 01:16:00,Title IX Incident Non Criminal,Active/Pending,8100 block of La Plata Dr
 2025-00207905,2025-09-21 01:30:00,2025-09-21 01:50:00,Injured/Sick Person,CBE,Knox Rd
-2025-00208071,2025-09-19 19:30:00,2025-09-21 09:19:00,Vandalism,Active/Pending,3400 block of Tulane Dr
+2025-00208071,2025-09-19 19:30:00,2025-09-21 09:19:00,Theft from Auto,Active/Pending,3400 block of Tulane Dr
 2025-00208402,2025-09-21 18:40:00,2025-09-21 19:25:00,Theft,Active/Pending,4100 block of Stadium Dr
 2025-00208926,2025-09-22 08:02:00,2025-09-22 08:02:00,Injured/Sick Person,CBE,4500 block of Campus Dr
 2025-00209172,2025-09-22 11:55:00,2025-09-22 12:01:00,Accident - Departmental,CBE,845 Chestnut Tree Dr
@@ -3243,6 +3243,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00211879,2025-09-25 19:58:00,2025-09-25 19:58:00,Suspicious Activity,Active/Pending,Graduate Hills Apartment #289 at 3431 Tulane Dr
 2025-00212229,2025-09-26 01:58:00,2025-09-26 01:58:00,DWI/DUI,Arrest,Baltimore Ave
 2025-00212281,2025-09-26 02:40:00,2025-09-26 03:03:00,Assault,Active/Pending,3800 block of Stadium Dr
+2025-00212348,2025-09-26 04:00:00,2025-09-26 04:00:00,Theft,Arrest,3400 block of Tulane Dr
 2025-00212498,2025-09-25 23:30:00,2025-09-26 08:01:00,Hate Bias Incident,Active/Pending,4200 block of Valley Dr
 2025-00212514,2025-09-26 08:50:00,2025-09-26 08:55:00,Injured/Sick Person,CBE,4400 block of Stadium Dr
 2025-00212556,2025-09-26 10:30:00,2025-09-26 10:51:00,Found/Recovered Property,CBE,4300 block of Knox Rd
@@ -3287,6 +3288,10 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00216241,2025-09-30 12:35:00,2025-09-30 12:35:00,Emergency Petition,CBE,4000 block of Union Dr
 2025-00216243,2025-09-28 14:00:00,2025-09-30 12:54:00,Vandalism,Active/Pending,8000 block of Hagerstown Dr
 2025-00216262,2025-09-30 10:16:00,2025-09-30 14:33:00,Suspicious Activity,CBE,7500 block of Baltimore Ave
+2025-00216276,2025-09-26 23:00:00,2025-09-30 15:07:00,Assist Other Agency,CBE,7600 block of Regents Dr
+2025-00216309,2025-09-28 18:30:00,2025-09-30 16:19:00,Theft,Active/Pending,3900 block of Campus Dr
+2025-00216435,2025-08-01 00:01:00,2025-09-30 18:12:00,Assist Other Agency,Active/Pending,4300 block of Hartwick Rd
+2025-00217098,2025-10-01 11:37:00,2025-10-01 11:37:00,Other Incident,CBE,7500 block of Baltimore Ave
 UMPD CASENUMBER,OCCURRED DATE TIMELOCATION,REPORT DATE TIME,TYPE,DISPOSITION,LOCATION
 2024-00200716,2024-11-13 12:14:00,2024-11-14 12:14:00,Check on the  Welfare,CBE,"76, Symons Hall at 7998  Regents  Dr"
 2024-00209815,2024-11-05 00:00:00,2024-11-25 14:35:00,Other Incident,CBE,8000 block of  Regents  Dr
