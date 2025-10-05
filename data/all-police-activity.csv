@@ -1724,8 +1724,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2024-00186213,2024-10-27 23:00:00,2024-10-27 23:17:00,Injured/Sick Person,CBE,4200 block of Farm Dr
 2024-00186373,2024-10-28 06:31:00,2024-10-28 06:31:00,Injured/Sick Person,CBE,Regents Dr
 2024-00186563,2024-10-28 10:13:00,2024-10-28 10:38:00,Telephone/EMail Misuse,Investigation Pending,Artemesia Building at 8400 Baltimore Ave
-2024-00193837,2024-08-22 20:00:00,2024-10-28 12:18:00,Other Incident,Active/Pending,"Comcast Center, Xfinity, Xfinity Center at 8500 Paint Branch Dr"
 2024-00186612,2024-10-28 08:00:00,2024-10-28 12:18:00,Other Incident,CBE,8500 block of Paint Branch Dr
+2024-00193837,2024-08-22 20:00:00,2024-10-28 12:18:00,Other Incident,Active/Pending,"Comcast Center, Xfinity, Xfinity Center at 8500 Paint Branch Dr"
 2024-00186713,2024-10-28 13:55:00,2024-10-28 14:23:00,Accident,Active/Pending,Mowatt Ln
 2024-00186846,2024-10-28 17:42:00,2024-10-28 17:42:00,Suspicious Person/Auto,Active/Pending,"iONQ, Paint Branch Building at 4505 Campus Dr"
 2024-00186847,2024-10-28 17:30:00,2024-10-28 17:53:00,Theft,Active/Pending,"Commons 1, SCC 1, South Campus Commons 1 at 4250 Lehigh Rd"
@@ -2474,7 +2474,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00096827,2025-04-22 17:45:00,2025-04-22 17:45:00,Other Incident,CBE,4100 block of Valley Dr
 2025-00096942,2025-04-22 21:00:00,2025-04-22 21:08:00,Assist Other Agency,CBE,8100 block of Paint Branch Dr
 2025-00097056,2025-04-22 23:25:00,2025-04-22 23:28:00,Warrant/Summons Service,Arrest,Campus Dr
-2025-00097526,2024-10-01 12:00:00,2025-04-23 15:05:00,Other Incident,CBE,7400 block of Preinkert Dr
+2025-00097526,2024-10-01 12:00:00,2025-04-23 15:05:00,Harassment/Stalking,CBE,7400 block of Preinkert Dr
 2025-00097535,2025-04-10 18:38:00,2025-04-23 15:30:00,Vehicle Tampering,Arrest,Lot SS1
 2025-00097620,2025-04-23 17:03:00,2025-04-23 17:03:00,Emergency Petition,CBE,3800 block of Stadium Dr
 2025-00097621,2025-04-23 17:04:00,2025-04-23 17:04:00,Injured/Sick Person,CBE,Lot 1b
@@ -3133,7 +3133,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00200702,2025-09-13 10:01:00,2025-09-13 10:01:00,Emergency Petition,CBE,3900 block of Denton Service Ln
 2025-00200704,2025-09-12 18:00:00,2025-09-13 10:21:00,Theft from Auto,Active/Pending,3400 block of Tulane Dr
 2025-00200803,2025-09-13 13:51:00,2025-09-13 13:51:00,Injured/Sick Person,CBE,"Capital One Field, Football Stadium, SECU Stadium"
-2025-00200825,2025-09-13 14:10:00,2025-09-13 14:10:00,Injured Officer,Active/Pending,7500 block of Mowatt Ln
+2025-00200825,2025-09-13 14:10:00,2025-09-13 14:10:00,Injured Officer,Investigation Pending,7500 block of Mowatt Ln
 2025-00200834,2025-09-13 14:45:00,2025-09-13 14:49:00,Trespassing,CBE,3900 block of Denton Service Ln
 2025-00200886,2025-09-13 09:30:00,2025-09-13 17:02:00,Dept Property Damage/Loss,CBE,Fieldhouse Dr
 2025-00200890,2025-09-13 16:50:00,2025-09-13 17:06:00,Injured/Sick Person,CBE,4600 block of College Ave
@@ -3297,6 +3297,9 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00217098,2025-10-01 11:37:00,2025-10-01 11:37:00,Other Incident,CBE,7500 block of Baltimore Ave
 2025-00217149,2025-10-01 15:14:00,2025-10-01 15:14:00,Theft,CBE,3900 block of Campus Dr
 2025-00217834,2025-10-02 09:02:00,2025-10-02 09:02:00,Alarm,CBE,8200 block of Paint Branch Dr
+2025-00217933,2025-10-02 12:12:00,2025-10-02 12:12:00,Suspicious Activity,CBE,Adelphi Rd
+2025-00218197,2025-10-02 12:30:00,2025-10-02 19:36:00,Injured/Sick Person,CBE,7000 block of Preinkert Dr
+2025-00218242,2025-10-02 21:25:00,2025-10-02 21:25:00,Injured/Sick Person,CBE,3800 block of Golf Course Rd
 UMPD CASENUMBER,OCCURRED DATE TIMELOCATION,REPORT DATE TIME,TYPE,DISPOSITION,LOCATION
 2024-00200716,2024-11-13 12:14:00,2024-11-14 12:14:00,Check on the  Welfare,CBE,"76, Symons Hall at 7998  Regents  Dr"
 2024-00209815,2024-11-05 00:00:00,2024-11-25 14:35:00,Other Incident,CBE,8000 block of  Regents  Dr
