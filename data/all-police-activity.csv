@@ -3386,9 +3386,11 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00224345,2025-10-09 23:55:00,2025-10-09 23:55:00,Injured/Sick Person,CBE,Dickinson Ave
 2025-00224860,2025-10-09 21:00:00,2025-10-10 09:54:00,Theft,Investigation Pending,4100 block of Stadium Dr
 2025-00224925,2025-10-10 10:00:00,2025-10-10 12:38:00,Extortion,Active/Pending,7500 block of Baltimore Ave
+2025-00224976,2025-10-10 15:05:00,2025-10-10 15:27:00,Vandalism,Active/Pending,7600 block of Library Ln
 2025-00225218,2025-10-10 18:50:00,2025-10-10 18:54:00,Injured/Sick Person,CBE,3900 block of Campus Dr
 2025-00225386,2025-09-18 21:20:00,2025-10-10 21:36:00,Theft,Investigation Pending,Lot U1
 2025-00225417,2025-10-10 22:14:00,2025-10-10 22:14:00,Accident - Departmental,CBE,Lot 1b
+2025-00225424,2025-10-10 22:00:00,2025-10-10 22:29:00,Vandalism,Arrest,7500 block of Mowatt Ln
 2025-00225500,2025-10-10 23:58:00,2025-10-10 23:58:00,DWI/DUI,Arrest,University Blvd
 2025-00225580,2025-10-11 00:39:00,2025-10-11 00:39:00,DWI/DUI,Arrest,University Blvd
 2025-00225621,2025-10-10 17:30:00,2025-10-11 01:00:00,Vandalism,Active/Pending,7500 block of Mowatt Ln
@@ -3421,13 +3423,15 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00229472,2025-10-15 13:39:00,2025-10-15 13:39:00,Other Incident,CBE,7700 block of Alumni Dr
 2025-00229572,2025-10-15 14:33:00,2025-10-15 14:33:00,Assist Other Agency,CBE,7500 block of Baltimore Ave
 2025-00229647,2025-10-15 16:35:00,2025-10-15 16:35:00,Emergency Petition,CBE,4200 block of Chapel Ln
-2025-00229663,2025-10-10 18:00:00,2025-10-15 17:28:00,Theft,Active/Pending,3800 block of Stadium Dr
+2025-00229663,2025-10-10 18:00:00,2025-10-15 17:28:00,Theft,Investigation Pending,3800 block of Stadium Dr
 2025-00229793,2025-10-15 22:44:00,2025-10-15 22:44:00,Injured/Sick Person,CBE,4400 block of Rossborough Ln
 2025-00230090,2025-10-16 06:51:00,2025-10-16 06:51:00,Injured/Sick Person,CBE,Stanley R. Zupnick Hall at 8184 Paint Branch Dr
 2025-00230386,2025-10-16 17:27:00,2025-10-16 17:27:00,Suspicious Person/Auto,CBE,7000 block of 52nd Ave
 2025-00230447,2025-10-16 17:15:00,2025-10-16 19:48:00,Assist Other Agency,Active/Pending,Five Guys at 7346 Baltimore Ave
 2025-00230579,2025-10-09 12:00:00,2025-10-16 22:57:00,Theft,Active/Pending,4200 block of Farm Dr
+2025-00231106,2025-10-17 04:27:00,2025-10-17 04:27:00,DWI/DUI,Arrest,4300 block of Campus Dr
 2025-00231499,2025-10-17 16:20:00,2025-10-17 16:40:00,Other Incident,CBE,4600 block of Rossborough Ln
+2025-00231539,2025-10-17 17:20:00,2025-10-17 17:22:00,Assist Other Agency,CBE,4700 block of Navahoe St
 2025-00231672,2025-10-17 19:52:00,2025-10-17 19:52:00,Alarm,CBE,7500 block of Regents Dr
 2025-00231848,2025-10-17 22:48:00,2025-10-17 22:48:00,Injured/Sick Person,CBE,3900 block of Denton Service Ln
 2025-00232073,2025-10-18 00:52:00,2025-10-18 00:52:00,Assist Other Agency,CBE,7400 block of Baltimore Ave
@@ -3441,7 +3445,12 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00232824,2025-10-18 23:32:00,2025-10-18 23:32:00,Injured/Sick Person,CBE,7300 block of Baltimore Ave
 2025-00232926,2025-10-19 01:47:00,2025-10-19 01:47:00,Injured/Sick Person,CBE,7500 block of Yale Ave
 2025-00233069,2025-10-19 05:55:00,2025-10-19 05:55:00,Emergency Petition,CBE,7400 block of Preinkert Dr
+2025-00233519,2025-10-19 18:00:00,2025-10-19 18:39:00,Injured/Sick Person,Active/Pending,4100 block of Stadium Dr
 2025-00233733,2025-10-20 00:17:00,2025-10-20 02:37:00,Accident,Active/Pending,Regents Dr
+2025-00234341,2025-10-18 14:10:00,2025-10-20 13:12:00,Theft,Active/Pending,4300 block of Knox Rd
+2025-00234624,2025-10-10 18:00:00,2025-10-20 18:41:00,Theft,Active/Pending,4100 block of Stadium Dr
+2025-00234862,2025-10-20 23:00:00,2025-10-21 00:18:00,Injured/Sick Person,CBE,7400 block of Calvert Service Ln
+2025-00235852,2025-10-22 01:30:00,2025-10-22 01:37:00,Injured/Sick Person,CBE,7900 block of Regents Dr
 UMPD CASENUMBER,OCCURRED DATE TIMELOCATION,REPORT DATE TIME,TYPE,DISPOSITION,LOCATION
 2024-00200716,2024-11-13 12:14:00,2024-11-14 12:14:00,Check on the  Welfare,CBE,"76, Symons Hall at 7998  Regents  Dr"
 2024-00209815,2024-11-05 00:00:00,2024-11-25 14:35:00,Other Incident,CBE,8000 block of  Regents  Dr
