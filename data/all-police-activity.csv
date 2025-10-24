@@ -2644,8 +2644,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00120365,2025-05-18 10:00:00,2025-05-19 09:20:00,Theft,Investigation Pending,4600 block of Rossborough Ln
 2025-00103454,2025-05-17 12:00:00,2025-05-19 14:21:00,Theft,Active/Pending,4300 block of Chapel Ln
 2025-00103455,2025-05-19 08:00:00,2025-05-19 14:33:00,Theft,Active/Pending,Lot 1b
-2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
 2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
+2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
 2025-00120934,2025-05-10 00:00:00,2025-05-19 23:03:00,Damage to State Property,CBE,3900 block of Campus Dr
 2025-00121280,2025-05-20 03:13:00,2025-05-20 06:56:00,Theft,Investigation Pending,Lot 4a
 2025-00121421,2023-06-08 12:00:00,2025-05-20 09:51:00,Fraud,Active/Pending,5600 block of Rivertech Ct
@@ -3450,7 +3450,9 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00234341,2025-10-18 14:10:00,2025-10-20 13:12:00,Theft,Active/Pending,4300 block of Knox Rd
 2025-00234624,2025-10-10 18:00:00,2025-10-20 18:41:00,Theft,Active/Pending,4100 block of Stadium Dr
 2025-00234862,2025-10-20 23:00:00,2025-10-21 00:18:00,Injured/Sick Person,CBE,7400 block of Calvert Service Ln
+2025-00235382,2025-10-21 12:15:00,2025-10-21 14:20:00,Theft,Active/Pending,7300 block of Preinkert Dr
 2025-00235852,2025-10-22 01:30:00,2025-10-22 01:37:00,Injured/Sick Person,CBE,7900 block of Regents Dr
+2025-00235996,2025-10-22 08:10:00,2025-10-22 08:17:00,Theft,Active/Pending,4100 block of Stadium Dr
 UMPD CASENUMBER,OCCURRED DATE TIMELOCATION,REPORT DATE TIME,TYPE,DISPOSITION,LOCATION
 2024-00200716,2024-11-13 12:14:00,2024-11-14 12:14:00,Check on the  Welfare,CBE,"76, Symons Hall at 7998  Regents  Dr"
 2024-00209815,2024-11-05 00:00:00,2024-11-25 14:35:00,Other Incident,CBE,8000 block of  Regents  Dr
