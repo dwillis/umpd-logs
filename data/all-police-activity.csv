@@ -1724,8 +1724,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2024-00186213,2024-10-27 23:00:00,2024-10-27 23:17:00,Injured/Sick Person,CBE,4200 block of Farm Dr
 2024-00186373,2024-10-28 06:31:00,2024-10-28 06:31:00,Injured/Sick Person,CBE,Regents Dr
 2024-00186563,2024-10-28 10:13:00,2024-10-28 10:38:00,Telephone/EMail Misuse,Investigation Pending,Artemesia Building at 8400 Baltimore Ave
-2024-00186612,2024-10-28 08:00:00,2024-10-28 12:18:00,Other Incident,CBE,8500 block of Paint Branch Dr
 2024-00193837,2024-08-22 20:00:00,2024-10-28 12:18:00,Other Incident,Active/Pending,"Comcast Center, Xfinity, Xfinity Center at 8500 Paint Branch Dr"
+2024-00186612,2024-10-28 08:00:00,2024-10-28 12:18:00,Other Incident,CBE,8500 block of Paint Branch Dr
 2024-00186713,2024-10-28 13:55:00,2024-10-28 14:23:00,Accident,Active/Pending,Mowatt Ln
 2024-00186846,2024-10-28 17:42:00,2024-10-28 17:42:00,Suspicious Person/Auto,Active/Pending,"iONQ, Paint Branch Building at 4505 Campus Dr"
 2024-00186847,2024-10-28 17:30:00,2024-10-28 17:53:00,Theft,Active/Pending,"Commons 1, SCC 1, South Campus Commons 1 at 4250 Lehigh Rd"
@@ -3476,9 +3476,9 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00240055,2025-10-26 17:15:00,2025-10-26 18:42:00,Theft,Active/Pending,Engineering Fields
 2025-00240130,2025-10-26 22:09:00,2025-10-26 22:09:00,Suspicious Activity,CBE,Lot 4B
 2025-00240335,2025-10-27 06:36:00,2025-10-27 06:36:00,Injured/Sick Person,CBE,3400 block of Tulane Dr
-2025-00240548,2025-10-11 16:00:00,2025-10-27 09:21:00,Theft,Active/Pending,8600 block of Boteler Ln
+2025-00240548,2025-10-11 16:00:00,2025-10-27 09:21:00,Theft,Investigation Pending,8600 block of Boteler Ln
 2025-00240567,2025-10-24 04:00:00,2025-10-27 09:25:00,Other Incident,Active/Pending,4300 block of Terrapin Trl
-2025-00240554,2025-10-26 10:00:00,2025-10-27 09:26:00,Theft,Active/Pending,8600 block of Boteler Ln
+2025-00240554,2025-10-26 10:00:00,2025-10-27 09:26:00,Theft,Investigation Pending,8600 block of Boteler Ln
 2025-00240668,2025-10-27 11:20:00,2025-10-27 12:13:00,Hate Bias Incident,Active/Pending,4000 block of Stadium Dr
 2025-00240799,2025-10-27 16:40:00,2025-10-27 17:00:00,Fire,CBE,3900 block of Campus Dr
 2025-00240824,2025-10-27 18:39:00,2025-10-27 18:39:00,Theft,Active/Pending,3900 block of Denton Service Ln
@@ -3491,7 +3491,17 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00241454,2025-10-28 15:00:00,2025-10-28 15:24:00,Assist Other Agency,CBE,3400 block of University Blvd
 2025-00241455,2025-10-23 11:30:00,2025-10-28 15:26:00,Stolen Motor Vehicle,Active/Pending,Lot 11b
 2025-00241472,2025-10-28 16:15:00,2025-10-28 16:16:00,Hazardous Condition,CBE,8200 block of Paint Branch Dr
+2025-00241544,2025-10-22 12:00:00,2025-10-28 18:18:00,Lost Property,CBE,8500 block of Paint Branch Dr
+2025-00241549,2025-10-28 18:15:00,2025-10-28 18:28:00,Injured/Sick Person,CBE,4100 block of Campus Dr
 2025-00241912,2025-10-29 07:51:00,2025-10-29 07:51:00,Warrant/Summons Service,Arrest,Regents Dr
+2025-00241915,2025-10-29 06:10:00,2025-10-29 07:54:00,Theft,Active/Pending,4100 block of Stadium Dr
+2025-00242021,2025-10-29 06:10:00,2025-10-29 11:15:00,Theft,Arrest,4100 block of Stadium Dr
+2025-00242048,2025-10-29 11:59:00,2025-10-29 11:59:00,Other Incident,CBE,8000 block of Regents Dr
+2025-00242243,2025-10-29 15:00:00,2025-10-29 16:56:00,Other Incident,Active/Pending,4100 block of Campus Dr
+2025-00242741,2025-10-29 10:00:00,2025-10-30 09:01:00,Theft,Active/Pending,4200 block of Campus Dr
+2025-00242796,2025-10-29 17:43:00,2025-10-30 10:33:00,Title IX Incident Non Criminal,Active/Pending,8200 block of Paint Branch Dr
+2025-00242935,2025-10-28 11:32:00,2025-10-30 13:51:00,Theft,Active/Pending,4300 block of Knox Rd
+2025-00243466,2025-10-31 02:00:00,2025-10-31 03:27:00,Assist Other Agency,Active/Pending,4200 block of Knox Rd
 UMPD CASENUMBER,OCCURRED DATE TIMELOCATION,REPORT DATE TIME,TYPE,DISPOSITION,LOCATION
 2024-00200716,2024-11-13 12:14:00,2024-11-14 12:14:00,Check on the  Welfare,CBE,"76, Symons Hall at 7998  Regents  Dr"
 2024-00209815,2024-11-05 00:00:00,2024-11-25 14:35:00,Other Incident,CBE,8000 block of  Regents  Dr
