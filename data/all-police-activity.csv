@@ -3591,15 +3591,20 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00251131,2025-11-08 22:13:00,2025-11-08 22:13:00,Injured/Sick Person,CBE,3900 block of Denton Service Ln
 2025-00251243,2025-11-09 00:16:00,2025-11-09 00:36:00,Assist Other Agency,CBE,7300 block of Baltimore Ave
 2025-00251246,2025-11-09 00:43:00,2025-11-09 00:43:00,Assist Other Agency,CBE,7300 block of Baltimore Ave
+2025-00251278,2025-11-09 02:04:00,2025-11-09 02:04:00,DWI/DUI,Arrest,University Blvd
 2025-00251331,2025-11-09 04:02:00,2025-11-09 04:02:00,Extortion,Active/Pending,4200 block of Valley Dr
 2025-00251727,2025-11-06 21:00:00,2025-11-09 12:19:00,Theft,Active/Pending,4300 block of Knox Rd
 2025-00251765,2025-11-09 14:16:00,2025-11-09 14:16:00,Warrant/Summons Service,Arrest,8500 block of Paint Branch Dr
 2025-00251784,2025-11-08 16:29:00,2025-11-09 15:07:00,Fraud,Active/Pending,7  Fraternity Row
+2025-00251987,2025-11-09 16:00:00,2025-11-09 18:54:00,Theft,Active/Pending,7800 block of Alumni Dr
 2025-00252042,2025-11-09 20:20:00,2025-11-09 20:20:00,Warrant/Summons Service,Arrest,Baltimore Ave
 2025-00252762,2025-10-29 02:30:00,2025-11-10 13:55:00,Assist Other Agency,CBE,8100 block of Baltimore Ave
+2025-00252858,2025-11-07 18:25:00,2025-11-10 15:30:00,Theft,Active/Pending,8500 block of Paint Branch Dr
+2025-00253026,2025-11-07 14:00:00,2025-11-10 17:18:00,Theft,Active/Pending,4200 block of Lehigh Rd
 2025-00253027,2025-11-10 17:22:00,2025-11-10 17:22:00,Other Incident,CBE,8100 block of La Plata Dr
 2025-00253115,2025-11-10 10:30:00,2025-11-10 20:01:00,Theft,Active/Pending,4300 block of Knox Rd
 2025-00253123,2025-11-10 18:00:00,2025-11-10 20:51:00,Theft,Active/Pending,8100 block of Paint Branch Dr
+2025-00253132,2025-11-09 19:00:00,2025-11-10 21:11:00,Sex Offense,Active/Pending,7400 block of Preinkert Dr
 2025-00253648,2025-11-10 12:02:00,2025-11-11 10:16:00,Assist Other Agency,CBE,7800 block of Regents Dr
 2025-00253691,2025-11-11 12:07:00,2025-11-11 12:07:00,Emergency Petition,CBE,4200 block of Chapel Ln
 2025-00253714,2025-11-11 09:00:00,2025-11-11 14:35:00,Theft,Active/Pending,8100 block of Paint Branch Dr
@@ -3623,6 +3628,18 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00255648,2025-11-13 17:45:00,2025-11-13 18:02:00,Damage to State Property,CBE,7800 block of Alumni Dr
 2025-00255657,2025-11-13 17:30:00,2025-11-13 18:18:00,Emergency Petition,CBE,7600 block of Preinkert Dr
 2025-00255686,2025-11-13 20:40:00,2025-11-13 20:40:00,Emergency Petition,CBE,4100 block of Stadium Dr
+2025-00256338,2025-11-14 10:12:00,2025-11-14 10:12:00,Traffic Offense,Active/Pending,7000 block of Preinkert Dr
+2025-00256392,2025-11-14 12:18:00,2025-11-14 12:18:00,Warrant/Summons Service,Arrest,"Frat 12, Zeta Tau Alpha, Zeta Tau Alpha Sorority at 12 Fraternity Row"
+2025-00256461,2025-11-14 14:47:00,2025-11-14 14:47:00,Emergency Petition,CBE,4200 block of Chapel Ln
+2025-00256650,2025-11-14 19:20:00,2025-11-14 19:20:00,Recovered Stolen Motor Vehicle,CBE,7500 block of Mowatt Ln
+2025-00256957,2025-11-15 04:45:00,2025-11-15 04:45:00,DWI/DUI,Arrest,Baltimore Ave
+2025-00257020,2025-11-15 09:09:00,2025-11-15 09:09:00,Assist Other Agency,CBE,4200 block of Knox Rd
+2025-00257256,2025-11-13 10:00:00,2025-11-15 16:27:00,Theft,Active/Pending,Graduate Hills Apartment #289 at 3431 Tulane Dr
+2025-00257422,2025-11-15 08:00:00,2025-11-15 20:31:00,Other Incident,CBE,7400 block of Preinkert Dr
+2025-00257500,2025-11-16 00:16:00,2025-11-16 00:16:00,Injured/Sick Person,CBE,4200 block of Valley Dr
+2025-00257541,2025-11-16 01:27:00,2025-11-16 01:27:00,DWI/DUI,Arrest,Greenbelt Rd
+2025-00258209,2025-11-14 14:00:00,2025-11-16 16:33:00,Theft,Active/Pending,4200 block of Lehigh Rd
+2025-00258598,2025-11-17 02:55:00,2025-11-17 02:55:00,DWI/DUI,Arrest,Metzerott Rd
 UMPD CASENUMBER,OCCURRED DATE TIMELOCATION,REPORT DATE TIME,TYPE,DISPOSITION,LOCATION
 2024-00200716,2024-11-13 12:14:00,2024-11-14 12:14:00,Check on the  Welfare,CBE,"76, Symons Hall at 7998  Regents  Dr"
 2024-00209815,2024-11-05 00:00:00,2024-11-25 14:35:00,Other Incident,CBE,8000 block of  Regents  Dr
