@@ -137,11 +137,52 @@ def index():
     recent_counter = Counter(recent_types)
     most_common_30 = recent_counter.most_common(1)[0][0] if recent_counter else 'N/A'
 
+    # Phase 2: Enhanced statistics
+    # Calculate arrest count and rate
+    arrest_count = len([a for a in valid_activities if a.get('Disposition') == 'Arrest'])
+    arrest_rate = round((arrest_count / total_incidents * 100), 1) if total_incidents > 0 else 0
+
+    # Last 30 days vs previous 30 days for trend
+    thirty_days_ago = datetime.now() - timedelta(days=30)
+    sixty_days_ago = datetime.now() - timedelta(days=60)
+
+    recent_30 = []
+    previous_30 = []
+    for r in valid_activities:
+        ds = r.get('REPORT_DATE') or r.get('CASE_DATE') or ''
+        if not ds:
+            continue
+        try:
+            dt = datetime.strptime(ds, '%Y-%m-%d %H:%M:%S')
+        except Exception:
+            continue
+        if dt >= thirty_days_ago:
+            recent_30.append(r)
+        elif sixty_days_ago <= dt < thirty_days_ago:
+            previous_30.append(r)
+
+    recent_count = len(recent_30)
+    previous_count = len(previous_30)
+
+    if recent_count > previous_count:
+        trend_direction = '↑'
+    elif recent_count < previous_count:
+        trend_direction = '↓'
+    else:
+        trend_direction = '→'
+
+    trend_percentage = round(abs((recent_count - previous_count) / previous_count * 100), 1) if previous_count > 0 else 0
+
     # expose aggregates to template
     return render_template(template,
                            activity_list=valid_activities,
                            arrest_list=arrest_list,
                            total_incidents=total_incidents,
+                           arrest_count=arrest_count,
+                           arrest_rate=arrest_rate,
+                           recent_30_count=recent_count,
+                           trend_direction=trend_direction,
+                           trend_percentage=trend_percentage,
                            most_common_type=most_common_type,
                            most_common_30=most_common_30)
 
