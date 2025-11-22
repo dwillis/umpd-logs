@@ -11,7 +11,8 @@
 		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
 		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/1.11.5/dataRender/datetime.js"></script>
 		<script type="text/javascript" charset="utf8" src="../static/moment.min.js"></script>
-		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
 		<!--script type="text/javascript" charset="utf8" src="../static/script.js"></script-->
 		
 		
@@ -48,6 +49,45 @@
 					<div class="stat-label">Most common (30 days)</div>
 				</div>
 			</div>
+
+			<!-- Crime Category Legend -->
+			<div class="crime-legend">
+				<strong style="margin-right: 8px;">Crime Categories:</strong>
+				<div class="legend-item">
+					<div class="legend-color" style="background-color: #ffebee; border-color: #c62828;"></div>
+					<span>Violent</span>
+				</div>
+				<div class="legend-item">
+					<div class="legend-color" style="background-color: #fff3e0; border-color: #e65100;"></div>
+					<span>Property</span>
+				</div>
+				<div class="legend-item">
+					<div class="legend-color" style="background-color: #f3e5f5; border-color: #6a1b9a;"></div>
+					<span>Drug/Alcohol</span>
+				</div>
+				<div class="legend-item">
+					<div class="legend-color" style="background-color: #e3f2fd; border-color: #1565c0;"></div>
+					<span>Traffic</span>
+				</div>
+				<div class="legend-item">
+					<div class="legend-color" style="background-color: #f5f5f5; border-color: #757575;"></div>
+					<span>Other</span>
+				</div>
+			</div>
+
+			<!-- Days-Since Tracker -->
+			<div id="days-since-section">
+				<h3 style="font-size: 18px; margin-bottom: 12px; color: #333;">Most Recent Incidents</h3>
+				<div id="days-since-container"></div>
+			</div>
+
+			<!-- Export Button -->
+			<div style="margin-bottom: 12px; text-align: right;">
+				<button onclick="exportTableToCSV()" class="export-btn">
+					<span>↓</span> Export Filtered Results to CSV
+				</button>
+			</div>
+
 			<div id="table-stuff">
 				<div id= "mainbar">
 					<table id="crime-table" data-order='[[ 2, "desc" ]]' border=1 cellpadding=7>
@@ -90,15 +130,181 @@
 			<div id="footer-text">Copyright 2022-2025</div>
 		</footer>
 		<script>
+			// Crime category mapping
+			const CRIME_CATEGORIES = {
+				violent: {
+					keywords: ['Assault', 'Robbery', 'Rape', 'Sexual Assault', 'Weapon', 'Armed'],
+					color: '#ffebee',
+					borderColor: '#c62828',
+					textColor: '#b71c1c',
+					label: 'Violent Crime'
+				},
+				property: {
+					keywords: ['Theft', 'Burglary', 'Vandalism', 'Trespass', 'Breaking', 'Stolen'],
+					color: '#fff3e0',
+					borderColor: '#e65100',
+					textColor: '#bf360c',
+					label: 'Property Crime'
+				},
+				drugs: {
+					keywords: ['CDS', 'Drug', 'Alcohol', 'Marijuana', 'Intoxicated', 'DUI', 'DWI'],
+					color: '#f3e5f5',
+					borderColor: '#6a1b9a',
+					textColor: '#4a148c',
+					label: 'Drug/Alcohol'
+				},
+				traffic: {
+					keywords: ['Traffic', 'Parking', 'Vehicle', 'Hit and Run'],
+					color: '#e3f2fd',
+					borderColor: '#1565c0',
+					textColor: '#0d47a1',
+					label: 'Traffic'
+				},
+				other: {
+					keywords: [],
+					color: '#f5f5f5',
+					borderColor: '#757575',
+					textColor: '#424242',
+					label: 'Other'
+				}
+			};
+
+			function categorizeCrime(crimeType) {
+				const upperType = crimeType.toUpperCase();
+				for (const [category, config] of Object.entries(CRIME_CATEGORIES)) {
+					if (category === 'other') continue;
+					for (const keyword of config.keywords) {
+						if (upperType.includes(keyword.toUpperCase())) {
+							return {category, ...config};
+						}
+					}
+				}
+				return {category: 'other', ...CRIME_CATEGORIES.other};
+			}
+
+			function applyColorCoding() {
+				$('#crime-table tbody tr').each(function() {
+					const crimeType = $(this).find('td:eq(3)').text();
+					const categoryData = categorizeCrime(crimeType);
+
+					// Remove all crime category classes
+					$(this).removeClass('crime-violent crime-property crime-drugs crime-traffic crime-other');
+
+					// Add appropriate class based on category
+					$(this).addClass('crime-' + categoryData.category);
+				});
+			}
+
+			function calculateDaysSince() {
+				const crimeTypes = {};
+				const today = moment();
+
+				const table = $('#crime-table').DataTable();
+				const data = table.rows().data();
+
+				for (let i = 0; i < data.length; i++) {
+					const row = data[i];
+					const crimeType = $(row[3]).text();
+					const dateOccurred = moment($(row[1]).text(), 'MMM D, YYYY, h:mma');
+
+					if (!crimeTypes[crimeType] || dateOccurred.isAfter(crimeTypes[crimeType])) {
+						crimeTypes[crimeType] = dateOccurred;
+					}
+				}
+
+				const daysSince = {};
+				for (const [type, date] of Object.entries(crimeTypes)) {
+					daysSince[type] = today.diff(date, 'days');
+				}
+
+				return daysSince;
+			}
+
+			function getTopCrimeTypesByFrequency(limit = 5) {
+				const typeCount = {};
+				const table = $('#crime-table').DataTable();
+				const data = table.rows().data();
+
+				for (let i = 0; i < data.length; i++) {
+					const crimeType = $(data[i][3]).text();
+					typeCount[crimeType] = (typeCount[crimeType] || 0) + 1;
+				}
+
+				return Object.entries(typeCount)
+					.sort((a, b) => b[1] - a[1])
+					.slice(0, limit)
+					.map(([type]) => type);
+			}
+
+			function renderDaysSinceCards() {
+				const daysSince = calculateDaysSince();
+				const topTypes = getTopCrimeTypesByFrequency(5);
+
+				let html = '';
+				for (const type of topTypes) {
+					const days = daysSince[type] || 0;
+					const colorClass = days === 0 ? 'alert-red' : days <= 2 ? 'alert-red' : days <= 6 ? 'alert-yellow' : 'alert-green';
+					const label = days === 0 ? 'TODAY' : days === 1 ? '1 day ago' : days + ' days ago';
+
+					html += '<div class="days-since-card ' + colorClass + '">' +
+						'<div class="days-value">' + label + '</div>' +
+						'<div class="days-label">' + type + '</div>' +
+						'</div>';
+				}
+
+				$('#days-since-container').html(html);
+			}
+
+			function exportTableToCSV() {
+				const table = $('#crime-table').DataTable();
+				const data = table.rows({ search: 'applied' }).data();
+
+				const csvData = [];
+				for (let i = 0; i < data.length; i++) {
+					const row = data[i];
+					csvData.push({
+						'Case Number': $(row[0]).text(),
+						'Date Occurred': $(row[1]).text(),
+						'Date Reported': $(row[2]).text(),
+						'Crime Type': $(row[3]).text(),
+						'Disposition': $(row[4]).text(),
+						'Location': $(row[5]).text()
+					});
+				}
+
+				const csv = Papa.unparse(csvData);
+
+				const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+				const link = document.createElement('a');
+				const url = URL.createObjectURL(blob);
+
+				const timestamp = moment().format('YYYY-MM-DD');
+				link.setAttribute('href', url);
+				link.setAttribute('download', 'umpd-data-' + timestamp + '.csv');
+				link.style.visibility = 'hidden';
+
+				document.body.appendChild(link);
+				link.click();
+				document.body.removeChild(link);
+			}
+
 			$(document).ready( function () {
-				$('#crime-table').DataTable({
+				const table = $('#crime-table').DataTable({
 					"order": [[2,"desc"]],
 					columnDefs: [ {
 					    targets: [1,2],
 					    render: $.fn.dataTable.render.moment( 'YYYY-MM-DD HH:mm:ss','MMM D, YYYY, h:mma' )
-					} ]
+					} ],
+					"drawCallback": function() {
+						applyColorCoding();
+					}
 				});
-				
+
+				// Initialize Phase 1 features
+				setTimeout(function() {
+					applyColorCoding();
+					renderDaysSinceCards();
+				}, 100);
 			} );
 		</script>
 		<script language="JavaScript">
