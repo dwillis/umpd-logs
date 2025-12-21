@@ -2297,8 +2297,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00063012,2025-03-14 21:00:00,2025-03-16 12:52:00,Assist Other Agency,CBE,4300 block of Knox Rd
 2025-00063172,2025-03-16 16:04:00,2025-03-16 16:04:00,Recovered Stolen Property,Arrest,7500 block of Mowatt Ln
 2025-00063422,2025-03-16 21:24:00,2025-03-16 23:10:00,Dept Property Damage/Loss,CBE,Stanley R. Zupnick Hall at 8184 Paint Branch Dr
-2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
 2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
+2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
 2025-00063978,2025-03-17 12:43:00,2025-03-17 12:43:00,Damage to State Property,CBE,7500 block of Baltimore Ave
 2025-00064495,2025-03-17 22:54:00,2025-03-17 22:54:00,DWI/DUI,Arrest,University Blvd
 2025-00065844,2025-03-19 11:38:00,2025-03-19 11:41:00,Injured/Sick Person,CBE,7300 block of Baltimore Ave
@@ -2644,8 +2644,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00120365,2025-05-18 10:00:00,2025-05-19 09:20:00,Theft,Investigation Pending,4600 block of Rossborough Ln
 2025-00103454,2025-05-17 12:00:00,2025-05-19 14:21:00,Theft,Active/Pending,4300 block of Chapel Ln
 2025-00103455,2025-05-19 08:00:00,2025-05-19 14:33:00,Theft,Active/Pending,Lot 1b
-2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
 2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
+2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
 2025-00120934,2025-05-10 00:00:00,2025-05-19 23:03:00,Damage to State Property,CBE,3900 block of Campus Dr
 2025-00121280,2025-05-20 03:13:00,2025-05-20 06:56:00,Theft,Investigation Pending,Lot 4a
 2025-00121421,2023-06-08 12:00:00,2025-05-20 09:51:00,Fraud,Active/Pending,5600 block of Rivertech Ct
@@ -3401,7 +3401,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00226049,2025-10-11 15:18:00,2025-10-11 15:18:00,Injured/Sick Person,CBE,Engineering Dr
 2025-00226077,2025-10-11 17:20:00,2025-10-11 17:23:00,Injured/Sick Person,CBE,3900 block of Campus Dr
 2025-00226111,2025-10-09 19:30:00,2025-10-11 18:58:00,Theft,Investigation Pending,3400 block of Tulane Dr
-2025-00226114,2025-10-11 19:11:00,2025-10-11 19:17:00,Assault,Active/Pending,Lot 1c
+2025-00226114,2025-10-11 19:11:00,2025-10-11 19:17:00,Assault,Investigation Pending,Lot 1c
 2025-00226118,2025-10-11 19:36:00,2025-10-11 19:36:00,DWI/DUI,Arrest,8000 block of Regents Dr
 2025-00226207,2025-10-11 23:00:00,2025-10-12 00:24:00,Check on the  Welfare,CBE,3900 block of Denton Service Ln
 2025-00226306,2025-10-12 02:45:00,2025-10-12 02:45:00,DWI/DUI,Arrest,8600 block of Adelphi Rd
@@ -3710,7 +3710,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00264564,2025-11-23 00:52:00,2025-11-23 00:52:00,DWI/DUI,Arrest,8900 block of Paint Branch Dr
 2025-00264605,2025-11-23 02:19:00,2025-11-23 02:19:00,DWI/DUI,Arrest,Adelphi Rd
 2025-00264916,2025-11-20 16:50:00,2025-11-23 11:15:00,Vandalism,Investigation Pending,7800 block of Championship Ln
-2025-00264945,2025-11-23 02:45:00,2025-11-23 12:27:00,Theft,Active/Pending,4300 block of Knox Rd
+2025-00264945,2025-11-23 02:45:00,2025-11-23 12:27:00,Theft,Investigation Pending,4300 block of Knox Rd
 2025-00265066,2025-11-23 16:39:00,2025-11-23 16:39:00,Injured/Sick Person,CBE,4200 block of Farm Dr
 2025-00265204,2025-11-23 20:58:00,2025-11-23 20:58:00,Emergency Petition,CBE,8000 block of La Plata Dr
 2025-00265783,2025-11-24 10:00:00,2025-11-24 11:05:00,Theft,Active/Pending,7300 block of Preinkert Dr
