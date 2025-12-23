@@ -3645,8 +3645,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00256650,2025-11-14 19:20:00,2025-11-14 19:20:00,Recovered Stolen Motor Vehicle,CBE,7500 block of Mowatt Ln
 2025-00256957,2025-11-15 04:45:00,2025-11-15 04:45:00,DWI/DUI,Arrest,Baltimore Ave
 2025-00257020,2025-11-15 09:09:00,2025-11-15 09:09:00,Assist Other Agency,CBE,4200 block of Knox Rd
-2025-00257249,2025-11-15 15:09:00,2025-11-15 15:09:00,Theft from Auto,Active/Pending,Campus Dr
-2025-00257256,2025-11-13 10:00:00,2025-11-15 16:27:00,Theft,Active/Pending,Graduate Hills Apartment #289 at 3431 Tulane Dr
+2025-00257249,2025-11-15 15:09:00,2025-11-15 15:09:00,Theft from Auto,Warrant Issued,Campus Dr
+2025-00257256,2025-11-13 10:00:00,2025-11-15 16:27:00,Theft,Warrant Issued,Graduate Hills Apartment #289 at 3431 Tulane Dr
 2025-00257422,2025-11-15 08:00:00,2025-11-15 20:31:00,Other Incident,CBE,7400 block of Preinkert Dr
 2025-00257500,2025-11-16 00:16:00,2025-11-16 00:16:00,Injured/Sick Person,CBE,4200 block of Valley Dr
 2025-00257541,2025-11-16 01:27:00,2025-11-16 01:27:00,DWI/DUI,Arrest,Greenbelt Rd
@@ -3725,7 +3725,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00266780,2025-11-24 15:00:00,2025-11-25 14:50:00,Theft,Active/Pending,4000 block of Stadium Dr
 2025-00266996,2025-11-25 19:10:00,2025-11-25 19:21:00,Found/Recovered Property,Active/Pending,8100 block of La Plata Dr
 2025-00267083,2025-11-25 22:22:00,2025-11-25 22:31:00,Suspicious Person/Auto,Arrest,4000 block of Valley Dr
-2025-00267141,2025-11-24 09:00:00,2025-11-26 01:16:00,Theft,CBE,7600 block of Mowatt Ln
+2025-00267141,2025-11-24 09:00:00,2025-11-26 01:16:00,Theft,Arrest,7600 block of Mowatt Ln
 2025-00267914,2025-11-26 18:20:00,2025-11-26 18:31:00,Burglary,Arrest,3800 block of Stadium Dr
 2025-00267930,2025-10-30 14:00:00,2025-11-26 20:43:00,Other Incident,CBE,8000 block of Regents Dr
 2025-00267958,2025-11-26 22:52:00,2025-11-26 22:52:00,DWI/DUI,Arrest,9000 block of Baltimore Ave
@@ -3821,6 +3821,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00283504,2025-12-14 03:13:00,2025-12-14 03:13:00,DWI/DUI,Arrest,Baltimore Ave
 2025-00284033,2025-12-14 19:30:00,2025-12-14 19:30:00,Injured/Sick Person,CBE,Baltimore Ave
 2025-00284552,2025-12-15 02:41:00,2025-12-15 02:41:00,Warrant/Summons Service,Arrest,Adelphi Rd
+2025-00284756,2025-12-15 11:03:00,2025-12-15 11:03:00,Alarm,CBE,3900 block of Campus Dr
 2025-00284909,2025-12-15 13:13:00,2025-12-15 13:13:00,Suspicious Person/Auto,Active/Pending,"Drazek Circle, UMGC at 346 Ehrensberger Dr"
 2025-00285020,2025-12-14 10:18:00,2025-12-15 15:00:00,Suspicious Activity,Active/Pending,7800 block of Alumni Dr
 2025-00285216,2025-11-15 18:00:00,2025-12-15 18:14:00,Recovered Stolen Motor Vehicle,CBE,7400 block of Calvert Service Ln
@@ -3837,6 +3838,13 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00288365,2025-12-18 19:46:00,2025-12-18 19:46:00,Emergency Petition,CBE,4200 block of Valley Dr
 2025-00288612,2025-12-18 23:45:00,2025-12-18 23:45:00,Disorderly Conduct,Active/Pending,McKeldin Mall
 2025-00288987,2025-12-19 02:30:00,2025-12-19 04:36:00,Injured/Sick Person,CBE,7000 block of Preinkert Dr
+2025-00289160,2025-12-12 00:00:00,2025-12-19 08:26:00,Suspicious Activity,Active/Pending,7400 block of Preinkert Dr
+2025-00289630,2025-12-19 15:30:00,2025-12-19 18:03:00,Theft,Active/Pending,7600 block of Mowatt Ln
+2025-00289773,2025-12-17 23:00:00,2025-12-19 20:23:00,Dept Property Damage/Loss,Active/Pending,7500 block of Baltimore Ave
+2025-00289784,2025-12-16 13:00:00,2025-12-19 20:28:00,Theft,Active/Pending,8400 block of Boteler Ln
+2025-00289811,2025-12-08 08:00:00,2025-12-19 21:00:00,Theft,Active/Pending,7000 block of Preinkert Dr
+2025-00290080,2025-12-20 00:34:00,2025-12-20 00:34:00,DWI/DUI,Arrest,University Blvd
+2025-00290878,2025-12-21 00:07:00,2025-12-21 00:07:00,Injured/Sick Person,CBE,8100 block of Boteler Ln
 UMPD CASENUMBER,OCCURRED DATE TIMELOCATION,REPORT DATE TIME,TYPE,DISPOSITION,LOCATION
 2024-00200716,2024-11-13 12:14:00,2024-11-14 12:14:00,Check on the  Welfare,CBE,"76, Symons Hall at 7998  Regents  Dr"
 2024-00209815,2024-11-05 00:00:00,2024-11-25 14:35:00,Other Incident,CBE,8000 block of  Regents  Dr
