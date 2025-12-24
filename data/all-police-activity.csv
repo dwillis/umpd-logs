@@ -2644,8 +2644,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00120365,2025-05-18 10:00:00,2025-05-19 09:20:00,Theft,Investigation Pending,4600 block of Rossborough Ln
 2025-00103454,2025-05-17 12:00:00,2025-05-19 14:21:00,Theft,Active/Pending,4300 block of Chapel Ln
 2025-00103455,2025-05-19 08:00:00,2025-05-19 14:33:00,Theft,Active/Pending,Lot 1b
-2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
 2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
+2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
 2025-00120934,2025-05-10 00:00:00,2025-05-19 23:03:00,Damage to State Property,CBE,3900 block of Campus Dr
 2025-00121280,2025-05-20 03:13:00,2025-05-20 06:56:00,Theft,Investigation Pending,Lot 4a
 2025-00121421,2023-06-08 12:00:00,2025-05-20 09:51:00,Fraud,Active/Pending,5600 block of Rivertech Ct
@@ -3464,7 +3464,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00236990,2025-09-01 12:00:00,2025-10-23 12:36:00,Theft,Active/Pending,8000 block of La Plata Dr
 2025-00236994,2025-10-23 13:17:00,2025-10-23 13:17:00,Other Incident,CBE,4000 block of Campus Dr
 2025-00237005,2025-10-23 11:15:00,2025-10-23 13:42:00,Theft from Auto,Investigation Pending,7500 block of Mowatt Ln
-2025-00237179,2025-10-22 19:30:00,2025-10-23 20:24:00,Found/Recovered Property,Active/Pending,3900 block of Denton Service Ln
+2025-00237179,2025-10-22 19:30:00,2025-10-23 20:24:00,Found/Recovered Property,Investigation Pending,3900 block of Denton Service Ln
 2025-00237186,2025-10-23 21:03:00,2025-10-23 21:06:00,Damage to State Property,Active/Pending,3900 block of Denton Service Ln
 2025-00237191,2025-10-23 19:00:00,2025-10-23 21:25:00,Injured/Sick Person,CBE,3900 block of Campus Dr
 2025-00237969,2025-09-21 01:30:00,2025-10-24 10:45:00,Rape,Active/Pending,7400 block of Preinkert Dr
@@ -3486,7 +3486,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00240548,2025-10-11 16:00:00,2025-10-27 09:21:00,Theft,Unfounded,8600 block of Boteler Ln
 2025-00240567,2025-10-24 04:00:00,2025-10-27 09:25:00,Other Incident,Active/Pending,4300 block of Terrapin Trl
 2025-00240554,2025-10-26 10:00:00,2025-10-27 09:26:00,Theft,Unfounded,8600 block of Boteler Ln
-2025-00240668,2025-10-27 11:20:00,2025-10-27 12:13:00,Hate Bias Incident,Investigation Pending,4000 block of Stadium Dr
+2025-00240668,2025-10-27 11:20:00,2025-10-27 12:13:00,Hate Bias Incident,Active/Pending,4000 block of Stadium Dr
 2025-00240797,2025-10-27 16:00:00,2025-10-27 16:37:00,Emergency Petition,Active/Pending,3900 block of Campus Dr
 2025-00240799,2025-10-27 16:40:00,2025-10-27 17:00:00,Fire,CBE,3900 block of Campus Dr
 2025-00240824,2025-10-27 18:39:00,2025-10-27 18:39:00,Theft,Investigation Pending,3900 block of Denton Service Ln
