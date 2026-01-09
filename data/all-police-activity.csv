@@ -335,8 +335,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00063012,2025-03-14 21:00:00,2025-03-16 12:52:00,Assist Other Agency,CBE,4300 block of Knox Rd
 2025-00063172,2025-03-16 16:04:00,2025-03-16 16:04:00,Recovered Stolen Property,Arrest,7500 block of Mowatt Ln
 2025-00063422,2025-03-16 21:24:00,2025-03-16 23:10:00,Dept Property Damage/Loss,CBE,Stanley R. Zupnick Hall at 8184 Paint Branch Dr
-2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
 2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
+2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
 2025-00063978,2025-03-17 12:43:00,2025-03-17 12:43:00,Damage to State Property,CBE,7500 block of Baltimore Ave
 2025-00064495,2025-03-17 22:54:00,2025-03-17 22:54:00,DWI/DUI,Arrest,University Blvd
 2025-00065844,2025-03-19 11:38:00,2025-03-19 11:41:00,Injured/Sick Person,CBE,7300 block of Baltimore Ave
@@ -1887,6 +1887,14 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00292535,2025-12-22 18:50:00,2025-12-22 18:50:00,Emergency Petition,CBE,7500 block of Dartmouth Ave
 2025-00293524,2025-12-23 23:37:00,2025-12-23 23:37:00,Other Incident,CBE,7700 block of Adelphi Rd
 2025-00296437,2025-12-27 08:34:00,2025-12-27 08:34:00,Other Service Call,CBE,6800 block of Preinkert Dr
+2026-00000068,2026-01-01 03:02:00,2026-01-01 03:02:00,DWI/DUI,Arrest,Adelphi Rd
+2026-00000548,2026-01-01 20:54:00,2026-01-01 20:54:00,Suspicious Activity,Active/Pending,4600 block of Norwich Rd
+2026-00000726,2026-01-02 02:08:00,2026-01-02 02:08:00,DWI/DUI,Arrest,University Blvd
+2026-00000730,2026-01-02 02:36:00,2026-01-02 02:36:00,DWI/DUI,Arrest,University Blvd
+2026-00001371,2026-01-02 17:32:00,2026-01-02 18:41:00,Theft,Arrest,Paint Branch Dr
+2026-00001705,2026-01-03 03:19:00,2026-01-03 03:19:00,DWI/DUI,Arrest,University Blvd
+2026-00001949,2026-01-03 13:30:00,2026-01-03 13:30:00,Check on the  Welfare,CBE,7700 block of Baltimore Ave
+2026-00003006,2026-01-04 16:20:00,2026-01-04 17:26:00,Theft,Arrest,4100 block of Terrapin Trl
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
