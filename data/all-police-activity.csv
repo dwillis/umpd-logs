@@ -1888,13 +1888,20 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00293524,2025-12-23 23:37:00,2025-12-23 23:37:00,Other Incident,CBE,7700 block of Adelphi Rd
 2025-00296437,2025-12-27 08:34:00,2025-12-27 08:34:00,Other Service Call,CBE,6800 block of Preinkert Dr
 2026-00000068,2026-01-01 03:02:00,2026-01-01 03:02:00,DWI/DUI,Arrest,Adelphi Rd
-2026-00000548,2026-01-01 20:54:00,2026-01-01 20:54:00,Suspicious Activity,Active/Pending,4600 block of Norwich Rd
+2026-00000548,2026-01-01 20:54:00,2026-01-01 20:54:00,Suspicious Activity,Unfounded,4600 block of Norwich Rd
 2026-00000726,2026-01-02 02:08:00,2026-01-02 02:08:00,DWI/DUI,Arrest,University Blvd
 2026-00000730,2026-01-02 02:36:00,2026-01-02 02:36:00,DWI/DUI,Arrest,University Blvd
 2026-00001371,2026-01-02 17:32:00,2026-01-02 18:41:00,Theft,Arrest,Paint Branch Dr
+2026-00001643,2026-01-03 01:20:00,2026-01-03 01:20:00,DWI/DUI,Arrest,University Blvd
 2026-00001705,2026-01-03 03:19:00,2026-01-03 03:19:00,DWI/DUI,Arrest,University Blvd
 2026-00001949,2026-01-03 13:30:00,2026-01-03 13:30:00,Check on the  Welfare,CBE,7700 block of Baltimore Ave
 2026-00003006,2026-01-04 16:20:00,2026-01-04 17:26:00,Theft,Arrest,4100 block of Terrapin Trl
+2026-00005062,2026-01-06 15:08:00,2026-01-06 15:08:00,Assist Other Agency,CBE,7200 block of Princeton Ave
+2026-00005145,2026-01-06 18:00:00,2026-01-06 18:00:00,Assist Other Agency,CBE,Icc Hwy / Georgia Ave
+2026-00005212,2026-01-02 19:30:00,2026-01-06 20:30:00,Theft,Active/Pending,8500 block of Paint Branch Dr
+2026-00005908,2026-01-07 14:28:00,2026-01-07 14:28:00,Recovered Stolen Property,Arrest,7500 block of Regents Dr
+2026-00005910,2026-01-07 14:52:00,2026-01-07 14:52:00,Assist Other Agency,Active/Pending,4300 block of Knox Rd
+2026-00006246,2026-01-08 01:32:00,2026-01-08 01:32:00,DWI/DUI,Arrest,University Blvd
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
