@@ -682,8 +682,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00120365,2025-05-18 10:00:00,2025-05-19 09:20:00,Theft,Investigation Pending,4600 block of Rossborough Ln
 2025-00103454,2025-05-17 12:00:00,2025-05-19 14:21:00,Theft,Active/Pending,4300 block of Chapel Ln
 2025-00103455,2025-05-19 08:00:00,2025-05-19 14:33:00,Theft,Active/Pending,Lot 1b
-2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
 2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
+2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
 2025-00120934,2025-05-10 00:00:00,2025-05-19 23:03:00,Damage to State Property,CBE,3900 block of Campus Dr
 2025-00121280,2025-05-20 03:13:00,2025-05-20 06:56:00,Theft,Investigation Pending,Lot 4a
 2025-00121421,2023-06-08 12:00:00,2025-05-20 09:51:00,Fraud,Active/Pending,5600 block of Rivertech Ct
@@ -1904,14 +1904,19 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00005910,2026-01-07 14:52:00,2026-01-07 14:52:00,Assist Other Agency,Active/Pending,4300 block of Knox Rd
 2026-00006073,2026-01-07 22:42:00,2026-01-07 22:42:00,Assist Other Agency,CBE,3500 block of University Blvd
 2026-00006246,2026-01-08 01:32:00,2026-01-08 01:32:00,DWI/DUI,Arrest,University Blvd
+2026-00007763,2026-01-09 10:30:00,2026-01-09 10:41:00,Dept Property Damage/Loss,CBE,5100 block of College Ave
 2026-00008580,2026-01-10 00:24:00,2026-01-10 00:24:00,DWI/DUI,Arrest,University Blvd
 2026-00009308,2026-01-11 00:00:00,2026-01-11 00:06:00,Noise Complaint,CBE,4300 block of Knox Rd
 2026-00009510,2026-01-11 03:55:00,2026-01-11 03:55:00,Assist Other Agency,CBE,4300 block of Hartwick Rd
 2026-00010228,2026-01-12 02:04:00,2026-01-12 02:04:00,DWI/DUI,Arrest,University Blvd
 2026-00010772,2026-01-12 13:22:00,2026-01-12 13:22:00,Injured/Sick Person,CBE,4000 block of Union Dr
+2026-00010839,2026-01-12 14:50:00,2026-01-12 14:50:00,Warrant/Summons Service,Arrest,7700 block of Baltimore Ave
 2026-00011814,2026-01-13 13:55:00,2026-01-13 13:55:00,Disorderly Conduct,CBE,4100 block of Campus Dr
 2026-00011817,2026-01-12 18:00:00,2026-01-13 14:30:00,Burglary,Active/Pending,4300 block of Rowalt Dr
+2026-00013942,2026-01-15 11:16:00,2026-01-15 11:16:00,Emergency Petition,CBE,4000 block of Union Dr
 2026-00014289,2026-01-14 22:30:00,2026-01-15 19:04:00,Dept Property Damage/Loss,CBE,7800 block of Alumni Dr
+2026-00016270,2026-01-16 17:30:00,2026-01-17 09:42:00,Dept Property Damage/Loss,CBE,7500 block of Baltimore Ave
+2026-00016837,2026-01-18 00:45:00,2026-01-18 00:45:00,DWI/DUI,Arrest,University Blvd
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
