@@ -59,7 +59,7 @@ def process_and_save_data(row_list, data_dir):
     # Normalize common date/time columns (if present) to a consistent ISO-like format
     def _normalize_col(col_series):
         # attempt to parse using pandas (handles many common formats); leave non-parseable values alone
-        parsed = pd.to_datetime(col_series.astype(str).str.replace(' - ', ' ', regex=False), errors='coerce', infer_datetime_format=True)
+        parsed = pd.to_datetime(col_series.astype(str).str.replace(' - ', ' ', regex=False), errors='coerce', format='mixed')
         try:
             formatted = parsed.dt.strftime('%Y-%m-%d %H:%M:%S')
         except Exception:
