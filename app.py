@@ -21,7 +21,7 @@ def parse_date_str(value):
     # fallback to pandas flexible parser
     try:
         import pandas as _pd
-        dt = _pd.to_datetime(val, errors='coerce', infer_datetime_format=True)
+        dt = _pd.to_datetime(val, errors='coerce', format='mixed')
         if _pd.notna(dt):
             return dt.strftime('%Y-%m-%d %H:%M:%S')
     except Exception:
