@@ -90,12 +90,19 @@ def process_and_save_data(row_list, data_dir):
     this_year = date.today().year
     for row in new_all_data.itertuples():
         row_data = row[1:]
-        date_str = row_data[2]
-        if '/' in date_str:
-            year_part = date_str.split('/')[2].split()[0]
-            if (len(year_part) == 4 and int(year_part) >= (this_year - 1)) or \
-               (len(year_part) == 2 and int(year_part) >= (this_year - 2001)):
+        date_str = str(row_data[2])
+        try:
+            if '-' in date_str:
+                year_part = int(date_str.split('-')[0])
+            elif '/' in date_str:
+                raw = date_str.split('/')[2].split()[0]
+                year_part = int(raw) if len(raw) == 4 else int(raw) + 2000
+            else:
+                continue
+            if year_part >= (this_year - 1):
                 new_now_list.append(row_data)
+        except (ValueError, IndexError):
+            continue
 
     new_now_data = pd.DataFrame(new_now_list)
     if len(new_now_data) > 0:
