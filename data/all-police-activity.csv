@@ -335,8 +335,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00063012,2025-03-14 21:00:00,2025-03-16 12:52:00,Assist Other Agency,CBE,4300 block of Knox Rd
 2025-00063172,2025-03-16 16:04:00,2025-03-16 16:04:00,Recovered Stolen Property,Arrest,7500 block of Mowatt Ln
 2025-00063422,2025-03-16 21:24:00,2025-03-16 23:10:00,Dept Property Damage/Loss,CBE,Stanley R. Zupnick Hall at 8184 Paint Branch Dr
-2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
 2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
+2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
 2025-00063978,2025-03-17 12:43:00,2025-03-17 12:43:00,Damage to State Property,CBE,7500 block of Baltimore Ave
 2025-00064495,2025-03-17 22:54:00,2025-03-17 22:54:00,DWI/DUI,Arrest,University Blvd
 2025-00065844,2025-03-19 11:38:00,2025-03-19 11:41:00,Injured/Sick Person,CBE,7300 block of Baltimore Ave
@@ -682,8 +682,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00120365,2025-05-18 10:00:00,2025-05-19 09:20:00,Theft,Investigation Pending,4600 block of Rossborough Ln
 2025-00103454,2025-05-17 12:00:00,2025-05-19 14:21:00,Theft,Active/Pending,4300 block of Chapel Ln
 2025-00103455,2025-05-19 08:00:00,2025-05-19 14:33:00,Theft,Active/Pending,Lot 1b
-2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
 2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
+2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
 2025-00120934,2025-05-10 00:00:00,2025-05-19 23:03:00,Damage to State Property,CBE,3900 block of Campus Dr
 2025-00121280,2025-05-20 03:13:00,2025-05-20 06:56:00,Theft,Investigation Pending,Lot 4a
 2025-00121421,2023-06-08 12:00:00,2025-05-20 09:51:00,Fraud,Active/Pending,5600 block of Rivertech Ct
@@ -2289,12 +2289,14 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00073762,2026-03-19 17:58:00,2026-03-19 18:42:00,Theft,Active/Pending,3400 block of Tulane Dr
 2026-00074813,2026-03-19 14:45:00,2026-03-20 10:43:00,Other Incident,Active/Pending,4200 block of Lehigh Rd
 2026-00074848,2026-03-20 12:11:00,2026-03-20 12:11:00,Accident - Departmental,CBE,202/ Medical Center Dr
+2026-00075759,2026-03-21 03:50:00,2026-03-21 09:33:00,Assist Other Agency,CBE,4700 block of Norwich Rd
 2026-00076314,2026-03-22 00:14:00,2026-03-22 00:14:00,Check on the  Welfare,CBE,7500 block of Baltimore Ave
 2026-00076374,2026-03-22 00:56:00,2026-03-22 00:56:00,DWI/DUI,Arrest,University Blvd
 2026-00076500,2026-03-22 03:20:00,2026-03-22 03:20:00,DWI/DUI,Arrest,University Blvd
 2026-00076782,2026-03-22 11:30:00,2026-03-22 11:47:00,Assist Other Agency,CBE,4600 block of Calvert Rd
 2026-00076986,2026-03-22 18:07:00,2026-03-22 18:07:00,Vandalism,CBE,3400 block of Tulane Dr
 2026-00077031,2026-03-22 21:00:00,2026-03-22 21:06:00,Recovered Stolen Motor Vehicle,Arrest,7300 block of Baltimore Ave
+2026-00077697,2026-03-13 17:00:00,2026-03-23 11:13:00,Theft,Active/Pending,4200 block of Campus Dr
 2026-00077755,2026-03-23 12:21:00,2026-03-23 12:21:00,Injured/Sick Person,CBE,3900 block of Denton Service Ln
 2026-00077883,2026-03-20 08:00:00,2026-03-23 15:19:00,Damaged Property,Investigation Pending,Lot Y
 2026-00078014,2026-03-23 18:40:00,2026-03-23 19:33:00,Assist Other Agency,CBE,8400 block of Baltimore Ave
@@ -2302,11 +2304,25 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00078763,2026-03-24 10:14:00,2026-03-24 10:14:00,Injured/Sick Person,CBE,7600 block of Mowatt Ln
 2026-00078845,2026-03-23 17:00:00,2026-03-24 12:15:00,Other Incident,CBE,4700 block of Berwyn House Rd
 2026-00078847,2026-03-24 12:23:00,2026-03-24 12:23:00,Hazardous Condition,CBE,8200 block of Paint Branch Dr
+2026-00078849,2026-03-24 12:31:00,2026-03-24 13:02:00,Other Incident,CBE,7900 block of Regents Dr
 2026-00079057,2026-03-24 18:00:00,2026-03-24 18:06:00,Disorderly Conduct,Arrest,4600 block of River Rd
 2026-00079188,2026-03-24 22:00:00,2026-03-24 22:02:00,CDS Violation,CBE,8100 block of Boteler Ln
 2026-00079703,2026-03-25 09:00:00,2026-03-25 09:08:00,Recovered Stolen Property,CBE,7500 block of Regents Dr
+2026-00079916,2026-03-25 16:50:00,2026-03-25 18:13:00,Suspicious Activity,Active/Pending,7600 block of Library Ln
 2026-00079920,2026-03-25 18:28:00,2026-03-25 18:28:00,Injured/Sick Person,CBE,4000 block of Stadium Dr
+2026-00079966,2026-03-18 09:00:00,2026-03-25 20:16:00,Vandalism,Investigation Pending,4600 block of Rossborough Ln
+2026-00080533,2026-03-25 15:54:00,2026-03-26 09:00:00,Theft,Active/Pending,8100 block of Paint Branch Dr
+2026-00080562,2026-03-26 10:17:00,2026-03-26 10:17:00,Emergency Petition,CBE,4200 block of Chapel Ln
+2026-00080615,2026-03-26 12:14:00,2026-03-26 12:14:00,Suspicious Activity,Active/Pending,7600 block of Mowatt Ln
+2026-00080614,2026-03-26 12:14:00,2026-03-26 12:14:00,Injured/Sick Person,CBE,3900 block of Campus Dr
+2026-00080623,2026-03-26 13:05:00,2026-03-26 13:05:00,Injured/Sick Person,CBE,3900 block of Campus Dr
+2026-00080732,2026-03-26 14:30:00,2026-03-26 14:58:00,Peeping Tom,Active/Pending,3900 block of Denton Service Ln
+2026-00080752,2026-03-26 09:00:00,2026-03-26 15:57:00,Theft,Active/Pending,4300 block of Stadium Dr
+2026-00081011,2026-03-26 22:24:00,2026-03-26 22:24:00,CDS Violation,CBE,7500 block of Yale Ave
 2026-00081318,2026-03-27 01:15:00,2026-03-27 01:17:00,Alcohol Violation,CBE,Baltimore Ave
+2026-00081799,2026-03-27 09:00:00,2026-03-27 09:01:00,Damage to State Property,CBE,4100 block of Stadium Dr
+2026-00081923,2026-03-27 12:40:00,2026-03-27 12:48:00,Injured/Sick Person,CBE,4200 block of Valley Dr
+2026-00082567,2026-03-28 01:05:00,2026-03-28 01:05:00,DWI/DUI,Arrest,University Blvd
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
