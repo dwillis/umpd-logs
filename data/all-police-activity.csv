@@ -2456,6 +2456,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00100314,2026-04-15 01:47:00,2026-04-15 01:47:00,DWI/DUI,Arrest,Lot GG1
 2026-00100644,2026-04-15 15:01:00,2026-04-15 15:06:00,Suspicious Activity,Active/Pending,6500 block of America Blvd
 2026-00100645,2026-04-15 15:12:00,2026-04-15 15:12:00,Emergency Petition,CBE,7900 block of Regents Dr
+2026-00100832,2026-04-15 20:58:00,2026-04-15 21:58:00,Injured/Sick Person,CBE,3900 block of Denton Service Ln
 2026-00100956,2026-04-15 23:25:00,2026-04-15 23:30:00,Injured/Sick Person,CBE,4100 block of Valley Dr
 2026-00101139,2026-04-16 00:44:00,2026-04-16 00:44:00,DWI/DUI,Arrest,Baltimore Ave
 2026-00101544,2026-04-16 11:25:00,2026-04-16 11:25:00,Injured/Sick Person,CBE,4000 block of Campus Dr
@@ -2484,6 +2485,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00103551,2026-04-18 04:47:00,2026-04-18 04:47:00,DWI/DUI,Arrest,Knox Rd
 2026-00103554,2026-04-18 04:48:00,2026-04-18 04:48:00,Assist Other Agency,CBE,4300 block of Hartwick Rd
 2026-00103923,2026-04-18 14:30:00,2026-04-18 15:42:00,Trespassing,Summons Issued,"Frat 5, Phi Kappa Tau Fraternity at 5 Fraternity Row"
+2026-00103950,2026-04-18 17:29:00,2026-04-18 17:29:00,Injured/Sick Person,CBE,7200 block of Baltimore Ave
 2026-00103980,2026-04-18 14:00:00,2026-04-18 18:21:00,Injured/Sick Person,CBE,4200 block of Farm Dr
 2026-00104031,2026-04-18 19:38:00,2026-04-18 19:38:00,Emergency Petition,CBE,4200 block of Valley Dr
 2026-00104053,2026-04-18 20:04:00,2026-04-18 20:04:00,Vandalism,Investigation Pending,3800 block of Stadium Dr
@@ -2533,30 +2535,61 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00110658,2026-04-25 00:44:00,2026-04-25 00:44:00,DWI/DUI,Arrest,Baltimore Ave
 2026-00111080,2026-04-25 12:00:00,2026-04-25 15:56:00,Theft,Active/Pending,Baltimore Ave
 2026-00111103,2026-04-25 16:29:00,2026-04-25 16:39:00,Assist Other Agency,CBE,7500 block of Baltimore Ave
+2026-00111164,2026-04-25 19:14:00,2026-04-25 19:14:00,Alcohol Violation,Arrest,4500 block of Knox Rd
 2026-00111342,2026-04-25 23:19:00,2026-04-25 23:19:00,DWI/DUI,Arrest,Metzerott Rd
 2026-00111345,2026-04-25 23:21:00,2026-04-25 23:21:00,Injured/Sick Person,CBE,8000 block of La Plata Dr
 2026-00111411,2026-04-26 01:28:00,2026-04-26 01:28:00,DWI/DUI,Arrest,University Blvd
 2026-00111440,2026-04-26 02:19:00,2026-04-26 02:19:00,DWI/DUI,Arrest,University Blvd
+2026-00111644,2026-04-26 09:26:00,2026-04-26 09:26:00,Trespassing,Arrest,8000 block of Hagerstown Dr
+2026-00112627,2026-04-27 09:11:00,2026-04-27 09:11:00,Damage to State Property,CBE,McKeldin Mall
 2026-00112789,2026-04-27 11:00:00,2026-04-27 11:04:00,Injured/Sick Person,CBE,Adelphi Rd
 2026-00112847,2026-04-27 11:33:00,2026-04-27 11:33:00,Emergency Petition,CBE,4200 block of Chapel Ln
 2026-00113182,2026-04-27 16:27:00,2026-04-27 16:27:00,Emergency Petition,CBE,9  Fraternity Row
 2026-00113190,2026-04-27 16:58:00,2026-04-27 16:58:00,Injured/Sick Person,CBE,3900 block of Denton Service Ln
 2026-00113364,2026-04-27 20:24:00,2026-04-27 20:24:00,DWI/DUI,Arrest,University Blvd
+2026-00113367,2026-04-27 13:00:00,2026-04-27 20:35:00,Dept Property Damage/Loss,CBE,7500 block of Baltimore Ave
 2026-00113480,2026-04-27 22:59:00,2026-04-27 22:59:00,DWI/DUI,Arrest,Greenbelt Rd
+2026-00113519,2026-04-27 23:00:00,2026-04-27 23:14:00,Assist Other Agency,CBE,4600 block of Knox Rd
+2026-00113604,2026-04-27 21:30:00,2026-04-28 00:09:00,Assist Other Agency,CBE,4700 block of College Ave
 2026-00113635,2026-04-28 00:59:00,2026-04-28 00:59:00,Injured/Sick Person,CBE,University Blvd
 2026-00113986,2026-04-28 11:23:00,2026-04-28 11:23:00,Injured/Sick Person,CBE,4200 block of Lehigh Rd
+2026-00114058,2026-04-28 13:40:00,2026-04-28 13:42:00,Accident - Departmental,CBE,4100 block of Terrapin Trl
+2026-00114082,2026-04-28 14:30:00,2026-04-28 14:49:00,Vehicle Tampering,Active/Pending,Lot 4B
+2026-00114083,2026-04-28 15:14:00,2026-04-28 15:14:00,Accident,CBE,7800 block of Alumni Dr
+2026-00114085,2026-04-28 14:47:00,2026-04-28 15:56:00,Fraud,Active/Pending,8100 block of La Plata Dr
+2026-00114086,2026-04-28 15:30:00,2026-04-28 16:00:00,Damaged Property,CBE,8000 block of Greenmead Dr
 2026-00114103,2026-04-28 17:28:00,2026-04-28 17:28:00,Emergency Petition,CBE,7500 block of Calvert Service Ln
 2026-00114137,2026-04-28 18:59:00,2026-04-28 18:59:00,Emergency Petition,CBE,4200 block of Chapel Ln
+2026-00114139,2026-04-23 15:15:00,2026-04-28 20:05:00,Theft,Active/Pending,4100 block of Library Ln
 2026-00114465,2026-04-26 01:29:00,2026-04-29 01:29:00,Injured/Sick Person,CBE,Lot F
+2026-00114822,2026-04-29 15:36:00,2026-04-29 15:40:00,Assist Other Agency,CBE,Baltimore Ave
+2026-00115470,2026-04-30 04:10:00,2026-04-30 04:20:00,Injured/Sick Person,CBE,7400 block of Preinkert Dr
+2026-00115565,2026-04-30 08:46:00,2026-04-30 08:46:00,Assist Other Agency,CBE,4500 block of College Ave
 2026-00115737,2026-04-30 12:11:00,2026-04-30 12:11:00,Emergency Petition,CBE,3900 block of Campus Dr
+2026-00115782,2026-04-30 03:00:00,2026-04-30 14:19:00,Theft,Active/Pending,8000 block of Hagerstown Dr
+2026-00115844,2026-04-29 16:56:00,2026-04-30 16:39:00,Theft,Active/Pending,4100 block of Campus Dr
+2026-00116771,2026-04-30 18:15:00,2026-05-01 09:32:00,Hate Bias Incident,CBE,4200 block of Lehigh Rd
+2026-00117039,2026-04-13 12:40:00,2026-05-01 18:26:00,Suspicious Activity,Active/Pending,4400 block of Rossborough Ln
+2026-00117216,2026-05-01 21:06:00,2026-05-01 21:06:00,Suspicious Activity,CBE,Barry P. Gossett Basketball Performance Center at 8454 Paint Branch Dr
+2026-00117250,2026-05-01 21:30:00,2026-05-01 21:40:00,Other Incident,CBE,4700 block of Pontiac St
+2026-00117283,2026-05-01 22:00:00,2026-05-01 22:17:00,Assault,Active/Pending,8500 block of Paint Branch Dr
 2026-00117301,2026-05-01 22:55:00,2026-05-01 22:55:00,DWI/DUI,Arrest,University Blvd
+2026-00117304,2026-05-01 23:00:00,2026-05-01 23:08:00,Title IX Incident Non Criminal,CBE,8500 block of Paint Branch Dr
 2026-00117330,2026-05-02 00:03:00,2026-05-02 00:03:00,DWI/DUI,Arrest,University Blvd
 2026-00117447,2026-05-02 02:07:00,2026-05-02 02:07:00,DWI/DUI,Arrest,University Blvd
+2026-00117464,2026-04-25 15:00:00,2026-05-02 03:02:00,Extortion,Active/Pending,4000 block of Stadium Dr
 2026-00117473,2026-05-02 03:30:00,2026-05-02 03:34:00,Injured/Sick Person,CBE,4200 block of Valley Dr
+2026-00117779,2026-05-01 19:00:00,2026-05-02 12:09:00,Theft,Active/Pending,7500 block of Regents Dr
+2026-00118055,2026-05-02 18:10:00,2026-05-02 18:10:00,Assist Other Agency,CBE,4500 block of College Ave
 2026-00118208,2026-05-02 23:02:00,2026-05-02 23:02:00,DWI/DUI,Arrest,University Blvd
+2026-00118223,2026-05-02 23:56:00,2026-05-02 23:56:00,Assist Other Agency,CBE,7300 block of Baltimore Ave
+2026-00118237,2026-05-03 00:19:00,2026-05-03 00:19:00,Hazardous Condition,Active/Pending,7500 block of Yale Ave
 2026-00118304,2026-05-03 02:37:00,2026-05-03 02:37:00,DWI/DUI,Arrest,University Blvd
 2026-00118305,2026-05-03 02:46:00,2026-05-03 02:46:00,Injured/Sick Person,CBE,3900 block of Denton Service Ln
+2026-00118932,2026-05-01 12:00:00,2026-05-03 18:15:00,Animal Complaint,CBE,4100 block of Stadium Dr
+2026-00119048,2026-05-03 21:04:00,2026-05-03 21:40:00,Suspicious Activity,CBE,8100 block of Paint Branch Dr
 2026-00119220,2026-05-04 01:53:00,2026-05-04 01:53:00,DWI/DUI,Arrest,Baltimore Ave
+2026-00119260,2026-05-04 03:14:00,2026-05-04 03:14:00,DWI/DUI,Arrest,Adelphi Rd
 2026-00120055,2026-05-04 20:57:00,2026-05-04 20:57:00,Injured/Sick Person,CBE,4400 block of Rossborough Ln
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
