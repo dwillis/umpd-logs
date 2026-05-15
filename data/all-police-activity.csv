@@ -2451,6 +2451,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00099157,2026-04-13 18:00:00,2026-04-13 19:50:00,Theft,Summons Issued,8100 block of Paint Branch Dr
 2026-00099186,2026-04-13 14:00:00,2026-04-13 20:51:00,Injured/Sick Person,CBE,3900 block of Denton Service Ln
 2026-00099295,2026-04-13 21:00:00,2026-04-14 00:23:00,Theft,Active/Pending,7100 block of Preinkert Dr
+2026-00099623,2026-04-01 00:01:00,2026-04-14 10:09:00,Other Incident,CBE,8100 block of Baltimore Ave
 2026-00099746,2026-04-14 10:00:00,2026-04-14 15:07:00,Other Incident,Active/Pending,4100 block of Campus Dr
 2026-00100301,2026-04-15 01:26:00,2026-04-15 01:26:00,DWI/DUI,Arrest,Metzerott Rd
 2026-00100314,2026-04-15 01:47:00,2026-04-15 01:47:00,DWI/DUI,Arrest,Lot GG1
@@ -2597,6 +2598,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00117779,2026-05-01 19:00:00,2026-05-02 12:09:00,Theft,Active/Pending,7500 block of Regents Dr
 2026-00117794,2026-05-01 16:30:00,2026-05-02 12:34:00,Theft from Auto,Active/Pending,8400 block of Baltimore Ave
 2026-00118055,2026-05-02 18:10:00,2026-05-02 18:10:00,Assist Other Agency,CBE,4500 block of College Ave
+2026-00118149,2026-01-27 00:00:00,2026-05-02 21:11:00,Harassment/Stalking,Active/Pending,8200 block of Alumni Dr
 2026-00118208,2026-05-02 23:02:00,2026-05-02 23:02:00,DWI/DUI,Arrest,University Blvd
 2026-00118218,2026-05-02 21:38:00,2026-05-02 23:41:00,Stolen Motor Vehicle,Active/Pending,Lot 11b
 2026-00118223,2026-05-02 23:56:00,2026-05-02 23:56:00,Assist Other Agency,CBE,7300 block of Baltimore Ave
@@ -2648,6 +2650,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00126664,2026-05-11 15:37:00,2026-05-11 15:37:00,Injured/Sick Person,CBE,4200 block of Chapel Ln
 2026-00127104,2026-05-12 02:23:00,2026-05-12 02:23:00,Injured/Sick Person,CBE,4200 block of Valley Dr
 2026-00127622,2026-05-12 18:19:00,2026-05-12 18:19:00,Injured/Sick Person,CBE,7600 block of Mowatt Ln
+2026-00127869,2026-05-13 01:01:00,2026-05-13 01:01:00,Injured/Sick Person,CBE,8100 block of Baltimore Ave
+2026-00128319,2026-05-13 15:00:00,2026-05-13 15:09:00,Injured/Sick Person,CBE,3900 block of Campus Dr
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
