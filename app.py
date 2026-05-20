@@ -74,6 +74,212 @@ def get_activity_csv(arrest_list):
         activity['REPORT_DATE'] = parse_date_str(report)
     return csv_list
 
+
+def is_valid_row(r):
+    case = (r.get('UMPD Case Number') or r.get('UMPD CASE NUMBER') or '').strip()
+    if not case:
+        return False
+    up = case.upper()
+    if up.startswith('UMPD') or ('CASE' in up and not case[0].isdigit()):
+        return False
+    return True
+
+
+def activity_type(r):
+    for k in ('Crime Type', 'TYPE', 'Type'):
+        v = r.get(k)
+        if v and v.strip():
+            return v.strip()
+    return 'Unknown'
+
+
+def categorize_crime(crime_type):
+    ct = (crime_type or '').upper()
+    if any(k in ct for k in ('ASSAULT', 'ROBBERY', 'RAPE', 'SEXUAL ASSAULT', 'WEAPON', 'ARMED',
+                              'CARJACKING', 'HOMICIDE', 'CUTTING', 'STABBING', 'RECKLESS')):
+        return 'violent'
+    if any(k in ct for k in ('THEFT', 'BURGLARY', 'VANDALISM', 'TRESPASS', 'BREAKING', 'STOLEN',
+                              'DAMAGE', 'ARSON', 'FRAUD', 'EMBEZZLEMENT')):
+        return 'property'
+    if any(k in ct for k in ('CDS', 'DRUG', 'ALCOHOL', 'MARIJUANA', 'INTOXICATED', 'DUI', 'DWI')):
+        return 'drugs'
+    if any(k in ct for k in ('TRAFFIC', 'PARKING', 'VEHICLE', 'HIT AND RUN',
+                              'ACCIDENT', 'HAZARDOUS', 'PEDESTRIAN')):
+        return 'traffic'
+    if any(k in ct for k in ('INJURED', 'SICK', 'EMERGENCY', 'WELFARE', 'DEATH',
+                              'OVERDOSE', 'SUICIDE', 'FIRE', 'BOMB', 'MISSING')):
+        return 'medical'
+    if any(k in ct for k in ('HARASS', 'STALK', 'INDECENT', 'PEEPING', 'SEX OFFENSE',
+                              'TELEPHONE', 'EMAIL', 'DOMESTIC', 'TITLE IX', 'PORNOGRAPHY',
+                              'OBSCENE', 'EXTORTION', 'HATE')):
+        return 'harassment'
+    return 'other'
+
+
+def compute_analytics(valid_activities, arrest_list):
+    from collections import defaultdict
+    now = datetime.now()
+
+    def parse_dt(r):
+        s = r.get('CASE_DATE') or r.get('REPORT_DATE') or ''
+        try:
+            return datetime.strptime(s, '%Y-%m-%d %H:%M:%S')
+        except Exception:
+            return None
+
+    # yoy leads: current month MTD this year vs same MTD range last year
+    current_month, current_year = now.month, now.year
+    this_yr, last_yr = defaultdict(int), defaultdict(int)
+    for r in valid_activities:
+        dt = parse_dt(r)
+        if not dt or dt.month != current_month or dt.day > now.day:
+            continue
+        ct = activity_type(r)
+        if dt.year == current_year:
+            this_yr[ct] += 1
+        elif dt.year == current_year - 1:
+            last_yr[ct] += 1
+
+    yoy_leads = []
+    for ct in set(this_yr) | set(last_yr):
+        n_this, n_last = this_yr.get(ct, 0), last_yr.get(ct, 0)
+        if n_this < 5 or n_last < 5:
+            continue
+        pct = round((n_this - n_last) / n_last * 100)
+        if abs(pct) < 10:
+            continue
+        yoy_leads.append({'crime_type': ct, 'this_year': n_this, 'last_year': n_last,
+                          'pct_change': pct, 'direction': 'up' if pct > 0 else 'down'})
+    yoy_leads.sort(key=lambda x: abs(x['pct_change']), reverse=True)
+    yoy_leads = yoy_leads[:2]
+
+    # pending 90+ days but within 2 years (older cases are likely data artifacts)
+    cutoff_90 = now - timedelta(days=90)
+    cutoff_2yr = now - timedelta(days=730)
+    pending_statuses = {'investigation pending', 'active/pending', 'pending'}
+    pending_old = []
+    for r in valid_activities:
+        disp = (r.get('Disposition') or '').strip().lower()
+        if disp not in pending_statuses:
+            continue
+        s = r.get('REPORT_DATE') or ''
+        try:
+            dt = datetime.strptime(s, '%Y-%m-%d %H:%M:%S')
+        except Exception:
+            continue
+        if cutoff_2yr <= dt < cutoff_90:
+            pending_old.append({
+                'case': r.get('UMPD Case Number', ''),
+                'crime_type': activity_type(r),
+                'days_old': (now - dt).days,
+                'report_date': dt.strftime('%Y-%m-%d'),
+            })
+    pending_old.sort(key=lambda x: x['days_old'], reverse=True)
+
+    # lowest arrest rate (only crime types with >= 5 total incidents)
+    type_total, type_arrests = defaultdict(int), defaultdict(int)
+    for r in valid_activities:
+        ct = activity_type(r)
+        type_total[ct] += 1
+        if r.get('ARREST') == 'Yes':
+            type_arrests[ct] += 1
+    arrest_rate_list = [
+        {'crime_type': ct, 'rate': round(type_arrests.get(ct, 0) / total * 100, 1), 'total': total}
+        for ct, total in type_total.items() if total >= 5
+    ]
+    arrest_rate_list.sort(key=lambda x: x['rate'])
+    lowest_arrest_rate = arrest_rate_list[0] if arrest_rate_list else None
+
+    # location clusters (last 60 days, 3+ incidents)
+    cutoff_60 = now - timedelta(days=60)
+    loc_incidents = defaultdict(list)
+    for r in valid_activities:
+        dt = parse_dt(r)
+        if not dt or dt < cutoff_60:
+            continue
+        loc = (r.get('LOCATION') or '').strip()
+        if len(loc) >= 5:
+            loc_incidents[loc].append(activity_type(r))
+    clusters = sorted(
+        [{'location': loc, 'count': len(v), 'types': list(set(v))}
+         for loc, v in loc_incidents.items() if len(v) >= 3],
+        key=lambda x: x['count'], reverse=True
+    )
+    top_cluster = clusters[0] if clusters else None
+
+    # heatmap[weekday 0=Mon][hour 0-23] = count, all-time
+    heatmap = [[0] * 24 for _ in range(7)]
+    for r in valid_activities:
+        dt = parse_dt(r)
+        if dt:
+            heatmap[dt.weekday()][dt.hour] += 1
+
+    # monthly counts by crime category
+    monthly_counts = defaultdict(lambda: defaultdict(int))
+    for r in valid_activities:
+        dt = parse_dt(r)
+        if dt:
+            monthly_counts[dt.strftime('%Y-%m')][categorize_crime(activity_type(r))] += 1
+    sorted_months = sorted(monthly_counts)
+    cats = ['violent', 'property', 'drugs', 'traffic', 'medical', 'harassment', 'other']
+    monthly_data = {
+        'labels': sorted_months,
+        'series': {cat: [monthly_counts[m].get(cat, 0) for m in sorted_months] for cat in cats},
+    }
+
+    # semester data: Spring=Feb-Apr, Summer=Jun-Aug, Fall=Sep-Nov
+    def get_semester(dt):
+        m = dt.month
+        if m in (2, 3, 4): return f'Spring {dt.year}'
+        if m in (6, 7, 8): return f'Summer {dt.year}'
+        if m in (9, 10, 11): return f'Fall {dt.year}'
+        return None
+
+    sem_counts = defaultdict(lambda: defaultdict(int))
+    for r in valid_activities:
+        dt = parse_dt(r)
+        if not dt:
+            continue
+        sem = get_semester(dt)
+        if sem:
+            sem_counts[sem][categorize_crime(activity_type(r))] += 1
+    sem_order = {'Spring': 0, 'Summer': 1, 'Fall': 2}
+    sorted_sems = sorted(sem_counts,
+                         key=lambda s: (int(s.split()[1]), sem_order.get(s.split()[0], 3)))
+    last_4_sems = sorted_sems[-4:] if len(sorted_sems) >= 4 else sorted_sems
+    semester_data = {
+        'labels': last_4_sems,
+        'series': {cat: [sem_counts[s].get(cat, 0) for s in last_4_sems] for cat in cats},
+    }
+
+    # year-over-year totals by crime category
+    year_counts = defaultdict(lambda: defaultdict(int))
+    for r in valid_activities:
+        dt = parse_dt(r)
+        if dt:
+            year_counts[str(dt.year)][categorize_crime(activity_type(r))] += 1
+    years = sorted(year_counts)
+    yoy_totals = {
+        'labels': years,
+        'series': {cat: [year_counts[yr].get(cat, 0) for yr in years] for cat in cats},
+    }
+
+    return {
+        'yoy_leads': yoy_leads,
+        'pending_count': len(pending_old),
+        'oldest_pending': pending_old[0] if pending_old else None,
+        'lowest_arrest_rate': lowest_arrest_rate,
+        'top_cluster': top_cluster,
+        'heatmap': heatmap,
+        'monthly_data': monthly_data,
+        'semester_data': semester_data,
+        'yoy_totals': yoy_totals,
+        'current_month_name': now.strftime('%B'),
+        'current_year': current_year,
+        'last_year': current_year - 1,
+    }
+
+
 @app.route("/")
 def index():
     template = 'index.html'
@@ -81,17 +287,6 @@ def index():
     arrest_list = get_arrest_csv()
     activity_list = get_activity_csv(arrest_list)
     
-    # filter out accidental embedded header rows (some CSVs contain repeated header lines)
-    def is_valid_row(r):
-        case = (r.get('UMPD Case Number') or r.get('UMPD CASE NUMBER') or '').strip()
-        if not case:
-            return False
-        # header-like values often contain 'UMPD' or 'CASE' in uppercase; treat those as invalid
-        up = case.upper()
-        if up.startswith('UMPD') or 'CASE' in up and not case[0].isdigit():
-            return False
-        return True
-
     valid_activities = [r for r in activity_list if is_valid_row(r)]
 
     # sort valid activities so newest records appear first on initial render
@@ -106,14 +301,6 @@ def index():
 
     # total incidents
     total_incidents = len(valid_activities)
-
-    # helper to extract crime type robustly
-    def activity_type(r):
-        for k in ('Crime Type', 'TYPE', 'Type'):
-            v = r.get(k)
-            if v and v.strip():
-                return v.strip()
-        return 'Unknown'
 
     from collections import Counter
     all_types = [activity_type(r) for r in valid_activities]
@@ -138,12 +325,14 @@ def index():
     most_common_30 = recent_counter.most_common(1)[0][0] if recent_counter else 'N/A'
 
     # expose aggregates to template
+    analytics = compute_analytics(valid_activities, arrest_list)
     return render_template(template,
                            activity_list=valid_activities,
                            arrest_list=arrest_list,
                            total_incidents=total_incidents,
                            most_common_type=most_common_type,
-                           most_common_30=most_common_30)
+                           most_common_30=most_common_30,
+                           analytics=analytics)
 
 # @app.route('/<case_number>/')
 # def detail(case_number):
@@ -159,6 +348,16 @@ def index():
             # return render_template(template, activity = activity, arrest = arrest_matches[0])
         # return render_template(template, activity = activity, arrest = None)
     # abort(404)
+
+
+@app.route('/trends/')
+def trends():
+    arrest_list = get_arrest_csv()
+    activity_list = get_activity_csv(arrest_list)
+    valid_activities = [r for r in activity_list if is_valid_row(r)]
+    analytics = compute_analytics(valid_activities, arrest_list)
+    return render_template('trends.html', analytics=analytics)
+
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)

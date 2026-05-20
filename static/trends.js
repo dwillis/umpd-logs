@@ -1,0 +1,164 @@
+(function () {
+	'use strict';
+
+	var A = window.ANALYTICS;
+	if (!A) return;
+
+	var CATS = ['violent', 'property', 'drugs', 'traffic', 'medical', 'harassment', 'other'];
+
+	var CAT_LABELS = {
+		violent:    'Violent',
+		property:   'Property',
+		drugs:      'Drug/Alcohol',
+		traffic:    'Traffic',
+		medical:    'Medical/Emergency',
+		harassment: 'Harassment/Sexual',
+		other:      'Other',
+	};
+
+	var COLORS = {
+		violent:    { bg: 'rgba(198,40,40,0.7)',   border: '#c62828' },
+		property:   { bg: 'rgba(230,81,0,0.7)',    border: '#e65100' },
+		drugs:      { bg: 'rgba(106,27,154,0.7)',  border: '#6a1b9a' },
+		traffic:    { bg: 'rgba(21,101,192,0.7)',  border: '#1565c0' },
+		medical:    { bg: 'rgba(0,131,143,0.7)',   border: '#00838f' },
+		harassment: { bg: 'rgba(194,24,91,0.7)',   border: '#c2185b' },
+		other:      { bg: 'rgba(117,117,117,0.7)', border: '#757575' },
+	};
+
+	// ── Heatmap ──────────────────────────────────────────────────
+	function buildHeatmap() {
+		var container = document.getElementById('heatmap-container');
+		if (!container || !A.heatmap) return;
+
+		var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+		var flat = [];
+		for (var d = 0; d < 7; d++) {
+			for (var h = 0; h < 24; h++) {
+				flat.push(A.heatmap[d][h]);
+			}
+		}
+		var maxVal = Math.max.apply(null, flat) || 1;
+
+		var html = '<div class="heatmap-grid">';
+		// Hour header row
+		html += '<div class="hm-cell hm-corner"></div>';
+		for (var h = 0; h < 24; h++) {
+			html += '<div class="hm-cell hm-hour">' + h + '</div>';
+		}
+		// Data rows
+		for (var d = 0; d < 7; d++) {
+			html += '<div class="hm-cell hm-day">' + DAYS[d] + '</div>';
+			for (var h = 0; h < 24; h++) {
+				var val = A.heatmap[d][h];
+				var intensity = val / maxVal;
+				var alpha = (0.06 + intensity * 0.88).toFixed(2);
+				var bg = 'rgba(178,34,34,' + alpha + ')';
+				var color = intensity > 0.55 ? '#fff' : '#333';
+				var titleText = DAYS[d] + ' ' + h + ':00\u2013' + (h + 1) + ':00 \u2014 ' + val + ' incident' + (val !== 1 ? 's' : '');
+				html += '<div class="hm-cell hm-data" style="background:' + bg + ';color:' + color + '" title="' + titleText + '">' + (val > 0 ? val : '') + '</div>';
+			}
+		}
+		html += '</div>';
+		container.innerHTML = html;
+	}
+
+	// ── Monthly Trends ───────────────────────────────────────────
+	function buildMonthlyChart() {
+		var ctx = document.getElementById('monthly-chart');
+		if (!ctx || !A.monthly_data || !A.monthly_data.labels.length) return;
+
+		var datasets = CATS.map(function (cat) {
+			return {
+				label: CAT_LABELS[cat],
+				data: A.monthly_data.series[cat] || [],
+				borderColor: COLORS[cat].border,
+				backgroundColor: COLORS[cat].bg,
+				borderWidth: 2,
+				tension: 0.3,
+				fill: false,
+				pointRadius: 2,
+			};
+		});
+
+		new Chart(ctx, {
+			type: 'line',
+			data: { labels: A.monthly_data.labels, datasets: datasets },
+			options: {
+				responsive: true,
+				maintainAspectRatio: false,
+				interaction: { mode: 'index', intersect: false },
+				plugins: { legend: { position: 'top' } },
+				scales: {
+					x: { ticks: { maxTicksLimit: 20, maxRotation: 45 } },
+					y: { beginAtZero: true, title: { display: true, text: 'Incidents' } },
+				},
+			},
+		});
+	}
+
+	// ── Semester Comparison ──────────────────────────────────────
+	function buildSemesterChart() {
+		var ctx = document.getElementById('semester-chart');
+		if (!ctx || !A.semester_data || !A.semester_data.labels.length) return;
+
+		var datasets = CATS.map(function (cat) {
+			return {
+				label: CAT_LABELS[cat],
+				data: A.semester_data.series[cat] || [],
+				backgroundColor: COLORS[cat].bg,
+				borderColor: COLORS[cat].border,
+				borderWidth: 1,
+			};
+		});
+
+		new Chart(ctx, {
+			type: 'bar',
+			data: { labels: A.semester_data.labels, datasets: datasets },
+			options: {
+				responsive: true,
+				maintainAspectRatio: false,
+				plugins: { legend: { position: 'top' } },
+				scales: {
+					x: { stacked: false },
+					y: { beginAtZero: true, title: { display: true, text: 'Incidents' } },
+				},
+			},
+		});
+	}
+
+	// ── Year-over-Year ───────────────────────────────────────────
+	function buildYoYChart() {
+		var ctx = document.getElementById('yoy-chart');
+		if (!ctx || !A.yoy_totals || !A.yoy_totals.labels.length) return;
+
+		var datasets = CATS.map(function (cat) {
+			return {
+				label: CAT_LABELS[cat],
+				data: A.yoy_totals.series[cat] || [],
+				backgroundColor: COLORS[cat].bg,
+				borderColor: COLORS[cat].border,
+				borderWidth: 1,
+			};
+		});
+
+		new Chart(ctx, {
+			type: 'bar',
+			data: { labels: A.yoy_totals.labels, datasets: datasets },
+			options: {
+				responsive: true,
+				maintainAspectRatio: false,
+				plugins: { legend: { position: 'top' } },
+				scales: {
+					x: { stacked: true },
+					y: { stacked: true, beginAtZero: true, title: { display: true, text: 'Incidents' } },
+				},
+			},
+		});
+	}
+
+	buildHeatmap();
+	buildMonthlyChart();
+	buildSemesterChart();
+	buildYoYChart();
+})();

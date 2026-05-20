@@ -97,7 +97,9 @@ tr.crime-violent { background-color: #ffebee !important; }
 tr.crime-property { background-color: #fff3e0 !important; }
 tr.crime-drugs { background-color: #f3e5f5 !important; }
 tr.crime-traffic { background-color: #e3f2fd !important; }
-tr.crime-other { background-color: #f5f5f5 !important; }
+tr.crime-medical    { background-color: #e0f7fa !important; }
+tr.crime-harassment { background-color: #fce4ec !important; }
+tr.crime-other      { background-color: #f5f5f5 !important; }
 
 /* Phase 1: Days-Since Tracker */
 #days-since-section {
@@ -177,4 +179,106 @@ tr.crime-other { background-color: #f5f5f5 !important; }
 .export-btn span {
 	font-size: 16px;
 	margin-right: 4px;
+}
+
+/* Site navigation */
+#site-nav {
+	background: #2e2e2e;
+	border-top: 1px solid #444;
+}
+#nav-inner {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 16px;
+	display: flex;
+	gap: 4px;
+}
+.nav-link {
+	display: inline-block;
+	padding: 10px 16px;
+	color: #bbb;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
+	transition: color 0.15s, border-color 0.15s;
+}
+.nav-link:hover { color: #fff; border-bottom-color: #b22222; }
+.nav-link.nav-active { color: #fff; border-bottom-color: #b22222; }
+
+/* Story Leads */
+#story-leads { margin: 20px 0; }
+.section-heading { font-size: 18px; margin: 0 0 12px; color: #333; }
+#leads-container {
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.lead-card {
+	flex: 1;
+	min-width: 220px;
+	padding: 14px 16px;
+	border-radius: 8px;
+	border-left: 4px solid;
+	background: #fff;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+.lead-card.lead-spike  { border-color: #c62828; background: #fff5f5; }
+.lead-card.lead-drop   { border-color: #2e7d32; background: #f1f8f1; }
+.lead-card.lead-info   { border-color: #1565c0; background: #f0f4ff; }
+.lead-card.lead-hotspot{ border-color: #e65100; background: #fff8f0; }
+.lead-headline {
+	font-size: 14px;
+	font-weight: 700;
+	color: #222;
+	margin-bottom: 6px;
+	line-height: 1.35;
+}
+.lead-detail { font-size: 13px; color: #555; line-height: 1.4; }
+.lead-more {
+	width: 100%;
+	text-align: right;
+	margin-top: 6px;
+	font-size: 13px;
+}
+.lead-more a { color: #1565c0; font-weight: 600; }
+
+/* Trends page */
+.page-title    { font-size: 24px; margin: 20px 0 4px; color: #222; }
+.page-subtitle { font-size: 14px; color: #555; margin: 0 0 24px; line-height: 1.5; }
+.chart-section {
+	margin: 28px 0;
+	background: #fff;
+	border: 1px solid #eee;
+	border-radius: 8px;
+	padding: 20px 24px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.chart-section h3 { font-size: 18px; margin: 0 0 4px; color: #222; }
+.chart-desc { font-size: 13px; color: #666; margin: 0 0 16px; line-height: 1.5; }
+.chart-wrap { position: relative; height: 320px; }
+
+/* Heatmap grid */
+.heatmap-grid {
+	display: grid;
+	grid-template-columns: 38px repeat(24, 1fr);
+	gap: 2px;
+	font-size: 11px;
+	margin: 4px 0;
+	overflow-x: auto;
+}
+.hm-cell    { padding: 3px 1px; text-align: center; border-radius: 3px; }
+.hm-corner  { background: transparent; }
+.hm-hour    { background: #f0f0f0; color: #666; font-weight: 600; }
+.hm-day     { background: #f0f0f0; font-weight: 600; color: #444; display: flex; align-items: center; justify-content: center; }
+.hm-data    { min-height: 22px; line-height: 22px; cursor: default; transition: opacity 0.12s; }
+.hm-data:hover { opacity: 0.75; outline: 2px solid #555; }
+
+@media (max-width: 768px) {
+	.lead-card { min-width: calc(50% - 6px); }
+	.heatmap-grid { font-size: 9px; }
+	.hm-cell  { padding: 2px 0; }
+	.hm-data  { min-height: 18px; line-height: 18px; }
+	.chart-wrap { height: 240px; }
 }

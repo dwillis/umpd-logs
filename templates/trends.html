@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Trends &amp; Patterns — UMD Police Activity</title>
+		<link rel="stylesheet" href="../static/style.css" />
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script>window.ANALYTICS = {{ analytics|tojson }};</script>
+	</head>
+	<body>
+		<div id="top-header">
+			<div id="header">UMD Police Activity Log with Arrests</div>
+		</div>
+		<nav id="site-nav">
+			<div id="nav-inner">
+				<a href="/" class="nav-link">Activity Log</a>
+				<a href="/trends/" class="nav-link nav-active">Trends &amp; Patterns</a>
+			</div>
+		</nav>
+		<div id="container">
+			<div class="byline">
+				By Rachel Logan, with updates from Derek Willis. <a href="https://github.com/dwillis/umpd-logs">See the code</a>
+			</div>
+
+			<h2 class="page-title">Trends &amp; Patterns</h2>
+			<p class="page-subtitle">Visual analysis of UMPD incident data across time. Semester definitions: Spring&nbsp;=&nbsp;Feb–Apr, Summer&nbsp;=&nbsp;Jun–Aug, Fall&nbsp;=&nbsp;Sep–Nov.</p>
+
+			<section class="chart-section">
+				<h3>When It Happens</h3>
+				<p class="chart-desc">Incident counts by day of week and hour, all time. Darker red = more incidents. Hover a cell for exact count.</p>
+				<div id="heatmap-container"></div>
+			</section>
+
+			<section class="chart-section">
+				<h3>Monthly Trends</h3>
+				<p class="chart-desc">Incidents per month by crime category. Click legend items to show or hide a category.</p>
+				<div class="chart-wrap">
+					<canvas id="monthly-chart"></canvas>
+				</div>
+			</section>
+
+			<section class="chart-section">
+				<h3>Semester Comparison</h3>
+				<p class="chart-desc">Incident totals across the last four semesters, grouped by crime category.</p>
+				<div class="chart-wrap">
+					<canvas id="semester-chart"></canvas>
+				</div>
+			</section>
+
+			<section class="chart-section">
+				<h3>Year over Year</h3>
+				<p class="chart-desc">Total incidents per calendar year, stacked by crime category.</p>
+				<div class="chart-wrap">
+					<canvas id="yoy-chart"></canvas>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div id="footer-text">Copyright 2022-2025</div>
+		</footer>
+		<script src="../static/trends.js"></script>
+	</body>
+</html>

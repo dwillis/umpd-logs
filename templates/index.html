@@ -12,6 +12,7 @@
 		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/1.11.5/dataRender/datetime.js"></script>
 		<script type="text/javascript" charset="utf8" src="../static/moment.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+		<script>const ANALYTICS = {{ analytics|tojson }};</script>
 
 		<!--script type="text/javascript" charset="utf8" src="../static/script.js"></script-->
 		
@@ -23,6 +24,12 @@
 		<div id="top-header">
 			<div id="header">UMD Police Activity Log with Arrests</div>
 		</div>
+		<nav id="site-nav">
+			<div id="nav-inner">
+				<a href="/" class="nav-link nav-active">Activity Log</a>
+				<a href="/trends/" class="nav-link">Trends &amp; Patterns</a>
+			</div>
+		</nav>
 		<div id="container">
 			<div class="byline">
 				By Rachel Logan, with updates from Derek Willis. <a href="https://github.com/dwillis/umpd-logs">See the code</a>
@@ -50,6 +57,12 @@
 				</div>
 			</div>
 
+			<!-- Story Leads -->
+			<div id="story-leads" style="display:none;">
+				<h3 class="section-heading">Story Leads</h3>
+				<div id="leads-container"></div>
+			</div>
+
 			<!-- Crime Category Legend -->
 			<div class="crime-legend">
 				<strong style="margin-right: 8px;">Crime Categories:</strong>
@@ -68,6 +81,14 @@
 				<div class="legend-item">
 					<div class="legend-color" style="background-color: #e3f2fd; border-color: #1565c0;"></div>
 					<span>Traffic</span>
+				</div>
+				<div class="legend-item">
+					<div class="legend-color" style="background-color: #e0f7fa; border-color: #00838f;"></div>
+					<span>Medical/Emergency</span>
+				</div>
+				<div class="legend-item">
+					<div class="legend-color" style="background-color: #fce4ec; border-color: #c2185b;"></div>
+					<span>Harassment/Sexual</span>
 				</div>
 				<div class="legend-item">
 					<div class="legend-color" style="background-color: #f5f5f5; border-color: #757575;"></div>
@@ -133,14 +154,16 @@
 			// Crime category mapping
 			const CRIME_CATEGORIES = {
 				violent: {
-					keywords: ['Assault', 'Robbery', 'Rape', 'Sexual Assault', 'Weapon', 'Armed'],
+					keywords: ['Assault', 'Robbery', 'Rape', 'Sexual Assault', 'Weapon', 'Armed',
+					           'Carjacking', 'Homicide', 'Cutting', 'Stabbing', 'Reckless'],
 					color: '#ffebee',
 					borderColor: '#c62828',
 					textColor: '#b71c1c',
 					label: 'Violent Crime'
 				},
 				property: {
-					keywords: ['Theft', 'Burglary', 'Vandalism', 'Trespass', 'Breaking', 'Stolen'],
+					keywords: ['Theft', 'Burglary', 'Vandalism', 'Trespass', 'Breaking', 'Stolen',
+					           'Damage', 'Arson', 'Fraud', 'Embezzlement'],
 					color: '#fff3e0',
 					borderColor: '#e65100',
 					textColor: '#bf360c',
@@ -154,11 +177,26 @@
 					label: 'Drug/Alcohol'
 				},
 				traffic: {
-					keywords: ['Traffic', 'Parking', 'Vehicle', 'Hit and Run'],
+					keywords: ['Traffic', 'Parking', 'Vehicle', 'Hit and Run', 'Accident', 'Hazardous', 'Pedestrian'],
 					color: '#e3f2fd',
 					borderColor: '#1565c0',
 					textColor: '#0d47a1',
 					label: 'Traffic'
+				},
+				medical: {
+					keywords: ['Injured', 'Sick', 'Emergency', 'Welfare', 'Death', 'Overdose', 'Suicide', 'Fire', 'Bomb', 'Missing'],
+					color: '#e0f7fa',
+					borderColor: '#00838f',
+					textColor: '#006064',
+					label: 'Medical/Emergency'
+				},
+				harassment: {
+					keywords: ['Harass', 'Stalk', 'Indecent', 'Peeping', 'Sex Offense', 'Telephone',
+					           'Email', 'Domestic', 'Title IX', 'Pornography', 'Obscene', 'Extortion', 'Hate'],
+					color: '#fce4ec',
+					borderColor: '#c2185b',
+					textColor: '#880e4f',
+					label: 'Harassment/Sexual'
 				},
 				other: {
 					keywords: [],
@@ -255,6 +293,63 @@
 				$('#days-since-container').html(html);
 			}
 
+			function renderStoryLeads() {
+				const a = ANALYTICS;
+				if (!a) return;
+				const monthName = a.current_month_name;
+				const leads = [];
+
+				// YoY leads
+				for (const lead of (a.yoy_leads || [])) {
+					const dir = lead.direction === 'up' ? '\u2191' : '\u2193';
+					const typeClass = lead.direction === 'up' ? 'lead-spike' : 'lead-drop';
+					const pct = Math.abs(lead.pct_change);
+					leads.push({
+						typeClass,
+						headline: `${dir} ${lead.crime_type} ${lead.direction === 'up' ? 'up' : 'down'} ${pct}% this ${monthName}`,
+						detail: `${lead.this_year} incidents so far in ${monthName} ${a.current_year}, vs. ${lead.last_year} in ${monthName} ${a.last_year}.`,
+					});
+				}
+
+				// Pending backlog
+				if (a.pending_count > 0) {
+					const oldest = a.oldest_pending;
+					let detail = `${a.pending_count} case${a.pending_count > 1 ? 's' : ''} marked Investigation Pending for over 90 days.`;
+					if (oldest) detail += ` Oldest: ${oldest.crime_type} reported ${oldest.report_date} (${oldest.days_old} days ago).`;
+					leads.push({ typeClass: 'lead-info', headline: `${a.pending_count} case${a.pending_count > 1 ? 's' : ''} pending 90+ days`, detail });
+				}
+
+				// Lowest arrest rate
+				if (a.lowest_arrest_rate) {
+					const lr = a.lowest_arrest_rate;
+					leads.push({
+						typeClass: 'lead-info',
+						headline: `Only ${lr.rate}% of ${lr.crime_type} reports result in arrest`,
+						detail: `Based on ${lr.total} total ${lr.crime_type} incidents in the dataset.`,
+					});
+				}
+
+				// Hot spot
+				if (a.top_cluster) {
+					const c = a.top_cluster;
+					leads.push({
+						typeClass: 'lead-hotspot',
+						headline: `${c.count} incidents at \u201c${c.location}\u201d in the past 60 days`,
+						detail: `Types: ${c.types.join(', ')}.`,
+					});
+				}
+
+				if (leads.length === 0) return;
+
+				let html = '';
+				for (const lead of leads) {
+					html += `<div class="lead-card ${lead.typeClass}"><div class="lead-headline">${lead.headline}</div><div class="lead-detail">${lead.detail}</div></div>`;
+				}
+				html += '<div class="lead-more"><a href="/trends/">Full trends analysis \u2192</a></div>';
+				document.getElementById('leads-container').innerHTML = html;
+				document.getElementById('story-leads').style.display = 'block';
+			}
+
 			function exportTableToCSV() {
 				const table = $('#crime-table').DataTable();
 				const data = table.rows({ search: 'applied' }).data();
@@ -304,6 +399,7 @@
 				setTimeout(function() {
 					applyColorCoding();
 					renderDaysSinceCards();
+					renderStoryLeads();
 				}, 100);
 			} );
 		</script>
