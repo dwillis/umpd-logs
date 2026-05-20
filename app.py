@@ -220,7 +220,7 @@ def compute_analytics(valid_activities, arrest_list):
         dt = parse_dt(r)
         if dt:
             monthly_counts[dt.strftime('%Y-%m')][categorize_crime(activity_type(r))] += 1
-    sorted_months = sorted(monthly_counts)
+    sorted_months = [m for m in sorted(monthly_counts) if m >= '2015-01']
     cats = ['violent', 'property', 'drugs', 'traffic', 'medical', 'harassment', 'other']
     monthly_data = {
         'labels': sorted_months,
