@@ -682,8 +682,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00120365,2025-05-18 10:00:00,2025-05-19 09:20:00,Theft,Investigation Pending,4600 block of Rossborough Ln
 2025-00103454,2025-05-17 12:00:00,2025-05-19 14:21:00,Theft,Active/Pending,4300 block of Chapel Ln
 2025-00103455,2025-05-19 08:00:00,2025-05-19 14:33:00,Theft,Active/Pending,Lot 1b
-2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
 2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
+2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
 2025-00120934,2025-05-10 00:00:00,2025-05-19 23:03:00,Damage to State Property,CBE,3900 block of Campus Dr
 2025-00121280,2025-05-20 03:13:00,2025-05-20 06:56:00,Theft,Investigation Pending,Lot 4a
 2025-00121421,2023-06-08 12:00:00,2025-05-20 09:51:00,Fraud,Active/Pending,5600 block of Rivertech Ct
@@ -2698,6 +2698,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00136311,2026-05-20 23:20:00,2026-05-20 23:55:00,Other Incident,Active/Pending,8300 block of Baltimore Ave
 2026-00136359,2026-05-21 01:30:00,2026-05-21 02:25:00,Assist Other Agency,CBE,8200 block of Baltimore Ave
 2026-00136682,2026-05-21 09:57:00,2026-05-21 09:57:00,Trespassing,Arrest,Paint Branch Dr
+2026-00136733,2026-05-21 11:54:00,2026-05-21 11:54:00,Emergency Petition,CBE,3900 block of Campus Dr
 2026-00136743,2026-05-21 12:17:00,2026-05-21 12:17:00,Theft,Arrest,7390 River Rd
 2026-00136883,2026-05-21 17:10:00,2026-05-21 17:10:00,Found/Recovered Property,CBE,Anacostia Building at 1 Physics Ellipse
 2026-00136972,2026-05-21 19:19:00,2026-05-21 19:19:00,Injured/Sick Person,CBE,90 Stadium Dr
@@ -2714,8 +2715,10 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00139907,2026-05-24 03:07:00,2026-05-24 03:07:00,DWI/DUI,Arrest,University Blvd
 2026-00139953,2026-05-24 04:35:00,2026-05-24 04:35:00,DWI/DUI,Arrest,University Blvd
 2026-00140362,2026-03-10 18:00:00,2026-05-24 15:24:00,Assist Other Agency,Active/Pending,4300 block of Hartwick Rd
+2026-00141888,2026-05-25 22:57:00,2026-05-25 22:57:00,DWI/DUI,Arrest,University Blvd
 2026-00141967,2026-05-26 02:02:00,2026-05-26 02:02:00,DWI/DUI,Arrest,Adelphi Rd
 2026-00141982,2026-05-26 02:42:00,2026-05-26 02:42:00,Warrant/Summons Service,Arrest,University Blvd
+2026-00142218,2026-05-26 12:05:00,2026-05-26 12:05:00,Assist Other Agency,CBE,7600 block of Mowatt Ln
 2026-00142237,2026-05-26 11:56:00,2026-05-26 12:56:00,Suspicious Activity,CBE,3800 block of Golf Course Rd
 2026-00142572,2026-05-26 21:55:00,2026-05-26 22:52:00,Dept Property Damage/Loss,CBE,7500 block of Baltimore Ave
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
