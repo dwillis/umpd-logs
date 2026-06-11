@@ -335,8 +335,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00063012,2025-03-14 21:00:00,2025-03-16 12:52:00,Assist Other Agency,CBE,4300 block of Knox Rd
 2025-00063172,2025-03-16 16:04:00,2025-03-16 16:04:00,Recovered Stolen Property,Arrest,7500 block of Mowatt Ln
 2025-00063422,2025-03-16 21:24:00,2025-03-16 23:10:00,Dept Property Damage/Loss,CBE,Stanley R. Zupnick Hall at 8184 Paint Branch Dr
-2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
 2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
+2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
 2025-00063978,2025-03-17 12:43:00,2025-03-17 12:43:00,Damage to State Property,CBE,7500 block of Baltimore Ave
 2025-00064495,2025-03-17 22:54:00,2025-03-17 22:54:00,DWI/DUI,Arrest,University Blvd
 2025-00065844,2025-03-19 11:38:00,2025-03-19 11:41:00,Injured/Sick Person,CBE,7300 block of Baltimore Ave
@@ -2665,7 +2665,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00126853,2026-05-11 19:26:00,2026-05-11 19:51:00,Injured/Sick Person,CBE,3900 block of Campus Dr
 2026-00127104,2026-05-12 02:23:00,2026-05-12 02:23:00,Injured/Sick Person,CBE,4200 block of Valley Dr
 2026-00127385,2026-05-12 11:49:00,2026-05-12 11:49:00,Injured/Sick Person,CBE,5000 block of College Ave
-2026-00127390,2026-05-11 22:00:00,2026-05-12 12:01:00,Vandalism,Active/Pending,4000 block of Stadium Dr
+2026-00127390,2026-05-11 22:00:00,2026-05-12 12:01:00,Vandalism,Investigation Pending,4000 block of Stadium Dr
 2026-00127622,2026-05-12 18:19:00,2026-05-12 18:19:00,Injured/Sick Person,CBE,7600 block of Mowatt Ln
 2026-00127869,2026-05-13 01:01:00,2026-05-13 01:01:00,Injured/Sick Person,CBE,8100 block of Baltimore Ave
 2026-00127884,2026-05-13 01:41:00,2026-05-13 01:41:00,CDS Violation,Arrest,Metzerott Rd
@@ -2749,6 +2749,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00148240,2026-05-31 21:30:00,2026-06-02 11:07:00,Theft,Active/Pending,3400 block of Tulane Dr
 2026-00148353,2026-06-02 14:44:00,2026-06-02 14:44:00,Injured/Sick Person,CBE,7500 block of Baltimore Ave
 2026-00148432,2026-06-02 20:02:00,2026-06-02 20:02:00,Assist Other Agency,CBE,4600 block of Guilford Rd
+2026-00148883,2026-06-03 09:25:00,2026-06-03 09:25:00,Injured/Sick Person,CBE,7100 block of 51st Ave
 2026-00149316,2026-06-04 01:19:00,2026-06-04 01:19:00,DWI/DUI,Arrest,Adelphi Rd
 2026-00149345,2026-06-04 02:26:00,2026-06-04 02:26:00,Warrant/Summons Service,Active/Pending,University Blvd
 2026-00149594,2026-06-04 13:17:00,2026-06-04 13:17:00,Injured/Sick Person,CBE,3800 block of Stadium Dr
