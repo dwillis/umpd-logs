@@ -682,8 +682,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00120365,2025-05-18 10:00:00,2025-05-19 09:20:00,Theft,Investigation Pending,4600 block of Rossborough Ln
 2025-00103454,2025-05-17 12:00:00,2025-05-19 14:21:00,Theft,Active/Pending,4300 block of Chapel Ln
 2025-00103455,2025-05-19 08:00:00,2025-05-19 14:33:00,Theft,Active/Pending,Lot 1b
-2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
 2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
+2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
 2025-00120934,2025-05-10 00:00:00,2025-05-19 23:03:00,Damage to State Property,CBE,3900 block of Campus Dr
 2025-00121280,2025-05-20 03:13:00,2025-05-20 06:56:00,Theft,Investigation Pending,Lot 4a
 2025-00121421,2023-06-08 12:00:00,2025-05-20 09:51:00,Fraud,Active/Pending,5600 block of Rivertech Ct
@@ -2450,7 +2450,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00099143,2026-04-13 19:26:00,2026-04-13 19:26:00,Indecent Exposure,Arrest,7600 block of Mowatt Ln
 2026-00099157,2026-04-13 18:00:00,2026-04-13 19:50:00,Theft,Summons Issued,8100 block of Paint Branch Dr
 2026-00099186,2026-04-13 14:00:00,2026-04-13 20:51:00,Injured/Sick Person,CBE,3900 block of Denton Service Ln
-2026-00099295,2026-04-13 21:00:00,2026-04-14 00:23:00,Theft,Active/Pending,7100 block of Preinkert Dr
+2026-00099295,2026-04-13 21:00:00,2026-04-14 00:23:00,Theft,Investigation Pending,7100 block of Preinkert Dr
 2026-00099623,2026-04-01 00:01:00,2026-04-14 10:09:00,Other Incident,CBE,8100 block of Baltimore Ave
 2026-00099746,2026-04-14 10:00:00,2026-04-14 15:07:00,Other Incident,Active/Pending,4100 block of Campus Dr
 2026-00100301,2026-04-15 01:26:00,2026-04-15 01:26:00,DWI/DUI,Arrest,Metzerott Rd
@@ -2472,7 +2472,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00103063,2026-04-17 18:44:00,2026-04-17 18:44:00,Theft,Investigation Pending,4500 block of College Ave
 2026-00103096,2026-04-17 19:09:00,2026-04-17 19:09:00,DWI/DUI,Arrest,University Blvd
 2026-00103136,2026-04-17 20:10:00,2026-04-17 20:10:00,DWI/DUI,Arrest,Adelphi Rd
-2026-00103140,2026-04-16 22:00:00,2026-04-17 20:12:00,Theft,Active/Pending,3800 block of Stadium Dr
+2026-00103140,2026-04-16 22:00:00,2026-04-17 20:12:00,Theft,Investigation Pending,3800 block of Stadium Dr
 2026-00103160,2026-04-17 21:11:00,2026-04-17 21:11:00,Accident,CBE,Yale Ave
 2026-00103208,2026-01-17 22:22:00,2026-04-17 22:22:00,DWI/DUI,Arrest,University Blvd
 2026-00103259,2026-04-17 20:00:00,2026-04-17 22:47:00,Assault,Investigation Pending,Alumni Dr
@@ -2508,7 +2508,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00105718,2026-04-20 13:00:00,2026-04-20 13:02:00,Trespassing,CBE,7600 block of Library Ln
 2026-00106087,2026-04-20 19:59:00,2026-04-20 19:59:00,Injured/Sick Person,CBE,7500 block of Calvert Service Ln
 2026-00106784,2025-12-29 00:00:00,2026-04-21 09:05:00,Police Information,Active/Pending,7500 block of Baltimore Ave
-2026-00106893,2026-04-16 12:00:00,2026-04-21 10:55:00,Vandalism,Active/Pending,4200 block of Farm Dr
+2026-00106893,2026-04-16 12:00:00,2026-04-21 10:55:00,Vandalism,Investigation Pending,4200 block of Farm Dr
 2026-00107554,2026-04-22 00:28:00,2026-04-22 00:58:00,Emergency Petition,CBE,8200 block of Alumni Dr
 2026-00107734,2026-04-21 04:00:00,2026-04-22 06:45:00,Lost Property,Active/Pending,7600 block of Library Ln
 2026-00108099,2026-04-20 14:30:00,2026-04-22 13:55:00,Theft,Investigation Pending,4700 block of Rossborough Ln
@@ -2536,7 +2536,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00109936,2026-04-24 11:38:00,2026-04-24 11:38:00,Trespassing,CBE,4200 block of Fieldhouse Dr
 2026-00110123,2026-04-24 15:48:00,2026-04-24 15:48:00,Emergency Petition,Active/Pending,4100 block of Campus Dr
 2026-00110146,2026-04-24 16:20:00,2026-04-24 16:27:00,Assist Other Agency,CBE,7400 block of Baltimore Ave
-2026-00110254,2026-04-24 15:27:00,2026-04-24 17:52:00,Theft,Active/Pending,6800 block of Preinkert Dr
+2026-00110254,2026-04-24 15:27:00,2026-04-24 17:52:00,Theft,Investigation Pending,6800 block of Preinkert Dr
 2026-00110313,2026-04-23 10:00:00,2026-04-24 18:40:00,Missing Person/Runaway,CBE,4600 block of Knox Rd
 2026-00110455,2026-04-24 22:04:00,2026-04-24 22:04:00,DWI/DUI,Arrest,Lot Y
 2026-00110658,2026-04-25 00:44:00,2026-04-25 00:44:00,DWI/DUI,Arrest,Baltimore Ave
@@ -2762,6 +2762,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00151219,2026-06-06 22:24:00,2026-06-06 22:24:00,CDS Violation,CBE,8400 block of Boteler Ln
 2026-00151383,2026-06-07 00:15:00,2026-06-07 00:15:00,DWI/DUI,Arrest,Adelphi Rd
 2026-00152715,2026-06-08 11:15:00,2026-06-08 11:48:00,Injured/Sick Person,CBE,4500 block of Campus Dr
+2026-00154919,2026-06-10 21:08:00,2026-06-10 21:08:00,Injured/Sick Person,CBE,8600 block of Boteler Ln
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
