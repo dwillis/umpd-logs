@@ -335,8 +335,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00063012,2025-03-14 21:00:00,2025-03-16 12:52:00,Assist Other Agency,CBE,4300 block of Knox Rd
 2025-00063172,2025-03-16 16:04:00,2025-03-16 16:04:00,Recovered Stolen Property,Arrest,7500 block of Mowatt Ln
 2025-00063422,2025-03-16 21:24:00,2025-03-16 23:10:00,Dept Property Damage/Loss,CBE,Stanley R. Zupnick Hall at 8184 Paint Branch Dr
-2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
 2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
+2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
 2025-00063978,2025-03-17 12:43:00,2025-03-17 12:43:00,Damage to State Property,CBE,7500 block of Baltimore Ave
 2025-00064495,2025-03-17 22:54:00,2025-03-17 22:54:00,DWI/DUI,Arrest,University Blvd
 2025-00065844,2025-03-19 11:38:00,2025-03-19 11:41:00,Injured/Sick Person,CBE,7300 block of Baltimore Ave
@@ -2628,7 +2628,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00120086,2026-05-04 21:40:00,2026-05-04 21:51:00,Trespassing,CBE,"Capital One Field, Football Stadium, SECU Stadium"
 2026-00120252,2026-05-05 00:28:00,2026-05-05 00:28:00,Injured/Sick Person,CBE,7300 block of Baltimore Ave
 2026-00120441,2026-05-04 15:30:00,2026-05-05 06:32:00,Damage to State Property,Active/Pending,8000 block of Hagerstown Dr
-2026-00120468,2026-05-04 04:30:00,2026-05-05 07:33:00,Theft,Active/Pending,8000 block of Regents Dr
+2026-00120468,2026-05-04 04:30:00,2026-05-05 07:33:00,Theft,Investigation Pending,8000 block of Regents Dr
 2026-00120479,2026-05-05 07:50:00,2026-05-05 07:53:00,Injured/Sick Person,CBE,7500 block of Calvert Service Ln
 2026-00121016,2026-05-05 19:10:00,2026-05-05 19:10:00,Trespassing,Arrest,8900 block of Paint Branch Dr
 2026-00121029,2026-04-30 22:00:00,2026-05-05 20:39:00,Assist Other Agency,CBE,7400 block of Baltimore Ave
@@ -2764,6 +2764,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00152715,2026-06-08 11:15:00,2026-06-08 11:48:00,Injured/Sick Person,CBE,4500 block of Campus Dr
 2026-00154919,2026-06-10 21:08:00,2026-06-10 21:08:00,Injured/Sick Person,CBE,8600 block of Boteler Ln
 2026-00156306,2026-06-12 03:02:00,2026-06-12 03:02:00,DWI/DUI,Arrest,Union Ln
+2026-00157189,2026-06-12 23:33:00,2026-06-12 23:33:00,DWI/DUI,Arrest,University Blvd
+2026-00158688,2026-06-14 05:30:00,2026-06-14 05:52:00,Injured/Sick Person,CBE,8000 block of La Plata Dr
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
