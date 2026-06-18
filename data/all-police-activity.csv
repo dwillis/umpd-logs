@@ -335,8 +335,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00063012,2025-03-14 21:00:00,2025-03-16 12:52:00,Assist Other Agency,CBE,4300 block of Knox Rd
 2025-00063172,2025-03-16 16:04:00,2025-03-16 16:04:00,Recovered Stolen Property,Arrest,7500 block of Mowatt Ln
 2025-00063422,2025-03-16 21:24:00,2025-03-16 23:10:00,Dept Property Damage/Loss,CBE,Stanley R. Zupnick Hall at 8184 Paint Branch Dr
-2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
 2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
+2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
 2025-00063978,2025-03-17 12:43:00,2025-03-17 12:43:00,Damage to State Property,CBE,7500 block of Baltimore Ave
 2025-00064495,2025-03-17 22:54:00,2025-03-17 22:54:00,DWI/DUI,Arrest,University Blvd
 2025-00065844,2025-03-19 11:38:00,2025-03-19 11:41:00,Injured/Sick Person,CBE,7300 block of Baltimore Ave
@@ -2144,7 +2144,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00052145,2026-02-26 18:30:00,2026-02-26 19:29:00,Assist Other Agency,CBE,Lakeland Rd
 2026-00052151,2026-02-26 19:36:00,2026-02-26 19:36:00,Injured/Sick Person,CBE,4100 block of Stadium Dr
 2026-00052153,2026-02-12 17:00:00,2026-02-26 19:38:00,Suspicious Activity,CBE,8100 block of La Plata Dr
-2026-00052170,2026-02-20 18:00:00,2026-02-26 20:36:00,Other Incident,CBE,4600 block of Rossborough Ln
+2026-00052170,2026-02-20 18:00:00,2026-02-26 20:36:00,Other Incident,Active/Pending,4600 block of Rossborough Ln
 2026-00052189,2026-02-26 21:25:00,2026-02-26 21:25:00,Emergency Petition,CBE,7000 block of Preinkert Dr
 2026-00052191,2026-02-26 21:38:00,2026-02-26 21:38:00,Suspicious Activity,CBE,38.9942687395639;-76.9391649336945 / Lot 9b
 2026-00052241,2026-02-26 23:15:00,2026-02-26 23:15:00,Warrant/Summons Service,CBE,University Blvd
@@ -2767,7 +2767,9 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00156306,2026-06-12 03:02:00,2026-06-12 03:02:00,DWI/DUI,Arrest,Union Ln
 2026-00157189,2026-06-12 23:33:00,2026-06-12 23:33:00,DWI/DUI,Arrest,University Blvd
 2026-00157508,2026-06-13 02:21:00,2026-06-13 02:21:00,DWI/DUI,Arrest,University Blvd
+2026-00158460,2026-06-14 00:45:00,2026-06-14 00:45:00,DWI/DUI,Arrest,University Blvd
 2026-00158688,2026-06-14 05:30:00,2026-06-14 05:52:00,Injured/Sick Person,CBE,8000 block of La Plata Dr
+2026-00161042,2026-06-16 17:30:00,2026-06-16 17:51:00,Injured/Sick Person,CBE,7800 block of Regents Dr
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
