@@ -2776,6 +2776,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00154454,2026-06-08 19:00:00,2026-06-10 01:45:00,Telephone/EMail Misuse,Active/Pending,4300 block of Knox Rd
 2026-00154460,2026-06-10 01:59:00,2026-06-10 01:59:00,DWI/DUI,Arrest,Metzerott Rd
 2026-00154650,2026-06-03 08:00:00,2026-06-10 10:35:00,Injured Officer,CBE,7100 block of 51st Ave
+2026-00154814,2026-02-17 10:35:00,2026-06-10 15:37:00,Check on the  Welfare,Active/Pending,8500 block of Paint Branch Dr
 2026-00154841,2026-06-10 16:00:00,2026-06-10 16:04:00,Hazardous Condition,CBE,4200 block of Stadium Dr
 2026-00154919,2026-06-10 21:08:00,2026-06-10 21:08:00,Injured/Sick Person,CBE,8600 block of Boteler Ln
 2026-00154920,2026-06-05 21:00:00,2026-06-10 21:14:00,Vandalism,Active/Pending,4100 block of Terrapin Trl
@@ -2786,8 +2787,10 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00157508,2026-06-13 02:21:00,2026-06-13 02:21:00,DWI/DUI,Arrest,University Blvd
 2026-00157889,2026-06-13 13:40:00,2026-06-13 14:11:00,Assist Other Agency,CBE,3700 block of Campus Dr
 2026-00158460,2026-06-14 00:45:00,2026-06-14 00:45:00,DWI/DUI,Arrest,University Blvd
+2026-00158512,2026-06-14 01:22:00,2026-06-14 01:22:00,DWI/DUI,Arrest,University Blvd
 2026-00158688,2026-06-14 05:30:00,2026-06-14 05:52:00,Injured/Sick Person,CBE,8000 block of La Plata Dr
 2026-00159722,2026-06-15 10:15:00,2026-06-15 10:15:00,Suspicious Activity,CBE,Regents Dr
+2026-00159796,2026-06-15 11:38:00,2026-06-15 11:38:00,Other Incident,CBE,4200 block of Valley Dr
 2026-00160791,2026-06-15 09:08:00,2026-06-16 09:08:00,Damage to State Property,CBE,7700 block of Baltimore Ave
 2026-00160869,2026-06-03 13:45:00,2026-06-16 11:11:00,Other Incident,CBE,7900 block of Regents Dr
 2026-00160970,2026-06-16 11:00:00,2026-06-16 15:12:00,Theft,Unfounded,4200 block of Valley Dr
@@ -2796,6 +2799,10 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00161646,2026-06-02 08:00:00,2026-06-17 09:44:00,Damage to State Property,Active/Pending,Lot GG1
 2026-00161673,2026-06-16 11:30:00,2026-06-17 11:15:00,Theft,Investigation Pending,7700 block of Alumni Dr
 2026-00162608,2026-06-18 11:17:00,2026-06-18 11:32:00,Other Incident,Active/Pending,8100 block of Greenmead Dr
+2026-00163189,2026-06-19 02:50:00,2026-06-19 02:50:00,DWI/DUI,Arrest,Campus Dr
+2026-00164218,2026-06-20 02:32:00,2026-06-20 02:32:00,DWI/DUI,Arrest,University Blvd
+2026-00164223,2026-06-20 03:05:00,2026-06-20 03:05:00,DWI/DUI,Arrest,Campus Dr
+2026-00165200,2026-06-21 01:40:00,2026-06-21 01:40:00,DWI/DUI,Arrest,University Blvd
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
