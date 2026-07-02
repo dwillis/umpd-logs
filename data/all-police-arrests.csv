@@ -4,11 +4,11 @@ Arrest Number,Arrested Date Time,UMPD Case Number,Age,Race,Sex,Arrested Charge,D
 24336,01/04/2025 - 03:19,2025-00002272,,White,Male,"(Driving, Attempting to drive) veh. while under the influence of alcohol",24352
 24369,01/07/2025 - 12:00,2024-00136812,,Black,Male,MOTOR VEHICLE/UNLAWFUL TAKING,24368
 24338,01/07/2025 - 15:56,2025-00003694,,White,Male,"CDS: POSS PARAPHERNALIA; THEFT: $100 TO UNDER $1,500-All Other",24341
-24340,01/08/2025 - 05:39,2025-00004053,,Black,Male,Theft Less Than $100,24348
-24351,01/08/2025 - 12:00,2024-00164256,,White,Male,"THEFT SCHEME: $1,500 TO UNDER $25,000-All Other",24346
-24349,01/08/2025 - 12:00,2024-00163912,,White,Male,"THEFT SCHEME: $1,500 TO UNDER $25,000-All Other",24371
-24347,01/08/2025 - 12:00,2024-00074058,,White,Male,"THEFT SCHEME: $1,500 TO UNDER $25,000-All Other",24350
-24377,01/08/2025 - 12:00,2023-00086320,,White,Male,"THEFT: $100 TO UNDER $1,500-All Other",24363
+24340,01/08/2025 - 05:39,2025-00004053,,Black,Male,Theft Less Than $100,24347
+24350,01/08/2025 - 12:00,2024-00164161,,White,Male,"THEFT SCHEME: $1,500 TO UNDER $25,000-All Other",24377
+24348,01/08/2025 - 12:00,2024-00129195,,White,Male,"THEFT SCHEME: $1,500 TO UNDER $25,000-All Other",24351
+24346,01/08/2025 - 12:00,2024-00061743,,White,Male,"THEFT SCHEME: $1,500 TO UNDER $25,000-All Other",24349
+24371,01/08/2025 - 12:00,2023-00079735,,White,Male,"THEFT: $100 TO UNDER $1,500-All Other",24363
 24758,01/10/2025 - 01:02,2026-00008580,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se",24356
 24357,01/12/2025 - 01:12,2025-00006729,,Black,Male,"(Driving, Attempting to drive) veh. while impaired by controlled dangerous substance; CDS: POSS PARAPHERNALIA",24358
 24353,01/13/2025 - 17:58,2025-00007807,,Black,Male,Disorderly Conduct,24359
@@ -31,7 +31,7 @@ Arrest Number,Arrested Date Time,UMPD Case Number,Age,Race,Sex,Arrested Charge,D
 24440,02/23/2025 - 12:00,2024-00176376,,White,Male,"THEFT: $100 TO UNDER $1,500-All Other",24406
 24395,02/24/2025 - 15:12,2025-00043881,,Black,Male,"School Trespassing On Ground; THEFT: $1,500 TO UNDER $25,000-Bicycle",24407
 24430,02/25/2025 - 12:00,2024-00221946,,American Indian/Alaskan,Male,Theft Less Than $100 From Building,24397
-24398,02/25/2025 - 14:55,2025-00044755,,Black,Male,Disorderly Conduct; Obscene Matter/Possession with Intent to Distribute; Obscene Matter/Publish/Distribute,24399
+24399,02/25/2025 - 14:55,2025-00046715,,Black,Male,School Trespassing On Ground; School: Disturb Operation; Sex Offense- 4TH Degree-Sex Contact,24398
 24447,02/26/2025 - 13:00,2023-00055167,,Black,Male,"THEFT: $1,500 TO UNDER $25,000-From Building",24402
 24420,03/01/2025 - 02:08,2025-00048493,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol",24403
 24408,03/01/2025 - 15:36,2025-00048947,,Black,Male,Suspicion/No Charges,24414
@@ -55,11 +55,11 @@ Arrest Number,Arrested Date Time,UMPD Case Number,Age,Race,Sex,Arrested Charge,D
 934,04/09/2025 - 09:00,2025-00050469,,Black,Male,"THEFT: $100 TO UNDER $1,500-All Other",24461
 24454,04/11/2025 - 23:52,2025-00087720,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se",24459
 24464,04/12/2025 - 02:47,2025-00087823,,Black,Male,"ASSAULT SEC DEG-LE Officer,Parole/Probation Agent - Aggravated; Disorderly Conduct; Disturb Peace Hinder Passage",24467
-24467,04/12/2025 - 17:18,2025-00088127,,Black,Male,Loaded Handgun in Vehicle,24467
-24456,04/13/2025 - 21:20,2025-00089054,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se",24496
-24496,04/14/2025 - 12:00,2024-00094463,,Black,Male,Rogue and Vagabond,24496
-24497,04/14/2025 - 12:00,2024-00094532,,Black,Male,Malicious Destruction of Proper/Value $1000+,24497
+24467,04/12/2025 - 17:18,2025-00088127,,Black,Male,Possession of Firearm or Ammo being under the age of 21,24467
+24456,04/13/2025 - 21:20,2025-00089054,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se",24498
 24498,04/14/2025 - 12:00,2024-00095088,,Black,Male,Rogue and Vagabond,24498
+24496,04/14/2025 - 12:00,2024-00094463,,Black,Male,Malicious Destruction of Proper/Value $1000+,24496
+24497,04/14/2025 - 12:00,2024-00094532,,Black,Male,Rogue and Vagabond,24497
 24526,04/16/2025 - 12:00,2025-00078130,,Black,Male,"THEFT: $1,500 TO UNDER $25,000-All Other",24462
 24476,04/17/2025 - 12:00,2024-00163759,,White,Male,"THEFT: $100 TO UNDER $1,500-All Other",24463
 24469,04/20/2025 - 01:26,2025-00094670,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se",24468
@@ -73,10 +73,10 @@ Arrest Number,Arrested Date Time,UMPD Case Number,Age,Race,Sex,Arrested Charge,D
 24482,05/12/2025 - 03:02,2025-00113606,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se",24486
 24484,05/18/2025 - 02:10,2025-00119202,,White,Male,"(Driving, Attempting to drive) veh. while under the influence of (alcohol, alcohol per se) while transporting a minor; (Driving, Attempting to drive) veh. while under the influence of alcohol",24485
 24487,05/19/2025 - 00:12,2025-00119966,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se",24474
-24542,05/20/2025 - 12:00,2025-00001764,,White,Male,"THEFT: $100 TO UNDER $1,500-All Other",24548
+24542,05/20/2025 - 12:00,2025-00001764,,White,Male,School Trespassing On Ground,24506
+24769,05/20/2025 - 12:00,2025-00020104,,Black,Male,"THEFT SCHEME: $100 TO UNDER $1,500-Bicycle",24505
 24503,05/20/2025 - 12:00,2024-00181868,,Black,Male,"THEFT: $100 TO UNDER $1,500-All Other",24506
 24504,05/20/2025 - 12:00,2024-00190029,,Black,Male,"THEFT: $100 TO UNDER $1,500-All Other",24507
-24769,05/20/2025 - 12:00,2025-00020104,,Black,Male,"THEFT SCHEME: $100 TO UNDER $1,500-Bicycle",24505
 24489,05/21/2025 - 00:54,2025-00121875,,Black,Male,"(Driving, Attempting to drive) veh. while under the influence of alcohol per se",24476
 24475,05/21/2025 - 22:10,2025-00103457,,Black,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol while transporting a minor",24490
 24491,05/23/2025 - 22:27,2025-00124063,,Black,Male,"(Driving, Attempting to drive) veh. while under the influence of alcohol",24500
@@ -135,8 +135,9 @@ Arrest Number,Arrested Date Time,UMPD Case Number,Age,Race,Sex,Arrested Charge,D
 24773,09/11/2025 - 12:00,2025-00140097,,Asian,Male,"THEFT: $100 TO UNDER $1,500-All Other",24615
 24603,09/13/2025 - 03:55,2025-00200630,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se",24604
 24605,09/14/2025 - 00:25,2025-00201229,,Black,Female,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol",24665
+945,09/16/2025 - 12:00,2025-00176960,,Black,Male,Malicious Destruction Property/Value -$1000,941
 941,09/16/2025 - 12:00,2025-00176609,,Black,Male,Rogue and Vagabond,24645
-24645,09/16/2025 - 12:00,2025-00148421,,Black,Male,Trespass-Posted Property,945
+24645,09/16/2025 - 12:00,2025-00148421,,Black,Male,Trespass-Posted Property,24616
 24618,09/18/2025 - 22:50,2025-00205491,,White,Male,Consuming/Possessing Open Alcoholic Beverage in Public,24606
 24608,09/19/2025 - 00:05,2025-00205558,,White,Female,Consuming/Possessing Open Alcoholic Beverage in Public,24610
 24611,09/19/2025 - 01:30,2025-00205639,,Asian,Male,Urinating or Defecating in Public,24613
@@ -149,9 +150,9 @@ Arrest Number,Arrested Date Time,UMPD Case Number,Age,Race,Sex,Arrested Charge,D
 24627,09/26/2025 - 22:16,2025-00212890,,White,Male,Consuming/Possessing Open Alcoholic Beverage in Public,24632
 24638,09/26/2025 - 22:41,2025-00212895,,White,Male,Open Container: Alcohol Prohibited Place,24639
 24628,09/27/2025 - 01:00,2025-00213039,,White,Male,Open Container: Alcohol Prohibited Place,24629
-24635,09/27/2025 - 23:48,2025-00213887,,White,Male,Open Container: Alcohol Prohibited Place,24680
-24680,09/29/2025 - 12:00,2025-00193877,,Black,Male,Malicious Destruction Property/Value -$1000,24646
-24679,09/29/2025 - 12:00,2025-00193250,,Black,Male,"THEFT: $100 TO UNDER $1,500-All Other",24644
+24635,09/27/2025 - 23:48,2025-00213887,,White,Male,Open Container: Alcohol Prohibited Place,24646
+24679,09/29/2025 - 12:00,2025-00193250,,Black,Male,"THEFT: $100 TO UNDER $1,500-All Other",24680
+24680,09/29/2025 - 12:00,2025-00193877,,Black,Male,Malicious Destruction Property/Value -$1000,24644
 24643,10/01/2025 - 02:21,2025-00216773,,White,Male,BURGLARY-FOURTH DEGREE-DWELLING; BURGLARY-THIRD DEGREE; Disorderly Conduct; Malicious Destruction Property/Value -$1000,24640
 24655,10/04/2025 - 01:22,2025-00219541,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, attempting to drive) veh. while so far impaired by (drug(s) or drug(s) and alcohol) cannot drive safely; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se; Driver changing lanes when unsafe; Failure to drive veh. on right half of roadway when required; Negligent driving veh. in careless and imprudent manner endangering property, life and person; Reckless driving veh. in wanton and willfull disregard for safety of persons and property",946
 24650,10/05/2025 - 01:28,2025-00220383,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se",24656
@@ -186,9 +187,9 @@ Arrest Number,Arrested Date Time,UMPD Case Number,Age,Race,Sex,Arrested Charge,D
 24701,11/26/2025 - 18:38,2025-00267914,,White,Male,BURGLARY-4TH DEGREE/TOOLS; Obstructing and Hindering; Resist/Interfere with Arrest,24705
 24702,11/27/2025 - 00:38,2025-00267993,,Black,Male,Disorderly Conduct,24706
 24714,11/27/2025 - 21:08,2025-00268679,,Black,Male,"(Driving, Attempting to drive) veh. while under the influence of alcohol per se",24703
-24703,11/27/2025 - 22:44,2025-00268697,,Black,Male,Suspicion - Arrested and Released without Charges,24708
-24709,11/28/2025 - 03:47,2025-00268885,,Black,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se",24713
-24713,11/28/2025 - 15:29,2025-00253115,,White,Male,CDS: POSS PARAPHERNALIA,24712
+24703,11/27/2025 - 22:44,2025-00268697,,Black,Male,"Failure to drive veh. on right half of roadway when required; Negligent driving veh. in careless and imprudent manner endangering property, life and person; Reckless driving veh. in wanton and willfull disregard for safety of persons and property",24708
+24709,11/28/2025 - 03:47,2025-00268885,,Black,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se",24712
+24713,11/28/2025 - 15:29,2025-00253115,,White,Male,"THEFT: $100 TO UNDER $1,500-Bicycle",24713
 24710,11/29/2025 - 00:53,2025-00269934,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se",24711
 24715,11/30/2025 - 00:31,2025-00270722,,Black,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se; Reckless driving veh. in wanton and willfull disregard for safety of persons and property",24716
 24717,12/01/2025 - 23:52,2025-00272625,,White,Male,CDS: POSS PARAPHERNALIA; School Trespassing On Ground,24707
@@ -199,9 +200,9 @@ Arrest Number,Arrested Date Time,UMPD Case Number,Age,Race,Sex,Arrested Charge,D
 24774,12/11/2025 - 12:00,2024-00106997,,Black,Male,"THEFT: $100 TO UNDER $1,500-All Other",24780
 24728,12/12/2025 - 00:56,2025-00281125,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se",24734
 24727,12/12/2025 - 02:49,2025-00281192,,Black,Male,School Trespassing On Ground,24782
-24732,12/13/2025 - 02:01,2025-00282450,,Black,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; Reckless driving veh. in wanton and willfull disregard for safety of persons and property",24768
-24767,12/13/2025 - 12:00,2025-00253938,,White,Male,"THEFT: $100 TO UNDER $1,500-All Other",24767
-24768,12/13/2025 - 12:00,2025-00254646,,White,Male,"THEFT: $100 TO UNDER $1,500-All Other",24729
+24732,12/13/2025 - 02:01,2025-00282450,,Black,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; Reckless driving veh. in wanton and willfull disregard for safety of persons and property",24767
+24768,12/13/2025 - 12:00,2025-00254646,,White,Male,"THEFT: $100 TO UNDER $1,500-All Other",24768
+24767,12/13/2025 - 12:00,2025-00253938,,White,Male,"THEFT: $100 TO UNDER $1,500-All Other",24729
 24730,12/14/2025 - 03:36,2025-00283504,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; Reckless driving veh. in wanton and willfull disregard for safety of persons and property",24731
 24733,12/20/2025 - 01:00,2025-00290080,,White,Female,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se; Reckless driving veh. in wanton and willfull disregard for safety of persons and property",24735
 24777,12/21/2025 - 12:00,2025-00188738,,White,Male,"ASSAULT-FIRST DEGREE; ASSAULT-SEC DEGREE-Simple, Not Aggravated; Rape Second Degree; Reckless Endangerment; Sex Offense Third Degree; Sex Offense- 4TH Degree-Sex Contact",24781
@@ -328,6 +329,12 @@ Arrest Number,Arrested Date Time,UMPD Case Number,Age,Race,Sex,Arrested Charge,D
 24994,06/20/2026 - 03:45,2026-00164223,,White,Female,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; Driver failure to obey properly placed traffic control device instructions; Negligent driving veh. in careless and imprudent manner endangering property, life and person; Reckless driving veh. in wanton and willfull disregard for safety of persons and property",24995
 24996,06/24/2026 - 03:35,2026-00168154,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol",24997
 24998,06/26/2026 - 00:51,2026-00169782,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se; Reckless driving veh. in wanton and willfull disregard for safety of persons and property",24999
+25000,06/27/2026 - 02:32,2026-00171031,,Black,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se; Driver changing lanes when unsafe; Driver failure to obey properly placed traffic control device instructions; Negligent driving veh. in careless and imprudent manner endangering property, life and person; Reckless driving veh. in wanton and willfull disregard for safety of persons and property",25001
+24351,01/08/2025 - 12:00,2024-00164256,,White,Male,"THEFT SCHEME: $1,500 TO UNDER $25,000-All Other",24346
+24349,01/08/2025 - 12:00,2024-00163912,,White,Male,"THEFT SCHEME: $1,500 TO UNDER $25,000-All Other",24371
+24347,01/08/2025 - 12:00,2024-00074058,,White,Male,"THEFT SCHEME: $1,500 TO UNDER $25,000-All Other",24350
+24377,01/08/2025 - 12:00,2023-00086320,,White,Male,"THEFT: $100 TO UNDER $1,500-All Other",24363
+24398,02/25/2025 - 14:55,2025-00044755,,Black,Male,Disorderly Conduct; Obscene Matter/Possession with Intent to Distribute; Obscene Matter/Publish/Distribute,24399
 24506,05/20/2025 - 12:00,2024-00195208,,Black,Male,Malicious Destruction Property/Value -$1000,24505
 24563,07/15/2025 - 12:00,2025-00051537,,Black,Male,"THEFT: $1,500 TO UNDER $25,000-From Motor Vehicle",24553
 24726,11/25/2025 - 22:32,2025-00267141,,White,Male,"THEFT: $100 TO UNDER $1,500-All Other",24725
@@ -342,16 +349,10 @@ Arrest Number,Arrested Date Time,UMPD Case Number,Age,Race,Sex,Arrested Charge,D
 24978,04/09/2026 - 12:00,2025-00200701,,Black,Male,Malicious Destruction Property/Value -$1000,24979
 24981,04/09/2026 - 12:00,2025-00210161,,Black,Male,"THEFT: $100 TO UNDER $1,500-All Other",24979
 24368,01/07/2025 - 12:00,2024-00137564,,Black,Male,"THEFT: $100,000 PLUS-All Other",24369
-24350,01/08/2025 - 12:00,2024-00164161,,White,Male,"THEFT SCHEME: $1,500 TO UNDER $25,000-All Other",24377
-24348,01/08/2025 - 12:00,2024-00129195,,White,Male,"THEFT SCHEME: $1,500 TO UNDER $25,000-All Other",24351
-24346,01/08/2025 - 12:00,2024-00061743,,White,Male,"THEFT SCHEME: $1,500 TO UNDER $25,000-All Other",24349
-24371,01/08/2025 - 12:00,2023-00079735,,White,Male,"THEFT: $100 TO UNDER $1,500-All Other",24363
 24383,02/03/2025 - 17:12,2025-00024534,,Asian,Male,"THEFT: $100 TO UNDER $1,500-All Other",24389
 24646,09/29/2025 - 12:00,2025-00197636,,Black,Male,"School Trespassing On Ground; THEFT: $100 TO UNDER $1,500-All Other",24679
 24712,11/28/2025 - 15:29,2025-00240832,,White,Male,"THEFT: $1,500 TO UNDER $25,000-All Other",24713
 24780,12/11/2025 - 12:00,2024-00106993,,Black,Male,"THEFT: $100 TO UNDER $1,500-All Other",24778
-24399,02/25/2025 - 14:55,2025-00046715,,Black,Male,School Trespassing On Ground; School: Disturb Operation; Sex Offense- 4TH Degree-Sex Contact,24398
-945,09/16/2025 - 12:00,2025-00176960,,Black,Male,Malicious Destruction Property/Value -$1000,941
 24986,04/26/2026 - 12:00,2026-00034981,,Black,Male,"THEFT: $100 TO UNDER $1,500-Bicycle",24905
 24879,04/03/2026 - 03:25,2026-00088752,,White,Male,"(Driving, Attempting to drive) veh. while under the influence of alcohol per se",24865
 24868,04/05/2026 - 01:52,2026-00090807,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, attempting to drive) veh. while so far impaired by (drug(s) or drug(s) and alcohol) cannot drive safely; (Driving, Attempting to drive) veh. while under the influence of (alcohol, alcohol per se) while transporting a minor; (Driving, Attempting to drive) veh. while under the influence of alcohol",24978
