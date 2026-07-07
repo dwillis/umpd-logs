@@ -76,7 +76,7 @@ Arrest Number,Arrested Date Time,UMPD Case Number,Age,Race,Sex,Arrested Charge,D
 24542,05/20/2025 - 12:00,2025-00001764,,White,Male,"THEFT: $100 TO UNDER $1,500-All Other",24548
 24503,05/20/2025 - 12:00,2024-00181868,,Black,Male,"THEFT: $100 TO UNDER $1,500-All Other",24506
 24504,05/20/2025 - 12:00,2024-00190029,,Black,Male,"THEFT: $100 TO UNDER $1,500-All Other",24507
-24769,05/20/2025 - 12:00,2025-00020104,,Black,Male,"THEFT SCHEME: $100 TO UNDER $1,500-Bicycle",24505
+24506,05/20/2025 - 12:00,2024-00195208,,Black,Male,Malicious Destruction Property/Value -$1000,24505
 24489,05/21/2025 - 00:54,2025-00121875,,Black,Male,"(Driving, Attempting to drive) veh. while under the influence of alcohol per se",24476
 24475,05/21/2025 - 22:10,2025-00103457,,Black,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol while transporting a minor",24490
 24491,05/23/2025 - 22:27,2025-00124063,,Black,Male,"(Driving, Attempting to drive) veh. while under the influence of alcohol",24500
@@ -333,6 +333,8 @@ Arrest Number,Arrested Date Time,UMPD Case Number,Age,Race,Sex,Arrested Charge,D
 24997,06/25/2026 - 00:52,2026-00168879,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se",24998
 24999,06/26/2026 - 02:33,2026-00169884,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol",25000
 25001,06/28/2026 - 03:41,2026-00171867,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se; Negligent driving veh. in careless and imprudent manner endangering property, life and person; Reckless driving veh. in wanton and willfull disregard for safety of persons and property",950
+950,06/30/2026 - 15:00,2026-00154920,,Black,Male,Rogue and Vagabond,25003
+24769,05/20/2025 - 12:00,2025-00020104,,Black,Male,"THEFT SCHEME: $100 TO UNDER $1,500-Bicycle",24505
 24563,07/15/2025 - 12:00,2025-00051537,,Black,Male,"THEFT: $1,500 TO UNDER $25,000-From Motor Vehicle",24553
 24726,11/25/2025 - 22:32,2025-00267141,,White,Male,"THEFT: $100 TO UNDER $1,500-All Other",24725
 24778,12/11/2025 - 12:00,2024-00082808,,Black,Male,"THEFT: $100 TO UNDER $1,500-All Other",24761
@@ -350,7 +352,6 @@ Arrest Number,Arrested Date Time,UMPD Case Number,Age,Race,Sex,Arrested Charge,D
 24844,01/23/2026 - 12:00,2025-00198530,,Black,Male,"THEFT: $100 TO UNDER $1,500-All Other",24801
 24797,02/10/2026 - 13:45,2025-00262207,,White,Male,"THEFT: $100 TO UNDER $1,500-Bicycle",24794
 24986,04/26/2026 - 12:00,2026-00034981,,Black,Male,"THEFT: $100 TO UNDER $1,500-Bicycle",24905
-24506,05/20/2025 - 12:00,2024-00195208,,Black,Male,Malicious Destruction Property/Value -$1000,24505
 24784,01/15/2026 - 12:00,2025-00280669,,White,Male,Electronic Mail Harassment,24799
 24992,06/19/2026 - 03:06,2026-00163189,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se; Driver failure to obey properly placed traffic control device instructions; Negligent driving veh. in careless and imprudent manner endangering property, life and person; Reckless driving veh. in wanton and willfull disregard for safety of persons and property",24993
 24994,06/20/2026 - 03:45,2026-00164223,,White,Female,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; Driver failure to obey properly placed traffic control device instructions; Negligent driving veh. in careless and imprudent manner endangering property, life and person; Reckless driving veh. in wanton and willfull disregard for safety of persons and property",24995
