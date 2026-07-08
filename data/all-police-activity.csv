@@ -2492,7 +2492,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00104053,2026-04-18 20:04:00,2026-04-18 20:04:00,Vandalism,Investigation Pending,3800 block of Stadium Dr
 2026-00104215,2026-04-18 23:16:00,2026-04-18 23:16:00,Alcohol Violation,Arrest,"Graham Cracker, Lot 15"
 2026-00104232,2026-04-18 23:48:00,2026-04-18 23:48:00,DWI/DUI,Arrest,University Blvd
-2026-00104233,2026-04-18 23:50:00,2026-04-18 23:49:00,Alcohol Violation,Arrest,7400 block of Baltimore Ave
+2026-00104233,2026-04-18 23:49:00,2026-04-18 23:49:00,Alcohol Violation,CBE,7400 block of Baltimore Ave
 2026-00104234,2026-04-18 22:51:00,2026-04-18 23:51:00,Injured/Sick Person,CBE,7400 block of Baltimore Ave
 2026-00104257,2026-04-19 00:16:00,2026-04-19 00:16:00,Alcohol Violation,Arrest,Knox Rd
 2026-00104260,2026-04-19 00:17:00,2026-04-19 00:22:00,Alcohol Violation,Arrest,8000 block of Regents Dr
@@ -2618,7 +2618,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00119570,2026-04-01 00:00:00,2026-05-04 09:53:00,Damage to State Property,CBE,4100 block of Campus Dr
 2026-00119584,2026-05-04 07:30:00,2026-05-04 10:09:00,Accident - Departmental,CBE,E Rt-32 / Broken Land Pkwy
 2026-00119702,2026-05-04 12:25:00,2026-05-04 12:25:00,Injured/Sick Person,CBE,7600 block of Mowatt Ln
-2026-00119866,2026-04-28 08:00:00,2026-05-04 15:44:00,Harassment/Stalking,Active/Pending,300 block of Ehrensberger Dr
+2026-00119866,2026-04-28 08:00:00,2026-05-04 15:44:00,Harassment/Stalking,Summons Issued,300 block of Ehrensberger Dr
 2026-00119870,2026-05-04 15:54:00,2026-05-04 15:54:00,Assist Other Agency,CBE,8100 block of Baltimore Ave
 2026-00119869,2026-05-01 17:00:00,2026-05-04 15:56:00,Damage to State Property,Active/Pending,4100 block of Stadium Dr
 2026-00119917,2026-05-04 17:13:00,2026-05-04 17:13:00,Missing Person/Runaway,CBE,8100 block of Baltimore Ave
@@ -2820,6 +2820,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00170186,2026-06-24 13:00:00,2026-06-26 10:37:00,Damage to State Property,CBE,5200 block of Greenbelt Rd
 2026-00171031,2026-06-27 02:10:00,2026-06-27 02:10:00,DWI/DUI,Arrest,University Blvd
 2026-00171867,2026-06-28 03:09:00,2026-06-28 03:09:00,DWI/DUI,Arrest,Lot 12a
+2026-00172385,2026-06-28 21:49:00,2026-06-28 21:49:00,DWI/DUI,Arrest,Lot 1b
 2026-00173286,2026-06-29 19:52:00,2026-06-29 20:10:00,Assist Other Agency,CBE,College Ave
 2026-00173748,2026-06-30 07:50:00,2026-06-30 08:05:00,Sex Offense,Active/Pending,4100 block of Fieldhouse Dr
 2026-00174035,2026-06-30 15:59:00,2026-06-30 15:59:00,Check on the  Welfare,CBE,6718 Glenn Dale Rd
@@ -2827,9 +2828,11 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00174683,2026-07-01 09:49:00,2026-07-01 09:49:00,Suspicious Activity,CBE,8500 block of Paint Branch Dr
 2026-00174901,2026-06-25 20:34:00,2026-07-01 15:51:00,Theft,Active/Pending,"Frat 13, Zeta Psi Fraternity at 13 Fraternity Row"
 2026-00177663,2026-07-04 01:48:00,2026-07-04 01:48:00,DWI/DUI,Arrest,Metzerott Rd
+2026-00177768,2026-07-04 03:48:00,2026-07-04 03:48:00,Damaged Property,CBE,8100 block of Boteler Ln
 2026-00177769,2026-07-04 03:53:00,2026-07-04 03:53:00,DWI/DUI,Arrest,7500 block of Mowatt Ln
 2026-00177866,2026-07-03 17:30:00,2026-07-04 08:31:00,Theft,Active/Pending,3400 block of Tulane Dr
 2026-00177990,2026-07-04 11:50:00,2026-07-04 11:50:00,Assist Other Agency,CBE,7390 River Rd
+2026-00180135,2024-08-19 12:00:00,2026-07-06 18:23:00,Other Incident,Active/Pending,7500 block of Baltimore Ave
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
