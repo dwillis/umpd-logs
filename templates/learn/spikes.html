@@ -1,0 +1,83 @@
+{% extends "learn/base.html" %}
+{% block title %}Spike or noise?{% endblock %}
+{% block content %}
+	<h2 class="page-title">Spike or noise?</h2>
+	<p class="page-subtitle">
+		Weekly incident counts bounce around even when nothing is happening. Before you write
+		"surge," you need to know how much bounce is <em>normal</em>. The tool for that is the
+		<strong>standard deviation</strong>: the typical distance between a week and the average week.
+		A week within about two standard deviations of the mean is ordinary weather. Beyond that,
+		it might be climate — or a story.
+	</p>
+
+	<section class="chart-section" id="lab-spikes">
+		<h3>Weekly incidents vs. the "normal" band</h3>
+		<div class="lab-controls">
+			<label class="ctl">Show
+				<select id="spike-range">
+					<option value="24m" selected>last 2 years</option>
+					<option value="all">all time (2015–present)</option>
+				</select>
+			</label>
+			<label class="ctl ctl-check">
+				<input type="checkbox" id="spike-academic">
+				compute the band from semester weeks only (exclude Dec, Jan &amp; May breaks)
+			</label>
+		</div>
+		<div class="chart-wrap chart-wrap-tall">
+			<canvas id="spike-chart"></canvas>
+		</div>
+		<p class="chart-desc" id="spike-count"></p>
+		<div id="spike-card" class="spike-card" style="display:none;"></div>
+		<p class="chart-desc">
+			The shaded band is the mean ± 2 standard deviations, computed from complete Monday–Sunday
+			weeks. Red points poke above it. <strong>Click a red point</strong> to interrogate it like
+			a reporter would.
+		</p>
+	</section>
+
+	<section class="chart-section">
+		<h3>Why the band moves when you exclude breaks</h3>
+		<p class="chart-desc">
+			Check the "semester weeks only" box. Winter break weeks are near-empty, so including them
+			drags the mean down and stretches the standard deviation — making ordinary semester weeks
+			look like spikes. Computed from semester weeks alone, the band is tighter and honest.
+			The lesson generalizes: <strong>an average is only meaningful if you can say what population
+			it describes.</strong> "The average week" at a university is two different things in
+			October and in January.
+		</p>
+		<p class="chart-desc">
+			<strong>For your story:</strong> a flagged week is a lead, not a conclusion. Before writing,
+			check: Was it the first week of a semester? A home football weekend? One location generating
+			many reports (see the clusters on <a href="../../trends/">Trends</a>)? A change in how UMPD
+			logs incidents? "Statistically unusual" means <em>look here</em>, not <em>print this</em>.
+		</p>
+	</section>
+
+	<section class="chart-section">
+		<h3>Reproduce it in R</h3>
+		<div class="r-snippet">
+			<button class="copy-r-btn" type="button">Copy R code</button>
+			<pre><code>library(tidyverse)
+library(lubridate)
+
+activity &lt;- read_csv("https://raw.githubusercontent.com/dwillis/umpd-logs/master/data/all-police-activity.csv")
+
+weekly &lt;- activity |&gt;
+  mutate(week = floor_date(as_date(`Date Occurred`), "week", week_start = 1)) |&gt;
+  filter(week &gt;= ymd("2015-01-05")) |&gt;
+  count(week, name = "incidents") |&gt;
+  complete(week = seq(min(week), max(week), by = "week"),
+           fill = list(incidents = 0)) |&gt;
+  filter(week &lt; floor_date(today(), "week", week_start = 1))  # drop the partial week
+
+band &lt;- weekly |&gt;
+  summarize(m = mean(incidents), s = sd(incidents))  # sd() uses n-1: the sample SD
+
+weekly |&gt;
+  mutate(z = (incidents - band$m) / band$s) |&gt;
+  filter(z &gt; 2) |&gt;
+  arrange(desc(z))</code></pre>
+		</div>
+	</section>
+{% endblock %}

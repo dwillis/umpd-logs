@@ -1,7 +1,13 @@
 import csv
+import glob
+import os
+import re
 from flask import Flask
 from flask import abort
 from flask import render_template
+
+import learn_stats
+
 app = Flask(__name__)
     
 # module-level date parser (used by the views)
@@ -265,6 +271,8 @@ def compute_analytics(valid_activities, arrest_list):
     }
 
     return {
+        'per_1000': learn_stats.per_1000_rates(valid_activities),
+        'days_to_report': learn_stats.days_to_report(valid_activities),
         'yoy_leads': yoy_leads,
         'pending_count': len(pending_old),
         'oldest_pending': pending_old[0] if pending_old else None,
@@ -357,6 +365,84 @@ def trends():
     valid_activities = [r for r in activity_list if is_valid_row(r)]
     analytics = compute_analytics(valid_activities, arrest_list)
     return render_template('trends.html', analytics=analytics)
+
+
+def load_valid_activities():
+    arrest_list = get_arrest_csv()
+    activity_list = get_activity_csv(arrest_list)
+    return [r for r in activity_list if is_valid_row(r)]
+
+
+def _learn_page(template):
+    learn = learn_stats.compute_learn_data(load_valid_activities())
+    return render_template(template, learn=learn)
+
+
+@app.route('/learn/')
+def learn_index():
+    return _learn_page('learn/index.html')
+
+
+@app.route('/learn/averages/')
+def learn_averages():
+    return _learn_page('learn/averages.html')
+
+
+@app.route('/learn/moving-averages/')
+def learn_moving_averages():
+    return _learn_page('learn/moving_averages.html')
+
+
+@app.route('/learn/cherry-picking/')
+def learn_cherry_picking():
+    return _learn_page('learn/cherry_picking.html')
+
+
+@app.route('/learn/spikes/')
+def learn_spikes():
+    return _learn_page('learn/spikes.html')
+
+
+EXERCISES_DIR = './exercises'
+EXERCISE_SLUG_RE = re.compile(r'^\d{4}-\d{2}-\d{2}$')
+
+
+def list_exercises():
+    """Exercise files as [{'slug', 'title'}], newest first."""
+    items = []
+    for path in sorted(glob.glob(os.path.join(EXERCISES_DIR, '*.md')), reverse=True):
+        slug = os.path.splitext(os.path.basename(path))[0]
+        if not EXERCISE_SLUG_RE.match(slug):
+            continue
+        title = slug
+        with open(path) as f:
+            for line in f:
+                if line.startswith('# '):
+                    title = line[2:].strip()
+                    break
+        items.append({'slug': slug, 'title': title})
+    return items
+
+
+@app.route('/exercises/')
+def exercises_index():
+    return render_template('exercises/index.html', exercises=list_exercises())
+
+
+@app.route('/exercises/<slug>/')
+def exercise_detail(slug):
+    if not EXERCISE_SLUG_RE.match(slug):
+        abort(404)
+    path = os.path.join(EXERCISES_DIR, slug + '.md')
+    if not os.path.exists(path):
+        abort(404)
+    import markdown as md
+    with open(path) as f:
+        text = f.read()
+    body = md.markdown(text, extensions=['fenced_code', 'tables'])
+    github_url = f'https://github.com/dwillis/umpd-logs/blob/master/exercises/{slug}.md'
+    return render_template('exercises/detail.html', body=body, slug=slug,
+                           github_url=github_url)
 
 
 if __name__ == '__main__':

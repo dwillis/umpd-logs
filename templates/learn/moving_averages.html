@@ -1,0 +1,78 @@
+{% extends "learn/base.html" %}
+{% block title %}Moving averages{% endblock %}
+{% block content %}
+	<h2 class="page-title">Moving averages: seeing the trend through the noise</h2>
+	<p class="page-subtitle">
+		Raw daily counts jump around: a loud Saturday, a dead Tuesday. A <strong>moving average</strong>
+		replaces each day with the mean of the last <em>k</em> days, smoothing the jitter so real change
+		becomes visible. It's the same technique every COVID dashboard used ("7-day average of new
+		cases") — because reporting artifacts and day-of-week rhythms would otherwise bury the story.
+	</p>
+
+	<section class="chart-section" id="lab-moving">
+		<h3>Daily incidents, smoothed</h3>
+		<div class="lab-controls">
+			<label class="ctl">Show
+				<select id="ma-range">
+					<option value="24m" selected>last 2 years</option>
+					<option value="all">all time (2015–present)</option>
+				</select>
+			</label>
+			<label class="ctl ctl-slider">Window: <strong id="ma-window-label">7</strong> days
+				<input type="range" id="ma-window" min="3" max="60" step="1" value="7">
+			</label>
+			<button type="button" class="preset-btn" data-window="7">7-day</button>
+			<button type="button" class="preset-btn" data-window="30">30-day</button>
+		</div>
+		<div class="chart-wrap chart-wrap-tall">
+			<canvas id="ma-chart"></canvas>
+		</div>
+		<p class="chart-desc">
+			Gray dots are actual daily counts; the red line is the trailing moving average.
+			Drag the slider: a small window follows every bump, a large one flattens even real shifts.
+			Choosing the window is a judgment call — which is exactly why you should always say what it is.
+		</p>
+	</section>
+
+	<section class="chart-section">
+		<h3>Find the pandemic</h3>
+		<p class="chart-desc">
+			Switch the view to <strong>all time</strong> and look at spring 2020. Campus emptied out in
+			March 2020 and incident counts collapsed — the whole year logged about 900 incidents against
+			roughly 2,000 in a normal year. On the raw daily dots that's hard to see; on a 30-day average
+			it's unmistakable. That's the point of smoothing: one quiet day means nothing, ninety of them
+			are history happening.
+		</p>
+		<p class="chart-desc">
+			<strong>For your story:</strong> never write "incidents doubled yesterday" from one day's
+			count. Compare smoothed values, and name the window: "the 30-day average rose from A to B."
+		</p>
+	</section>
+
+	<section class="chart-section">
+		<h3>Reproduce it in R</h3>
+		<div class="r-snippet">
+			<button class="copy-r-btn" type="button">Copy R code</button>
+			<pre><code>library(tidyverse)
+library(lubridate)
+library(zoo)        # install.packages("zoo") -- for rollmeanr()
+
+activity &lt;- read_csv("https://raw.githubusercontent.com/dwillis/umpd-logs/master/data/all-police-activity.csv")
+
+daily &lt;- activity |&gt;
+  mutate(day = as_date(`Date Occurred`)) |&gt;
+  filter(day &gt;= ymd("2015-01-01")) |&gt;
+  count(day, name = "incidents") |&gt;
+  complete(day = seq(min(day), max(day), by = "day"),
+           fill = list(incidents = 0))
+
+daily |&gt;
+  mutate(avg7  = rollmeanr(incidents, 7,  fill = NA),
+         avg30 = rollmeanr(incidents, 30, fill = NA)) |&gt;
+  ggplot(aes(day)) +
+  geom_point(aes(y = incidents), color = "gray80", size = 0.4) +
+  geom_line(aes(y = avg30), color = "firebrick") +
+  labs(y = "incidents per day (30-day average)")</code></pre>
+		</div>
+	</section>
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends "learn/base.html" %}
+{% block title %}The cherry-picking machine{% endblock %}
+{% block content %}
+	<h2 class="page-title">The cherry-picking machine</h2>
+	<p class="page-subtitle">
+		"Crime is up 40%." Up 40% <em>since when</em>? A percent change needs a baseline, and whoever
+		picks the baseline picks the story. This machine lets you do it on purpose — so you'll recognize
+		it when a press release does it to you.
+	</p>
+
+	<section class="chart-section" id="lab-cherry">
+		<h3>Build your own headline</h3>
+		<div class="lab-controls">
+			<span class="ctl-group-label">Baseline period:</span>
+			<label class="ctl"><select id="cp-base-start"></select></label>
+			<span>to</span>
+			<label class="ctl"><select id="cp-base-end"></select></label>
+			<span class="ctl-group-label">compared with:</span>
+			<label class="ctl"><select id="cp-comp-start"></select></label>
+			<span>to</span>
+			<label class="ctl"><select id="cp-comp-end"></select></label>
+		</div>
+
+		<div id="cp-headline" class="cp-headline">Pick two periods to generate a headline.</div>
+		<p class="chart-desc" id="cp-detail"></p>
+		<p class="cp-counter" id="cp-counter"></p>
+
+		<div class="chart-wrap">
+			<canvas id="cp-chart"></canvas>
+		</div>
+		<p class="chart-desc">
+			Monthly incident totals, with your baseline shaded blue and your comparison period shaded red.
+			Try: baseline 2020 (the pandemic year) versus any normal year — instant "crime wave." Baseline
+			2016 versus 2020 — instant "historic decline." Same dataset, opposite stories.
+		</p>
+	</section>
+
+	<section class="chart-section">
+		<h3>The guardrails this site uses on itself</h3>
+		<p class="chart-desc">
+			The <a href="../../">Activity Log</a> page auto-generates "story leads" like
+			"Theft up 25% this July." That code refuses to print some comparisons. Its rules, straight
+			from <code>app.py</code>:
+		</p>
+		<ul class="rule-list">
+			<li><strong>Same window, both years.</strong> It compares July 1–12 this year against July
+			1–12 <em>last year</em> — never a full month against a partial one, and the same season
+			against itself (crime has rhythms; September isn't January).</li>
+			<li><strong>No small numbers.</strong> If either period has fewer than 5 incidents, no
+			headline. Going from 1 robbery to 3 is "up 200%" — and meaningless. Small bases make
+			percent changes explode.</li>
+			<li><strong>No trivial changes.</strong> Anything under 10% is treated as ordinary
+			fluctuation, not news.</li>
+		</ul>
+		<p class="chart-desc">
+			<strong>For your story:</strong> before publishing any percent change, ask the three
+			questions those rules encode: Is the comparison window fair? Are the raw counts big enough
+			to matter? Is the change bigger than the data's normal wobble? (The
+			<a href="../spikes/">spike detector</a> makes that last question precise.)
+		</p>
+	</section>
+
+	<section class="chart-section">
+		<h3>Reproduce it in R</h3>
+		<div class="r-snippet">
+			<button class="copy-r-btn" type="button">Copy R code</button>
+			<pre><code>library(tidyverse)
+library(lubridate)
+
+activity &lt;- read_csv("https://raw.githubusercontent.com/dwillis/umpd-logs/master/data/all-police-activity.csv")
+
+monthly &lt;- activity |&gt;
+  mutate(month = floor_date(as_date(`Date Occurred`), "month")) |&gt;
+  filter(month &gt;= ymd("2015-01-01")) |&gt;
+  count(month)
+
+# Change these four dates and watch the story flip.
+baseline &lt;- monthly |&gt; filter(month &gt;= ymd("2019-01-01"), month &lt;= ymd("2019-12-01"))
+compared &lt;- monthly |&gt; filter(month &gt;= ymd("2021-01-01"), month &lt;= ymd("2021-12-01"))
+
+round((sum(compared$n) - sum(baseline$n)) / sum(baseline$n) * 100, 1)</code></pre>
+		</div>
+	</section>
+{% endblock %}

@@ -157,8 +157,114 @@
 		});
 	}
 
+	// ── Rate vs. Count (incidents per 1,000 students) ────────────
+	function buildPer1000() {
+		var ctx = document.getElementById('per1000-chart');
+		if (!ctx || !A.per_1000 || !A.per_1000.length) return;
+
+		var rows = A.per_1000;
+		new Chart(ctx, {
+			data: {
+				labels: rows.map(function (r) { return r.label; }),
+				datasets: [
+					{
+						type: 'bar',
+						label: 'Incidents (count)',
+						data: rows.map(function (r) { return r.incidents; }),
+						backgroundColor: 'rgba(117,117,117,0.5)',
+						yAxisID: 'y',
+					},
+					{
+						type: 'line',
+						label: 'Incidents per 1,000 students (rate)',
+						data: rows.map(function (r) { return r.rate_per_1000; }),
+						borderColor: '#b22222',
+						backgroundColor: 'rgba(178,34,34,0.15)',
+						borderWidth: 2,
+						tension: 0.2,
+						yAxisID: 'y2',
+					},
+				],
+			},
+			options: {
+				responsive: true,
+				maintainAspectRatio: false,
+				interaction: { mode: 'index', intersect: false },
+				plugins: { legend: { position: 'top' } },
+				scales: {
+					y:  { beginAtZero: true, position: 'left', title: { display: true, text: 'Incidents' } },
+					y2: { beginAtZero: true, position: 'right', grid: { drawOnChartArea: false },
+					      title: { display: true, text: 'Per 1,000 students' } },
+				},
+			},
+		});
+
+		var tbl = document.getElementById('per1000-table');
+		if (tbl) {
+			var html = '<table class="mini-table"><thead><tr><th>Year</th><th>Incidents</th>' +
+				'<th>Fall enrollment</th><th>Per 1,000 students</th></tr></thead><tbody>';
+			rows.forEach(function (r) {
+				html += '<tr><td>' + r.label + '</td><td>' + r.incidents + '</td><td>' +
+					r.enrollment.toLocaleString() + (r.enrollment_estimated ? '*' : '') + '</td><td>' +
+					r.rate_per_1000 + '</td></tr>';
+			});
+			html += '</tbody></table>';
+			var hasEst = rows.some(function (r) { return r.enrollment_estimated; });
+			if (hasEst) html += '<p class="chart-desc">* Enrollment not yet published for this year; the latest known figure is used.</p>';
+			tbl.innerHTML = html;
+		}
+	}
+
+	// ── Days from occurrence to report ───────────────────────────
+	function buildDaysToReport() {
+		var container = document.getElementById('days-to-report-table');
+		if (!container || !A.days_to_report || !A.days_to_report.rows) return;
+
+		var html = '<table class="mini-table"><thead><tr><th>Crime type</th><th>Cases</th>' +
+			'<th>Median days</th><th>Mean days</th><th>% reported a day or more later</th></tr></thead><tbody>';
+		A.days_to_report.rows.forEach(function (r) {
+			html += '<tr><td>' + r.crime_type + '</td><td>' + r.n + '</td><td>' + r.median_days +
+				'</td><td>' + r.mean_days + '</td><td>' + r.pct_delayed + '%</td></tr>';
+		});
+		html += '</tbody></table>';
+		if (A.days_to_report.skipped_negative) {
+			html += '<p class="chart-desc">' + A.days_to_report.skipped_negative +
+				' cases where the report date precedes the occurrence date (data-entry errors) were excluded.</p>';
+		}
+		container.innerHTML = html;
+	}
+
+	// ── copy buttons for the "Show your work" R snippets ─────────
+	function wireCopyButtons() {
+		var btns = document.querySelectorAll('.copy-r-btn');
+		Array.prototype.forEach.call(btns, function (btn) {
+			btn.addEventListener('click', function () {
+				var code = btn.parentElement.querySelector('pre code');
+				if (!code) return;
+				var done = function () {
+					btn.textContent = 'Copied!';
+					setTimeout(function () { btn.textContent = 'Copy R code'; }, 1500);
+				};
+				if (navigator.clipboard && navigator.clipboard.writeText) {
+					navigator.clipboard.writeText(code.textContent).then(done, function () {});
+				} else {
+					var range = document.createRange();
+					range.selectNodeContents(code);
+					var sel = window.getSelection();
+					sel.removeAllRanges();
+					sel.addRange(range);
+					try { document.execCommand('copy'); done(); } catch (e) {}
+					sel.removeAllRanges();
+				}
+			});
+		});
+	}
+
 	buildHeatmap();
 	buildMonthlyChart();
 	buildSemesterChart();
 	buildYoYChart();
+	buildPer1000();
+	buildDaysToReport();
+	wireCopyButtons();
 })();
