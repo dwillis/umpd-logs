@@ -282,3 +282,156 @@ tr.crime-other      { background-color: #f5f5f5 !important; }
 	.hm-data  { min-height: 18px; line-height: 18px; }
 	.chart-wrap { height: 240px; }
 }
+/* ── Learn labs & exercises ─────────────────────────────────── */
+.lab-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 14px;
+	margin: 18px 0 26px;
+}
+.lab-card {
+	display: block;
+	background: linear-gradient(180deg,#fff,#fbfbfb);
+	border: 1px solid #eee;
+	border-radius: 8px;
+	padding: 16px 18px;
+	text-decoration: none;
+	color: #444;
+	box-shadow: 0 1px 3px rgba(16,24,40,0.04);
+	transition: box-shadow 0.12s, border-color 0.12s;
+}
+.lab-card:hover { border-color: #b22222; box-shadow: 0 2px 8px rgba(16,24,40,0.10); }
+.lab-card-title { font-size: 17px; font-weight: 700; color: #b22222; margin-bottom: 6px; }
+.lab-card p { font-size: 13px; line-height: 1.5; margin: 0; }
+
+.lab-controls {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px 16px;
+	align-items: center;
+	margin: 0 0 16px;
+	font-size: 13px;
+	color: #444;
+}
+.lab-controls .ctl select { margin-left: 4px; font-size: 13px; padding: 3px 6px; }
+.lab-controls .ctl-check input { margin-right: 5px; vertical-align: middle; }
+.lab-controls .ctl-slider input[type="range"] { vertical-align: middle; margin-left: 8px; width: 160px; }
+.ctl-group-label { font-weight: 600; }
+.preset-btn {
+	background: #f0f0f0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.preset-btn:hover { background: #e2e2e2; }
+
+.stat-sub { font-weight: 400; color: #888; font-size: 11px; }
+.chart-wrap-tall { height: 380px; }
+.learn-footer-note { font-size: 12px; color: #888; margin: 26px 0 8px; }
+
+.cp-headline {
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: 26px;
+	font-weight: 700;
+	margin: 6px 0 8px;
+	color: #333;
+}
+.cp-headline.cp-up   { color: #c62828; }
+.cp-headline.cp-down { color: #2e7d32; }
+.cp-counter { font-size: 12px; color: #6a1b9a; font-weight: 600; margin: 0 0 14px; }
+
+.rule-list { font-size: 13.5px; color: #444; line-height: 1.6; padding-left: 22px; }
+.rule-list li { margin-bottom: 8px; }
+
+.spike-card {
+	background: #fff8f0;
+	border: 1px solid #e65100;
+	border-radius: 8px;
+	padding: 12px 14px;
+	font-size: 13.5px;
+	line-height: 1.5;
+	color: #444;
+	margin: 0 0 14px;
+}
+
+/* ── "Show your work" panels & R snippets ───────────────────── */
+.show-work {
+	margin-top: 14px;
+	border-top: 1px dashed #ddd;
+	padding-top: 10px;
+	font-size: 13.5px;
+	color: #444;
+	line-height: 1.55;
+}
+.show-work summary {
+	cursor: pointer;
+	font-weight: 700;
+	color: #1565c0;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+}
+.show-work p { margin: 10px 0; }
+.r-snippet { position: relative; margin: 10px 0; }
+.r-snippet pre {
+	background: #f6f6f4;
+	border: 1px solid #e4e4e0;
+	border-radius: 8px;
+	padding: 14px;
+	overflow-x: auto;
+	font-size: 12.5px;
+	line-height: 1.55;
+	margin: 0;
+}
+.r-snippet code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.copy-r-btn {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 3px 10px;
+	font-size: 11.5px;
+	cursor: pointer;
+	color: #444;
+}
+.copy-r-btn:hover { border-color: #b22222; color: #b22222; }
+
+.mini-table { border-collapse: collapse; font-size: 13px; margin: 8px 0; width: 100%; }
+.mini-table th, .mini-table td { border: 1px solid #e4e4e0; padding: 6px 10px; text-align: left; }
+.mini-table th { background: #f0f0f0; font-weight: 600; }
+.mini-table tr:nth-child(even) td { background: #fafafa; }
+
+/* ── Exercises ──────────────────────────────────────────────── */
+.exercise-list { list-style: none; padding: 0; margin: 18px 0; }
+.exercise-list li {
+	background: #fff;
+	border: 1px solid #eee;
+	border-radius: 8px;
+	padding: 12px 16px;
+	margin-bottom: 10px;
+	box-shadow: 0 1px 3px rgba(16,24,40,0.04);
+}
+.exercise-list a { color: #1565c0; font-weight: 600; text-decoration: none; font-size: 15px; }
+.exercise-list a:hover { color: #b22222; }
+
+.exercise-body { line-height: 1.6; color: #333; font-size: 15px; }
+.exercise-body h1 { font-size: 24px; margin: 20px 0 8px; }
+.exercise-body h2 { font-size: 19px; margin: 22px 0 8px; }
+.exercise-body ul, .exercise-body ol { padding-left: 24px; }
+.exercise-body li { margin-bottom: 6px; }
+.exercise-body pre {
+	background: #f6f6f4;
+	border: 1px solid #e4e4e0;
+	border-radius: 8px;
+	padding: 14px;
+	overflow-x: auto;
+	font-size: 12.5px;
+	line-height: 1.55;
+}
+.exercise-body code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; }
+.exercise-body table { border-collapse: collapse; font-size: 13.5px; }
+.exercise-body table th, .exercise-body table td { border: 1px solid #e4e4e0; padding: 6px 10px; }

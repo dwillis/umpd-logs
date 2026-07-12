@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Learn — UMD Police Activity</title>
+		<link rel="stylesheet" href="../static/style.css" />
+	</head>
+	<body>
+		<div id="top-header">
+			<div id="header">UMD Police Activity Log with Arrests</div>
+		</div>
+		<nav id="site-nav">
+			<div id="nav-inner">
+				<a href="../" class="nav-link">Activity Log</a>
+				<a href="../trends/" class="nav-link">Trends &amp; Patterns</a>
+				<a href="./" class="nav-link nav-active">Learn</a>
+				<a href="../exercises/" class="nav-link">Exercises</a>
+			</div>
+		</nav>
+		<div id="container">
+			<div class="byline">
+				A statistics classroom built on real UMPD data, updated daily. <a href="https://github.com/dwillis/umpd-logs">See the code</a>
+			</div>
+
+			<h2 class="page-title">Learn: Averages and How They Measure Change</h2>
+			<p class="page-subtitle">
+				Every number below comes from the live UMPD dataset — the same one on the
+				<a href="../">Activity Log</a>. These four interactive lessons cover the statistics
+				journalists reach for most: averages, and the honest (and dishonest) ways to use them
+				to say something changed. Each lesson includes R code you can run yourself.
+				Data through 2026-07-12.
+			</p>
+
+			<div class="lab-grid">
+				<a class="lab-card" href="averages/">
+					<div class="lab-card-title">Which average?</div>
+					<p>Mean, median and mode of incidents per day — and why they disagree on this
+					dataset. Toggle the busiest days on and off and watch which average flinches.</p>
+				</a>
+				<a class="lab-card" href="moving-averages/">
+					<div class="lab-card-title">Moving averages</div>
+					<p>Daily counts are noisy. Smooth them with a rolling average — the same tool
+					every COVID dashboard used — and find the pandemic in campus crime data.</p>
+				</a>
+				<a class="lab-card" href="cherry-picking/">
+					<div class="lab-card-title">The cherry-picking machine</div>
+					<p>Pick your own baseline and make the same dataset say crime is up <em>or</em>
+					down. Then see the guardrails this site uses so its own headlines don't lie.</p>
+				</a>
+				<a class="lab-card" href="spikes/">
+					<div class="lab-card-title">Spike or noise?</div>
+					<p>A big week is not automatically a story. Use the mean and standard deviation
+					to decide which weeks are genuinely unusual — before you write the word "surge."</p>
+				</a>
+			</div>
+
+			<div class="chart-section">
+				<h3>For instructors</h3>
+				<p class="chart-desc">
+					A new practice exercise is generated from fresh data every Monday on the
+					<a href="../exercises/">Exercises</a> page, with R starter code and pinned data so
+					student answers are checkable. The <a href="../trends/">Trends</a> page shows every
+					chart with a "Show your work" panel: the formula, the inclusion rules, and
+					tidyverse code that reproduces the number.
+				</p>
+			</div>
+		</div>
+		<footer>
+			<div id="footer-text">Copyright 2022-2026</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Exercises — UMD Police Activity</title>
+		<link rel="stylesheet" href="../static/style.css" />
+	</head>
+	<body>
+		<div id="top-header">
+			<div id="header">UMD Police Activity Log with Arrests</div>
+		</div>
+		<nav id="site-nav">
+			<div id="nav-inner">
+				<a href="../" class="nav-link">Activity Log</a>
+				<a href="../trends/" class="nav-link">Trends &amp; Patterns</a>
+				<a href="../learn/" class="nav-link">Learn</a>
+				<a href="./" class="nav-link nav-active">Exercises</a>
+			</div>
+		</nav>
+		<div id="container">
+			<div class="byline">
+				Weekly practice exercises generated from fresh UMPD data. <a href="https://github.com/dwillis/umpd-logs">See the code</a>
+			</div>
+
+			<h2 class="page-title">Weekly Data Exercises</h2>
+			<p class="page-subtitle">
+				A new exercise is generated every Monday from the previous week's UMPD data. Each one
+				includes the week's key numbers, questions about averages and change, and R starter code
+				pinned to an exact copy of the dataset — so your answers are checkable. New to the
+				concepts? Start with the <a href="../learn/">Learn</a> lessons.
+			</p>
+
+			{% if exercises %}
+			<ul class="exercise-list">
+				{% for ex in exercises %}
+				<li><a href="{{ ex.slug }}/">{{ ex.title }}</a></li>
+				{% endfor %}
+			</ul>
+			{% else %}
+			<p class="chart-desc">No exercises yet — the first one will appear after the next Monday-morning run.</p>
+			{% endif %}
+		</div>
+		<footer>
+			<div id="footer-text">Copyright 2022-2026</div>
+		</footer>
+	</body>
+</html>

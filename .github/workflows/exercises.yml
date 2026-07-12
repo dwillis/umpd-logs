@@ -1,0 +1,41 @@
+name: Generate weekly exercise
+
+on:
+  schedule:
+    - cron: '30 8 * * 1'   # Mondays, after the 08:00 scrape and 08:10 freeze
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: grab python dependencies
+        run: python -m pip install flask pandas markdown
+
+      - name: Generate this week's exercise
+        run: python exercise_generator.py --sha "$GITHUB_SHA"
+
+      - name: Commit and push if it changed
+        run: |-
+          git config user.name "exercise-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add exercises/
+          git commit -m "Weekly exercise $(date -u +%F)" || exit 0
+          git push
+
+      - name: Rebuild the site so the new exercise appears
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run freeze.yml --ref master

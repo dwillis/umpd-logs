@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Exercise {{ slug }} — UMD Police Activity</title>
+		<link rel="stylesheet" href="../../static/style.css" />
+	</head>
+	<body>
+		<div id="top-header">
+			<div id="header">UMD Police Activity Log with Arrests</div>
+		</div>
+		<nav id="site-nav">
+			<div id="nav-inner">
+				<a href="../../" class="nav-link">Activity Log</a>
+				<a href="../../trends/" class="nav-link">Trends &amp; Patterns</a>
+				<a href="../../learn/" class="nav-link">Learn</a>
+				<a href="../" class="nav-link nav-active">Exercises</a>
+			</div>
+		</nav>
+		<div id="container">
+			<div class="byline">
+				<a href="../">&larr; All exercises</a> · <a href="{{ github_url }}">Download the Markdown source on GitHub</a>
+			</div>
+			<div class="exercise-body">
+				{{ body|safe }}
+			</div>
+		</div>
+		<footer>
+			<div id="footer-text">Copyright 2022-2026</div>
+		</footer>
+	</body>
+</html>
