@@ -51,8 +51,9 @@
 	function fmt1(x) { return (Math.round(x * 10) / 10).toFixed(1); }
 
 	function addDays(iso, n) {
-		var d = new Date(iso + 'T00:00:00');
-		d.setDate(d.getDate() + n);
+		// all-UTC so date labels don't shift by a day in other timezones
+		var d = new Date(iso + 'T00:00:00Z');
+		d.setUTCDate(d.getUTCDate() + n);
 		return d.toISOString().slice(0, 10);
 	}
 
