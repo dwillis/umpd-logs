@@ -682,8 +682,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00120365,2025-05-18 10:00:00,2025-05-19 09:20:00,Theft,Investigation Pending,4600 block of Rossborough Ln
 2025-00103454,2025-05-17 12:00:00,2025-05-19 14:21:00,Theft,Active/Pending,4300 block of Chapel Ln
 2025-00103455,2025-05-19 08:00:00,2025-05-19 14:33:00,Theft,Active/Pending,Lot 1b
-2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
 2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
+2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
 2025-00120934,2025-05-10 00:00:00,2025-05-19 23:03:00,Damage to State Property,CBE,3900 block of Campus Dr
 2025-00121280,2025-05-20 03:13:00,2025-05-20 06:56:00,Theft,Investigation Pending,Lot 4a
 2025-00121421,2023-06-08 12:00:00,2025-05-20 09:51:00,Fraud,Active/Pending,5600 block of Rivertech Ct
@@ -2757,7 +2757,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00149316,2026-06-04 01:19:00,2026-06-04 01:19:00,DWI/DUI,Arrest,Adelphi Rd
 2026-00149345,2026-06-04 02:26:00,2026-06-04 02:26:00,Warrant/Summons Service,Active/Pending,University Blvd
 2026-00149594,2026-06-04 13:17:00,2026-06-04 13:17:00,Injured/Sick Person,CBE,3800 block of Stadium Dr
-2026-00150066,2026-06-05 02:33:00,2026-06-05 02:33:00,DWI/DUI,Active/Pending,Metzerott Rd
+2026-00150066,2026-06-05 02:33:00,2026-06-05 02:33:00,DWI/DUI,Arrest,Metzerott Rd
 2026-00150238,2026-06-05 07:53:00,2026-06-05 07:53:00,Check on the  Welfare,CBE,3400 block of Tulane Dr
 2026-00150292,2026-06-05 09:00:00,2026-06-05 10:00:00,Weapon Violation,CBE,7700 block of Diamondback Dr
 2026-00150302,2026-06-05 10:40:00,2026-06-05 10:40:00,Emergency Petition,CBE,4600 block of Rossborough Ln
@@ -2843,6 +2843,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00181596,2026-07-08 12:26:00,2026-07-08 12:26:00,Injured/Sick Person,CBE,7900 block of Regents Dr
 2026-00185026,2020-07-10 11:45:00,2026-07-12 11:19:00,Accident - Departmental,Arrest,1119 Mermaid Dr
 2026-00185036,2026-07-12 11:35:00,2026-07-12 11:35:00,Assist Other Agency,CBE,4300 block of Hartwick Rd
+2026-00185833,2026-07-13 09:16:00,2026-07-13 09:16:00,Other Incident,CBE,3900 block of Campus Dr
 2026-00185967,2026-07-13 10:30:00,2026-07-13 10:38:00,Injured/Sick Person,CBE,3900 block of Campus Dr
 2026-00186117,2026-07-13 11:45:00,2026-07-13 11:53:00,Injured/Sick Person,CBE,4100 block of Valley Dr
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
