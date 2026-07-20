@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Exercise 2026-07-13 — UMD Police Activity</title>
+		<link rel="stylesheet" href="../../static/style.css" />
+	</head>
+	<body>
+		<div id="top-header">
+			<div id="header">UMD Police Activity Log with Arrests</div>
+		</div>
+		<nav id="site-nav">
+			<div id="nav-inner">
+				<a href="../../" class="nav-link">Activity Log</a>
+				<a href="../../trends/" class="nav-link">Trends &amp; Patterns</a>
+				<a href="../../learn/" class="nav-link">Learn</a>
+				<a href="../" class="nav-link nav-active">Exercises</a>
+			</div>
+		</nav>
+		<div id="container">
+			<div class="byline">
+				<a href="../">&larr; All exercises</a> · <a href="https://github.com/dwillis/umpd-logs/blob/master/exercises/2026-07-13.md">Download the Markdown source on GitHub</a>
+			</div>
+			<div class="exercise-body">
+				<h1>UMPD Data Exercise — Week of July 13, 2026 – July 19, 2026</h1>
+<p><em>Generated 2026-07-20. The data URL below is pinned to commit <code>424d9a00b</code>, a
+snapshot of the dataset as of this exercise — so your numbers should match these exactly.</em></p>
+<h2>This week's numbers</h2>
+<ul>
+<li>Incidents last week (Mon–Sun): <strong>4</strong></li>
+<li>Mean per day: <strong>0.6</strong> &nbsp;&nbsp; Median per day: <strong>0</strong></li>
+<li>Daily mean over Summer 2026 to date: <strong>2.0</strong></li>
+<li>Same week last year (July 14, 2025 on): <strong>24</strong> incidents — down <strong>83.3%</strong> <em>(small numbers — see the questions)</em></li>
+</ul>
+<h2>Questions</h2>
+<ol>
+<li>Write one sentence for a campus-news brief using the mean, and one using the median. Do they leave the reader with different impressions? Which is fairer?</li>
+<li>Careful: at least one of the two weeks being compared has fewer than 5 incidents (4 vs. 24). Explain in two sentences why the -83.3% figure above should NOT appear in a story, and what you would report instead.</li>
+<li>Rewrite the percent change above as a plain-language sentence a reader can check ("about X incidents a day, up from Y a year earlier"). Why might raw numbers serve readers better than percentages when counts are small?</li>
+<li>The Trends page compares semesters (Spring = Feb–Apr, Fall = Sep–Nov) instead of calendar quarters. What error does that choice avoid? What would a January-to-March "quarter" mix together on a university campus?</li>
+<li>In R, compute incidents per day for last week and for the same week last year, then the percent change between their means. Confirm you get the number printed above (both use <code>round(x, 1)</code>).</li>
+</ol>
+<h2>Starter code (R)</h2>
+<pre><code class="language-r">library(tidyverse)
+library(lubridate)
+
+activity &lt;- read_csv(&quot;https://raw.githubusercontent.com/dwillis/umpd-logs/424d9a00b2ff1adf772baf8c612a7ee0aeed176c/data/all-police-activity.csv&quot;)
+
+week_start &lt;- ymd(&quot;2026-07-13&quot;)
+
+daily &lt;- activity |&gt;
+  mutate(day = as_date(`Date Occurred`)) |&gt;
+  filter(day &gt;= week_start, day &lt; week_start + days(7)) |&gt;
+  count(day, name = &quot;incidents&quot;) |&gt;
+  complete(day = seq(week_start, week_start + days(6), by = &quot;day&quot;),
+           fill = list(incidents = 0))
+
+daily |&gt;
+  summarize(total = sum(incidents),
+            mean_per_day = round(mean(incidents), 1),
+            median_per_day = median(incidents))
+</code></pre>
+<h2>Check your work</h2>
+<p>Your <code>summarize()</code> output should match "This week's numbers" above: total <strong>4</strong>,
+mean <strong>0.6</strong>, median <strong>0</strong>. All values here use <code>round(x, 1)</code>, which
+rounds halves to the nearest even digit — the same rule as R's <code>round()</code>.</p>
+<p><em>Stuck on the concepts? The site's <a href="../../learn/">Learn pages</a> walk through every
+technique used here, with this same dataset.</em></p>
+			</div>
+		</div>
+		<footer>
+			<div id="footer-text">Copyright 2022-2026</div>
+		</footer>
+	</body>
+</html>
