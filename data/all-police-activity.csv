@@ -335,8 +335,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00063012,2025-03-14 21:00:00,2025-03-16 12:52:00,Assist Other Agency,CBE,4300 block of Knox Rd
 2025-00063172,2025-03-16 16:04:00,2025-03-16 16:04:00,Recovered Stolen Property,Arrest,7500 block of Mowatt Ln
 2025-00063422,2025-03-16 21:24:00,2025-03-16 23:10:00,Dept Property Damage/Loss,CBE,Stanley R. Zupnick Hall at 8184 Paint Branch Dr
-2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
 2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
+2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
 2025-00063978,2025-03-17 12:43:00,2025-03-17 12:43:00,Damage to State Property,CBE,7500 block of Baltimore Ave
 2025-00064495,2025-03-17 22:54:00,2025-03-17 22:54:00,DWI/DUI,Arrest,University Blvd
 2025-00065844,2025-03-19 11:38:00,2025-03-19 11:41:00,Injured/Sick Person,CBE,7300 block of Baltimore Ave
@@ -2847,6 +2847,10 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00185833,2026-07-13 09:16:00,2026-07-13 09:16:00,Other Incident,CBE,3900 block of Campus Dr
 2026-00185967,2026-07-13 10:30:00,2026-07-13 10:38:00,Injured/Sick Person,CBE,3900 block of Campus Dr
 2026-00186117,2026-07-13 11:45:00,2026-07-13 11:53:00,Injured/Sick Person,CBE,4100 block of Valley Dr
+2026-00186291,2026-07-13 16:04:00,2026-07-13 16:04:00,Injured/Sick Person,CBE,8200 block of Alumni Dr
+2026-00189658,2026-07-16 18:46:00,2026-07-16 18:46:00,DWI/DUI,Arrest,University Blvd
+2026-00190534,2026-07-16 23:30:00,2026-07-17 11:31:00,Injured/Sick Person,CBE,4200 block of Lehigh Rd
+2026-00192384,2026-07-19 10:05:00,2026-07-19 10:05:00,Injured/Sick Person,CBE,8500 block of Paint Branch Dr
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
