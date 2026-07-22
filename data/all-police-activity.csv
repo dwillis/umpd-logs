@@ -2837,7 +2837,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00177990,2026-07-04 11:50:00,2026-07-04 11:50:00,Assist Other Agency,CBE,7390 River Rd
 2026-00178358,2026-07-04 22:49:00,2026-07-04 22:49:00,DWI/DUI,Arrest,University Blvd
 2026-00180135,2024-08-19 12:00:00,2026-07-06 18:23:00,Other Incident,Active/Pending,7500 block of Baltimore Ave
-2026-00180551,2026-07-06 03:30:00,2026-07-07 08:21:00,Vandalism,Active/Pending,8000 block of Regents Dr
+2026-00180551,2026-07-06 03:30:00,2026-07-07 08:21:00,Vandalism,Investigation Pending,8000 block of Regents Dr
 2026-00180616,2026-07-07 09:30:00,2026-07-07 09:50:00,Injured Officer,CBE,7100 block of 51st Ave
 2026-00180773,2026-07-07 14:00:00,2026-07-07 14:25:00,Other Incident,CBE,4200 block of Stadium Dr
 2026-00181596,2026-07-08 12:26:00,2026-07-08 12:26:00,Injured/Sick Person,CBE,7900 block of Regents Dr
@@ -2850,6 +2850,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00186291,2026-07-13 16:04:00,2026-07-13 16:04:00,Injured/Sick Person,CBE,8200 block of Alumni Dr
 2026-00189658,2026-07-16 18:46:00,2026-07-16 18:46:00,DWI/DUI,Arrest,University Blvd
 2026-00190534,2026-07-16 23:30:00,2026-07-17 11:31:00,Injured/Sick Person,CBE,4200 block of Lehigh Rd
+2026-00190942,2026-07-17 20:31:00,2026-07-17 20:31:00,DWI/DUI,Arrest,University Blvd
+2026-00191129,2026-07-18 00:53:00,2026-07-18 00:53:00,DWI/DUI,Arrest,University Blvd
 2026-00192384,2026-07-19 10:05:00,2026-07-19 10:05:00,Injured/Sick Person,CBE,8500 block of Paint Branch Dr
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
