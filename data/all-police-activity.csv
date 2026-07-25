@@ -335,8 +335,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00063012,2025-03-14 21:00:00,2025-03-16 12:52:00,Assist Other Agency,CBE,4300 block of Knox Rd
 2025-00063172,2025-03-16 16:04:00,2025-03-16 16:04:00,Recovered Stolen Property,Arrest,7500 block of Mowatt Ln
 2025-00063422,2025-03-16 21:24:00,2025-03-16 23:10:00,Dept Property Damage/Loss,CBE,Stanley R. Zupnick Hall at 8184 Paint Branch Dr
-2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
 2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
+2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
 2025-00063978,2025-03-17 12:43:00,2025-03-17 12:43:00,Damage to State Property,CBE,7500 block of Baltimore Ave
 2025-00064495,2025-03-17 22:54:00,2025-03-17 22:54:00,DWI/DUI,Arrest,University Blvd
 2025-00065844,2025-03-19 11:38:00,2025-03-19 11:41:00,Injured/Sick Person,CBE,7300 block of Baltimore Ave
@@ -2753,7 +2753,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00148432,2026-06-02 20:02:00,2026-06-02 20:02:00,Assist Other Agency,CBE,4600 block of Guilford Rd
 2026-00148883,2026-06-03 09:25:00,2026-06-03 09:25:00,Injured/Sick Person,CBE,7100 block of 51st Ave
 2026-00149002,2026-05-27 21:47:00,2026-06-03 13:10:00,Burglary,Summons Issued,4200 block of Campus Dr
-2026-00149115,2026-06-03 08:15:00,2026-06-03 19:47:00,Vandalism,Active/Pending,4100 block of Terrapin Trl
+2026-00149115,2026-06-03 08:15:00,2026-06-03 19:47:00,Vandalism,Juvenile Arrest,4100 block of Terrapin Trl
 2026-00149316,2026-06-04 01:19:00,2026-06-04 01:19:00,DWI/DUI,Arrest,Adelphi Rd
 2026-00149345,2026-06-04 02:26:00,2026-06-04 02:26:00,Warrant/Summons Service,Active/Pending,University Blvd
 2026-00149594,2026-06-04 13:17:00,2026-06-04 13:17:00,Injured/Sick Person,CBE,3800 block of Stadium Dr
@@ -2824,7 +2824,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00172385,2026-06-28 21:49:00,2026-06-28 21:49:00,DWI/DUI,Arrest,Lot 1b
 2026-00172489,2026-06-29 01:13:00,2026-06-29 01:13:00,DWI/DUI,Arrest,3800 block of Stadium Dr
 2026-00173286,2026-06-29 19:52:00,2026-06-29 20:10:00,Assist Other Agency,CBE,College Ave
-2026-00173748,2026-06-30 07:50:00,2026-06-30 08:05:00,Sex Offense,Active/Pending,4100 block of Fieldhouse Dr
+2026-00173748,2026-06-30 07:50:00,2026-06-30 08:05:00,Sex Offense,Warrant Issued,4100 block of Fieldhouse Dr
 2026-00174035,2026-06-30 15:59:00,2026-06-30 15:59:00,Check on the  Welfare,CBE,6718 Glenn Dale Rd
 2026-00174176,2026-06-30 20:05:00,2026-06-30 20:05:00,Warrant/Summons Service,Arrest,University Blvd
 2026-00174683,2026-07-01 09:49:00,2026-07-01 09:49:00,Suspicious Activity,CBE,8500 block of Paint Branch Dr
@@ -2842,6 +2842,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00180723,2026-07-04 09:00:00,2026-07-07 12:29:00,Damaged Property,Active/Pending,8000 block of Boteler Ln
 2026-00180773,2026-07-07 14:00:00,2026-07-07 14:25:00,Other Incident,CBE,4200 block of Stadium Dr
 2026-00181596,2026-07-08 12:26:00,2026-07-08 12:26:00,Injured/Sick Person,CBE,7900 block of Regents Dr
+2026-00182964,2026-07-10 01:37:00,2026-07-10 01:37:00,DWI/DUI,Arrest,3800 block of Stadium Dr
 2026-00185026,2020-07-10 11:45:00,2026-07-12 11:19:00,Accident - Departmental,Arrest,1119 Mermaid Dr
 2026-00185036,2026-07-12 11:35:00,2026-07-12 11:35:00,Assist Other Agency,CBE,4300 block of Hartwick Rd
 2026-00185496,2026-07-13 00:36:00,2026-07-13 00:36:00,DWI/DUI,Arrest,University Blvd
@@ -2860,12 +2861,16 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00190651,2026-07-17 15:53:00,2026-07-17 15:53:00,Assist Other Agency,CBE,The Standard at 4321 Hartwick Rd
 2026-00190942,2026-07-17 20:31:00,2026-07-17 20:31:00,DWI/DUI,Arrest,University Blvd
 2026-00191129,2026-07-18 00:53:00,2026-07-18 00:53:00,DWI/DUI,Arrest,University Blvd
+2026-00192033,2026-07-18 23:51:00,2026-07-18 23:51:00,Injured/Sick Person,CBE,7700 block of Baltimore Ave
 2026-00192384,2026-07-19 10:05:00,2026-07-19 10:05:00,Injured/Sick Person,CBE,8500 block of Paint Branch Dr
 2026-00192751,2026-07-19 22:43:00,2026-07-19 23:43:00,DWI/DUI,Arrest,"Drazek Circle, UMGC at 346 Ehrensberger Dr"
 2026-00193706,2026-07-20 13:30:00,2026-07-20 14:09:00,Suspicious Activity,Active/Pending,4100 block of Campus Dr
 2026-00194856,2026-07-21 17:12:00,2026-07-21 17:12:00,Other Incident,CBE,8200 block of Alumni Dr
+2026-00194857,2026-07-21 17:14:00,2026-07-21 17:14:00,Vandalism,Active/Pending,4100 block of Terrapin Trl
 2026-00195202,2026-07-22 00:03:00,2026-07-22 00:03:00,Injured/Sick Person,CBE,6900 block of Preinkert Dr
 2026-00195723,2026-07-22 17:21:00,2026-07-22 17:21:00,Other Service Call,CBE,4600 block of Calvert Rd
+2026-00196320,2026-07-23 10:22:00,2026-07-23 10:22:00,Suspicious Activity,CBE,3900 block of Campus Dr
+2026-00196327,2026-07-23 10:26:00,2026-07-23 10:26:00,Fire,CBE,8100 block of Paint Branch Dr
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
