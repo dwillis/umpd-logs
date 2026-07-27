@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Exercise 2026-07-20 — UMD Police Activity</title>
+		<link rel="stylesheet" href="../../static/style.css" />
+	</head>
+	<body>
+		<div id="top-header">
+			<div id="header">UMD Police Activity Log with Arrests</div>
+		</div>
+		<nav id="site-nav">
+			<div id="nav-inner">
+				<a href="../../" class="nav-link">Activity Log</a>
+				<a href="../../trends/" class="nav-link">Trends &amp; Patterns</a>
+				<a href="../../learn/" class="nav-link">Learn</a>
+				<a href="../" class="nav-link nav-active">Exercises</a>
+			</div>
+		</nav>
+		<div id="container">
+			<div class="byline">
+				<a href="../">&larr; All exercises</a> · <a href="https://github.com/dwillis/umpd-logs/blob/master/exercises/2026-07-20.md">Download the Markdown source on GitHub</a>
+			</div>
+			<div class="exercise-body">
+				<h1>UMPD Data Exercise — Week of July 20, 2026 – July 26, 2026</h1>
+<p><em>Generated 2026-07-27. The data URL below is pinned to commit <code>50230db9b</code>, a
+snapshot of the dataset as of this exercise — so your numbers should match these exactly.</em></p>
+<h2>This week's numbers</h2>
+<ul>
+<li>Incidents last week (Mon–Sun): <strong>7</strong></li>
+<li>Mean per day: <strong>1.0</strong> &nbsp;&nbsp; Median per day: <strong>1</strong></li>
+<li>Daily mean over Summer 2026 to date: <strong>2.2</strong></li>
+<li>Same week last year (July 21, 2025 on): <strong>19</strong> incidents — down <strong>63.2%</strong></li>
+</ul>
+<h2>Questions</h2>
+<ol>
+<li>The mean and median daily counts above are different. Which days of last week pulled the mean away from the median? Run the starter code, look at the daily counts, and explain in two sentences which number you would put in a story.</li>
+<li>Using the percent change above: is this a real shift or ordinary week-to-week noise? The Learn page's spike detector uses mean ± 2 standard deviations of weekly counts as its "normal" band — compute that band in R (sd() on the weekly totals) and say whether last week falls outside it.</li>
+<li>A press release claims "campus crime fell 30% since 2020." Using what you know about 2020 (check the yearly chart on the Trends page), explain why that baseline is misleading — and what baseline you would use instead.</li>
+<li>In R, compute the mean and median incidents per day for each of the last four complete weeks (hint: <code>floor_date(day, "week", week_start = 1)</code> then <code>group_by(week)</code>). Is last week unusual among them?</li>
+</ol>
+<h2>Starter code (R)</h2>
+<pre><code class="language-r">library(tidyverse)
+library(lubridate)
+
+activity &lt;- read_csv(&quot;https://raw.githubusercontent.com/dwillis/umpd-logs/50230db9b5b8bcb0c0c5600a2271aed8413a09c0/data/all-police-activity.csv&quot;)
+
+week_start &lt;- ymd(&quot;2026-07-20&quot;)
+
+daily &lt;- activity |&gt;
+  mutate(day = as_date(`Date Occurred`)) |&gt;
+  filter(day &gt;= week_start, day &lt; week_start + days(7)) |&gt;
+  count(day, name = &quot;incidents&quot;) |&gt;
+  complete(day = seq(week_start, week_start + days(6), by = &quot;day&quot;),
+           fill = list(incidents = 0))
+
+daily |&gt;
+  summarize(total = sum(incidents),
+            mean_per_day = round(mean(incidents), 1),
+            median_per_day = median(incidents))
+</code></pre>
+<h2>Check your work</h2>
+<p>Your <code>summarize()</code> output should match "This week's numbers" above: total <strong>7</strong>,
+mean <strong>1.0</strong>, median <strong>1</strong>. All values here use <code>round(x, 1)</code>, which
+rounds halves to the nearest even digit — the same rule as R's <code>round()</code>.</p>
+<p><em>Stuck on the concepts? The site's <a href="../../learn/">Learn pages</a> walk through every
+technique used here, with this same dataset.</em></p>
+			</div>
+		</div>
+		<footer>
+			<div id="footer-text">Copyright 2022-2026</div>
+		</footer>
+	</body>
+</html>
