@@ -2835,7 +2835,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00177769,2026-07-04 03:53:00,2026-07-04 03:53:00,DWI/DUI,Arrest,7500 block of Mowatt Ln
 2026-00177866,2026-07-03 17:30:00,2026-07-04 08:31:00,Theft,Investigation Pending,3400 block of Tulane Dr
 2026-00177990,2026-07-04 11:50:00,2026-07-04 11:50:00,Assist Other Agency,CBE,7390 River Rd
-2026-00178358,2026-07-04 22:49:00,2026-07-04 22:49:00,DWI/DUI,Arrest,University Blvd
+2026-00178358,2026-07-04 22:49:00,2026-07-04 22:49:00,CDS Violation,Arrest,University Blvd
 2026-00180135,2024-08-19 12:00:00,2026-07-06 18:23:00,Other Incident,Active/Pending,7500 block of Baltimore Ave
 2026-00180196,2026-07-06 20:40:00,2026-07-06 21:32:00,Theft,Unfounded,3800 block of Stadium Dr
 2026-00180551,2026-07-06 03:30:00,2026-07-07 08:21:00,Vandalism,Investigation Pending,8000 block of Regents Dr
@@ -2871,7 +2871,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00192751,2026-07-19 22:43:00,2026-07-19 23:43:00,DWI/DUI,Arrest,"Drazek Circle, UMGC at 346 Ehrensberger Dr"
 2026-00193706,2026-07-20 13:30:00,2026-07-20 14:09:00,Suspicious Activity,Unfounded,4100 block of Campus Dr
 2026-00194856,2026-07-21 17:12:00,2026-07-21 17:12:00,Other Incident,CBE,8200 block of Alumni Dr
-2026-00194857,2026-07-21 17:14:00,2026-07-21 17:14:00,Vandalism,Unfounded,4100 block of Terrapin Trl
+2026-00194857,2026-07-21 17:14:00,2026-07-21 17:14:00,Vandalism,Active/Pending,4100 block of Terrapin Trl
 2026-00195202,2026-07-22 00:03:00,2026-07-22 00:03:00,Injured/Sick Person,CBE,6900 block of Preinkert Dr
 2026-00195409,2026-07-21 13:45:00,2026-07-22 12:05:00,Suspicious Activity,CBE,4400 block of Stadium Dr
 2026-00195539,2026-07-22 13:47:00,2026-07-22 13:47:00,Theft,Arrest,7400 block of Baltimore Ave
@@ -2933,7 +2933,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00213832,2026-08-09 23:34:00,2026-08-09 23:34:00,DWI/DUI,Arrest,University Blvd
 2026-00213856,2026-08-10 00:45:00,2026-08-10 00:45:00,DWI/DUI,Arrest,University Blvd
 2026-00213964,2026-08-07 13:00:00,2026-08-10 06:04:00,Theft,Active/Pending,4200 block of Stadium Dr
-2026-00214092,2026-08-09 20:35:00,2026-08-10 09:40:00,Suspicious Activity,Active/Pending,Regents Dr
+2026-00214092,2026-08-09 20:35:00,2026-08-10 09:40:00,Suspicious Activity,Investigation Pending,Regents Dr
 2026-00214301,2026-08-10 14:00:00,2026-08-10 14:19:00,Injured/Sick Person,CBE,4000 block of Union Dr
 2026-00214523,2026-08-10 18:15:00,2026-08-10 18:15:00,Warrant/Summons Service,Arrest,Lot 1b
 2026-00214622,2026-08-10 18:50:00,2026-08-10 20:44:00,Assault,Active/Pending,4000 block of Campus Dr
@@ -2957,6 +2957,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00222491,2026-08-16 21:30:00,2026-08-18 11:50:00,Theft,Active/Pending,4300 block of Knox Rd
 2026-00222904,2026-08-18 18:01:00,2026-08-18 23:01:00,Telephone/EMail Misuse,Active/Pending,7500 block of Baltimore Ave
 2026-00223602,2026-08-19 14:49:00,2026-08-19 17:38:00,Other Incident,CBE,7600 block of Library Ln
+2026-00224453,2026-08-20 19:25:00,2026-08-20 19:25:00,Hazardous Condition,CBE,3400 block of Tulane Dr
 2026-00224484,2026-08-20 21:13:00,2026-08-20 21:13:00,Assist Other Agency,CBE,College Ave
 2026-00224738,2026-08-21 00:38:00,2026-08-21 00:38:00,DWI/DUI,Arrest,Adelphi Rd
 2026-00225532,2026-08-21 16:20:00,2026-08-21 16:27:00,Injured/Sick Person,CBE,Baltimore Ave
@@ -2969,6 +2970,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00227785,2026-08-23 17:14:00,2026-08-23 17:14:00,Found/Recovered Property,CBE,4200 block of Valley Dr
 2026-00228309,2026-08-24 09:21:00,2026-08-24 09:21:00,Injured/Sick Person,CBE,4500 block of Campus Dr
 2026-00228749,2026-08-24 21:33:00,2026-08-24 21:33:00,Injured/Sick Person,CBE,Campus Dr
+2026-00228981,2026-08-25 00:54:00,2026-08-25 00:54:00,Injured/Sick Person,CBE,Princeton Ave
+2026-00229276,2026-08-23 21:00:00,2026-08-25 10:02:00,Theft,Active/Pending,3400 block of Tulane Dr
 2026-00229281,2026-08-25 10:19:00,2026-08-25 10:19:00,Emergency Petition,CBE,4646 Graduate Way
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
