@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Compare Periods — UMD Police Activity</title>
+		<link rel="stylesheet" href="../static/style.css" />
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script>window.ANALYTICS = {{ analytics|tojson }};</script>
+	</head>
+	<body>
+		<div id="top-header">
+			<div id="header">UMD Police Activity Log with Arrests</div>
+		</div>
+		<nav id="site-nav">
+			<div id="nav-inner">
+			<a href="../" class="nav-link">Activity Log</a>
+			<a href="../trends/" class="nav-link">Trends &amp; Patterns</a>
+			<a href="./" class="nav-link nav-active">Compare</a>
+			<a href="../learn/" class="nav-link">Learn</a>
+			<a href="../exercises/" class="nav-link">Exercises</a>
+			</div>
+		</nav>
+		<div id="container">
+			<div class="byline">
+				By Rachel Logan, with updates from Derek Willis. <a href="https://github.com/dwillis/umpd-logs">See the code</a>
+			</div>
+
+			<h2 class="page-title">Compare Two Periods</h2>
+			<p class="page-subtitle">Pick any two date ranges and compare incident counts by crime
+			category. The defaults are the last 30 days of data against the same 30 days one year
+			earlier &mdash; matching the calendar dates, not just "the month before," is the honest
+			comparison.</p>
+
+			<section class="chart-section">
+				<div id="compare-controls">
+					<fieldset class="compare-range">
+						<legend>Period A</legend>
+						<label>Start <input type="date" id="a-start"></label>
+						<label>End <input type="date" id="a-end"></label>
+					</fieldset>
+					<fieldset class="compare-range">
+						<legend>Period B</legend>
+						<label>Start <input type="date" id="b-start"></label>
+						<label>End <input type="date" id="b-end"></label>
+					</fieldset>
+					<button id="compare-run" class="export-btn" type="button">Compare</button>
+				</div>
+				<p id="compare-error" class="compare-error" role="alert"></p>
+				<p id="compare-summary" class="digest-text"></p>
+				<div class="chart-wrap">
+					<canvas id="compare-chart"></canvas>
+				</div>
+				<div id="compare-table"></div>
+				<details class="show-work">
+					<summary>Show your work</summary>
+					<p><strong>What's counted:</strong> incidents whose <em>Date Occurred</em> falls
+					inside each chosen range (both endpoints included), bucketed by the crime
+					categories used across this site. The arrest rate is arrests linked to incidents
+					in the range &divide; incidents in the range.</p>
+					<p><strong>Watch out for:</strong> the log's coverage runs from January 2015 to a
+					few days before today; ranges outside that window are clamped. Small counts make
+					big percentages &mdash; a jump from 2 to 5 incidents is +150% and usually not a
+					story. See the <a href="../learn/cherry-picking/">cherry-picking lesson</a>.</p>
+					<div class="r-snippet">
+						<button class="copy-r-btn" type="button">Copy R code</button>
+						<pre><code>library(tidyverse)
+library(lubridate)
+
+activity &lt;- read_csv("https://raw.githubusercontent.com/dwillis/umpd-logs/master/data/all-police-activity.csv")
+
+activity |&gt;
+  mutate(d = as_date(`Date Occurred`),
+         period = case_when(
+           d &gt;= ymd("2026-08-01") &amp; d &lt;= ymd("2026-08-30") ~ "A",
+           d &gt;= ymd("2025-08-01") &amp; d &lt;= ymd("2025-08-30") ~ "B")) |&gt;
+  filter(!is.na(period)) |&gt;
+  count(period, `Crime Type`) |&gt;
+  pivot_wider(names_from = period, values_from = n, values_fill = 0)</code></pre>
+					</div>
+				</details>
+			</section>
+		</div>
+		<footer>
+			<div id="footer-text">Copyright 2022-2026</div>
+		</footer>
+		<script src="../static/compare.js"></script>
+	</body>
+</html>

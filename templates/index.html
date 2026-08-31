@@ -29,6 +29,7 @@
 			<div id="nav-inner">
 				<a href="./" class="nav-link nav-active">Activity Log</a>
 				<a href="trends/" class="nav-link">Trends &amp; Patterns</a>
+				<a href="compare/" class="nav-link">Compare</a>
 				<a href="learn/" class="nav-link">Learn</a>
 				<a href="exercises/" class="nav-link">Exercises</a>
 			</div>
@@ -59,6 +60,23 @@
 					<div class="stat-label">Most common (30 days)</div>
 				</div>
 			</div>
+
+			{% if analytics.digest %}
+			{% set d = analytics.digest %}
+			{% set cat_labels = {'violent': 'Violent', 'property': 'Property', 'drugs': 'Drug/Alcohol', 'traffic': 'Traffic', 'medical': 'Medical/Emergency', 'harassment': 'Harassment/Sexual', 'other': 'Other'} %}
+			<div id="weekly-digest" role="region" aria-label="Last week in brief">
+				<h3 class="section-heading">Last Week in Brief</h3>
+				<p class="digest-text">
+					In the week of {{ d.week_label }}, UMPD logged
+					<strong>{{ d.total }} incident{{ 's' if d.total != 1 }}</strong>{% if d.pct_change is not none %}
+					&mdash; {{ d.direction }}
+					<strong>{{ d.pct_change|abs }}%</strong> from the {{ d.last_year_total }} logged
+					in the same week last year{% endif %}.
+					{% if d.top_category %}{{ cat_labels[d.top_category] }} led with {{ d.top_category_count }}.{% endif %}
+				</p>
+				<p class="digest-caveat">Data through {{ d.coverage_end }}; the most recent days may not be posted yet.</p>
+			</div>
+			{% endif %}
 
 			<!-- Story Leads -->
 			<div id="story-leads" style="display:none;">
@@ -151,7 +169,7 @@
 			</div> 
 		</div>
 		<footer>
-			<div id="footer-text">Copyright 2022-2025</div>
+			<div id="footer-text">Copyright 2022-2026</div>
 		</footer>
 		<script>
 			// Crime category mapping
@@ -225,7 +243,7 @@
 
 			function applyColorCoding() {
 				$('#crime-table tbody tr').each(function() {
-					const crimeType = $(this).find('td:eq(3)').text();
+					const crimeType = $(this).find('td:eq(3)').text().trim();
 					const categoryData = categorizeCrime(crimeType);
 
 					// Remove all crime category classes
@@ -234,6 +252,12 @@
 					// Add appropriate class based on category
 					$(this).addClass('crime-' + categoryData.category);
 				});
+			}
+
+			// Safe text extraction: DataTables row data are HTML strings, and
+			// $(str) treats strings like 'DWI/DUI' as (broken) CSS selectors.
+			function cellText(html) {
+				return $('<div>').html(html).text().trim();
 			}
 
 			function calculateDaysSince() {
@@ -245,8 +269,8 @@
 
 				for (let i = 0; i < data.length; i++) {
 					const row = data[i];
-					const crimeType = $(row[3]).text();
-					const dateOccurred = moment($(row[1]).text(), 'MMM D, YYYY, h:mma');
+					const crimeType = cellText(row[3]);
+					const dateOccurred = moment(cellText(row[1]), 'MMM D, YYYY, h:mma');
 
 					if (!crimeTypes[crimeType] || dateOccurred.isAfter(crimeTypes[crimeType])) {
 						crimeTypes[crimeType] = dateOccurred;
@@ -267,7 +291,7 @@
 				const data = table.rows().data();
 
 				for (let i = 0; i < data.length; i++) {
-					const crimeType = $(data[i][3]).text();
+					const crimeType = cellText(data[i][3]);
 					typeCount[crimeType] = (typeCount[crimeType] || 0) + 1;
 				}
 
@@ -301,6 +325,17 @@
 				if (!a) return;
 				const monthName = a.current_month_name;
 				const leads = [];
+
+				// Unusually busy/quiet week (season-aware z-score)
+				if (a.anomalies && a.anomalies.latest && a.anomalies.latest.anomalous) {
+					const w = a.anomalies.latest;
+					const season = a.anomalies.season_stats[w.season];
+					leads.push({
+						typeClass: 'lead-spike',
+						headline: `Unusually busy week: ${w.count} incidents`,
+						detail: `The week of ${w.start} had ${w.count} incidents, ${w.z} standard deviations above the typical ${w.season} week (average: ${season ? season.mean : '?'}).`,
+					});
+				}
 
 				// YoY leads
 				for (const lead of (a.yoy_leads || [])) {
@@ -361,12 +396,12 @@
 				for (let i = 0; i < data.length; i++) {
 					const row = data[i];
 					csvData.push({
-						'Case Number': $(row[0]).text(),
-						'Date Occurred': $(row[1]).text(),
-						'Date Reported': $(row[2]).text(),
-						'Crime Type': $(row[3]).text(),
-						'Disposition': $(row[4]).text(),
-						'Location': $(row[5]).text()
+						'Case Number': cellText(row[0]),
+						'Date Occurred': cellText(row[1]),
+						'Date Reported': cellText(row[2]),
+						'Crime Type': cellText(row[3]),
+						'Disposition': cellText(row[4]),
+						'Location': cellText(row[5])
 					});
 				}
 

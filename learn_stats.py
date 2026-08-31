@@ -252,6 +252,157 @@ def baseline_daily_mean(daily, as_of):
     return label, (round(mean(xs), 1) if xs else 0.0)
 
 
+# ── site-wide digest / anomaly helpers (homepage, trends, compare) ──────
+
+# Crime category buckets, matching categorize_crime() in app.py and the
+# CATS/CAT_LABELS maps in static/trends.js.
+CATEGORIES = ['violent', 'property', 'drugs', 'traffic', 'medical', 'harassment', 'other']
+
+
+def data_end_date(valid_activities):
+    """Latest occurred/reported date present in the data. Digest and
+    anomaly helpers treat this -- not today -- as the end of coverage, so
+    a scraping lag never turns un-scraped days into fake zeros."""
+    latest = None
+    for r in valid_activities:
+        dt = parse_dt(r)
+        if dt and (latest is None or dt.date() > latest):
+            latest = dt.date()
+    return latest or date.today()
+
+
+def truncate_daily(daily, end_day):
+    """Trim a daily_series() result so it ends on `end_day`."""
+    start_day = date.fromisoformat(daily['start'])
+    n = (end_day - start_day).days + 1
+    daily['counts'] = daily['counts'][:n]
+    return daily
+
+
+def truncate_daily_by_cat(dbc, end_day):
+    """Trim a daily_series_by_category() result so it ends on `end_day`."""
+    start_day = date.fromisoformat(dbc['start'])
+    n = (end_day - start_day).days + 1
+    dbc['series'] = {c: arr[:n] for c, arr in dbc['series'].items()}
+    dbc['total'] = dbc['total'][:n]
+    dbc['arrests'] = dbc['arrests'][:n]
+    dbc['coverage_end'] = end_day.isoformat()
+    return dbc
+
+
+def daily_series_by_category(valid_activities, categorize, start=DATA_START):
+    """Zero-filled incidents-per-day counts split by crime category.
+
+    `categorize` is a callable row -> category slug (app.py passes a
+    wrapper around categorize_crime so this module stays import-clean).
+    Also carries the daily total and daily arrest counts so the trends
+    calendar and compare page can slice one payload.
+    """
+    start_day = date.fromisoformat(start)
+    end_day = date.today()
+    n_days = (end_day - start_day).days + 1
+    series = {cat: [0] * n_days for cat in CATEGORIES}
+    total = [0] * n_days
+    arrests = [0] * n_days
+    for r in valid_activities:
+        dt = parse_dt(r)
+        if not dt:
+            continue
+        i = (dt.date() - start_day).days
+        if i < 0 or i >= n_days:
+            continue
+        cat = categorize(r)
+        if cat not in series:
+            cat = 'other'
+        series[cat][i] += 1
+        total[i] += 1
+        if r.get('ARREST') == 'Yes':
+            arrests[i] += 1
+    return {'start': start, 'series': series, 'total': total, 'arrests': arrests}
+
+
+def weekly_digest(daily, weekly, daily_by_cat):
+    """Plain-English numbers for the homepage "Last Week in Brief" card:
+    the last complete Monday-Sunday week vs. the same week (52 Mondays
+    earlier) one year before."""
+    counts = weekly['counts']
+    if len(counts) < 2:
+        return None
+    first = date.fromisoformat(weekly['start_monday'])
+    n = len(counts)
+    this_monday = first + timedelta(days=7 * (n - 1))
+    this_total = counts[-1]
+    last_total = counts[n - 53] if n >= 53 else None
+    pct = round((this_total - last_total) / last_total * 100) if last_total else None
+    start_day = date.fromisoformat(daily['start'])
+    i0 = (this_monday - start_day).days
+    cat_totals = {cat: sum(arr[i0:i0 + 7]) for cat, arr in daily_by_cat['series'].items()}
+    top_cat, top_n = max(cat_totals.items(), key=lambda kv: kv[1])
+    # 'Aug 17' style labels without platform-specific %-d
+    def short(d):
+        return d.strftime('%b %d').replace(' 0', ' ')
+    return {
+        'week_start': this_monday.isoformat(),
+        'week_end': (this_monday + timedelta(days=6)).isoformat(),
+        'week_label': f"{short(this_monday)}\u2013{short(this_monday + timedelta(days=6))}",
+        'total': this_total,
+        'last_year_total': last_total,
+        'pct_change': pct,
+        'direction': 'up' if pct and pct > 0 else ('down' if pct and pct < 0 else 'flat'),
+        'top_category': top_cat if top_n > 0 else None,
+        'top_category_count': top_n,
+        'category_totals': cat_totals,
+    }
+
+
+def weekly_anomalies(weekly, threshold=2.0):
+    """Z-scores for each complete week, computed against a season-aware
+    baseline: weeks are grouped by the semester season their Monday falls
+    in (Spring/Summer/Fall, or break), so a quiet winter-break week is not
+    flagged against a fall-semester mean. z uses the sample SD, matching
+    the spikes lab."""
+    first = date.fromisoformat(weekly['start_monday'])
+    counts = weekly['counts']
+
+    def season_of(i):
+        sem = semester_window(first + timedelta(days=7 * i))
+        return sem[0].split()[0] if sem else 'break'
+
+    grouped = defaultdict(list)
+    for i, n in enumerate(counts):
+        grouped[season_of(i)].append(n)
+    season_stats = {}
+    for label, xs in grouped.items():
+        season_stats[label] = {
+            'n_weeks': len(xs),
+            'mean': round(mean(xs), 1),
+            'sd': round(stdev(xs), 1),
+        }
+
+    weeks = []
+    for i, n in enumerate(counts):
+        label = season_of(i)
+        sd = season_stats[label]['sd']
+        mu = season_stats[label]['mean']
+        z = round((n - mu) / sd, 2) if sd > 0 else 0.0
+        weeks.append({
+            'start': (first + timedelta(days=7 * i)).isoformat(),
+            'count': n,
+            'z': z,
+            'season': label,
+            'anomalous': z >= threshold,
+        })
+
+    anomalous = [w for w in weeks if w['anomalous']]
+    return {
+        'threshold': threshold,
+        'season_stats': season_stats,
+        'anomalous_weeks': anomalous,
+        # the most recent complete week, for the homepage banner
+        'latest': weeks[-1] if weeks else None,
+    }
+
+
 # ── payload for the /learn/ pages ────────────────────────────────────────
 
 def compute_learn_data(valid_activities):

@@ -122,7 +122,7 @@ def categorize_crime(crime_type):
     return 'other'
 
 
-def compute_analytics(valid_activities, arrest_list):
+def compute_analytics(valid_activities, arrest_list, include_daily=False):
     from collections import defaultdict
     now = datetime.now()
 
@@ -270,7 +270,23 @@ def compute_analytics(valid_activities, arrest_list):
         'series': {cat: [year_counts[yr].get(cat, 0) for yr in years] for cat in cats},
     }
 
-    return {
+    # weekly digest + season-aware anomaly detection (learn_stats helpers).
+    # Series are truncated at the last date present in the data so a
+    # scraping lag never shows up as a week of fake zeros.
+    coverage_end = learn_stats.data_end_date(valid_activities)
+    daily = learn_stats.truncate_daily(
+        learn_stats.daily_series(valid_activities), coverage_end)
+    weekly = learn_stats.weekly_series(daily)
+    daily_by_cat = learn_stats.truncate_daily_by_cat(
+        learn_stats.daily_series_by_category(
+            valid_activities, lambda r: categorize_crime(activity_type(r))),
+        coverage_end)
+    anomalies = learn_stats.weekly_anomalies(weekly)
+    digest = learn_stats.weekly_digest(daily, weekly, daily_by_cat)
+    if digest:
+        digest['coverage_end'] = coverage_end.isoformat()
+
+    analytics = {
         'per_1000': learn_stats.per_1000_rates(valid_activities),
         'days_to_report': learn_stats.days_to_report(valid_activities),
         'yoy_leads': yoy_leads,
@@ -285,7 +301,13 @@ def compute_analytics(valid_activities, arrest_list):
         'current_month_name': now.strftime('%B'),
         'current_year': current_year,
         'last_year': current_year - 1,
+        'digest': digest,
+        'anomalies': anomalies,
     }
+    # daily resolution is heavy (~40k ints); only pages that slice it pay for it
+    if include_daily:
+        analytics['daily_by_category'] = daily_by_cat
+    return analytics
 
 
 @app.route("/")
@@ -363,8 +385,17 @@ def trends():
     arrest_list = get_arrest_csv()
     activity_list = get_activity_csv(arrest_list)
     valid_activities = [r for r in activity_list if is_valid_row(r)]
-    analytics = compute_analytics(valid_activities, arrest_list)
+    analytics = compute_analytics(valid_activities, arrest_list, include_daily=True)
     return render_template('trends.html', analytics=analytics)
+
+
+@app.route('/compare/')
+def compare():
+    arrest_list = get_arrest_csv()
+    activity_list = get_activity_csv(arrest_list)
+    valid_activities = [r for r in activity_list if is_valid_row(r)]
+    analytics = compute_analytics(valid_activities, arrest_list, include_daily=True)
+    return render_template('compare.html', analytics=analytics)
 
 
 def load_valid_activities():

@@ -16,6 +16,7 @@
 			<div id="nav-inner">
 			<a href="../" class="nav-link">Activity Log</a>
 			<a href="./" class="nav-link nav-active">Trends &amp; Patterns</a>
+			<a href="../compare/" class="nav-link">Compare</a>
 			<a href="../learn/" class="nav-link">Learn</a>
 			<a href="../exercises/" class="nav-link">Exercises</a>
 			</div>
@@ -27,6 +28,61 @@
 
 			<h2 class="page-title">Trends &amp; Patterns</h2>
 			<p class="page-subtitle">Visual analysis of UMPD incident data across time. Semester definitions: Spring&nbsp;=&nbsp;Feb–Apr, Summer&nbsp;=&nbsp;Jun–Aug, Fall&nbsp;=&nbsp;Sep–Nov.</p>
+
+			<section class="chart-section">
+				<h3>The Long View: Every Day Since 2015</h3>
+				<p class="chart-desc">One cell per day, darker red&nbsp;=&nbsp;more incidents. Weeks outlined in
+				black are <strong>anomalies</strong>: at least 2 standard deviations above the average week
+				for their season (Spring, Summer, Fall or break), so quiet winter breaks don't count as news.</p>
+				<div id="calendar-container"></div>
+				<div class="cal-legend">
+					<span>Fewer</span>
+					<div class="cal-swatch" style="background: rgba(178,34,34,0.10);"></div>
+					<div class="cal-swatch" style="background: rgba(178,34,34,0.35);"></div>
+					<div class="cal-swatch" style="background: rgba(178,34,34,0.60);"></div>
+					<div class="cal-swatch" style="background: rgba(178,34,34,0.94);"></div>
+					<span>More</span>
+				</div>
+				<details class="show-work">
+					<summary>Show your work</summary>
+					<p><strong>What's counted:</strong> incidents per calendar day by <em>Date Occurred</em>,
+					starting January 2015. A day with no cell is outside the data's coverage (the log
+					begins in 2015, and the most recent days may not be posted yet).</p>
+					<p><strong>How anomalies are picked:</strong> each complete Monday–Sunday week gets a
+					z-score against the average and <em>sample</em> standard deviation of weeks in the same
+					season — the same calculation as the "spikes" <a href="../learn/">lab</a>. Weeks with
+					z&nbsp;≥&nbsp;2 are outlined. Season-aware baselines matter: without them, every
+					winter break would look like a miracle and every move-in week like a crisis.</p>
+					<div class="r-snippet">
+						<button class="copy-r-btn" type="button">Copy R code</button>
+						<pre><code>library(tidyverse)
+library(lubridate)
+
+activity &lt;- read_csv("https://raw.githubusercontent.com/dwillis/umpd-logs/master/data/all-police-activity.csv")
+
+# daily counts
+activity |&gt;
+  mutate(d = as_date(`Date Occurred`)) |&gt;
+  filter(d &gt;= ymd("2015-01-01")) |&gt;
+  count(d)
+
+# weekly z-scores against the week's season
+weekly &lt;- activity |&gt;
+  mutate(week = floor_date(as_date(`Date Occurred`), "week", week_start = 1),
+         season = case_when(
+           month(week) %in% 2:4  ~ "Spring",
+           month(week) %in% 6:8  ~ "Summer",
+           month(week) %in% 9:11 ~ "Fall",
+           TRUE ~ "break")) |&gt;
+  count(week, season)
+
+weekly |&gt;
+  group_by(season) |&gt;
+  mutate(z = (n - mean(n)) / sd(n)) |&gt;
+  filter(z &gt;= 2)</code></pre>
+					</div>
+				</details>
+			</section>
 
 			<section class="chart-section">
 				<h3>When It Happens</h3>
@@ -234,7 +290,7 @@ activity |&gt;
 			</section>
 		</div>
 		<footer>
-			<div id="footer-text">Copyright 2022-2025</div>
+			<div id="footer-text">Copyright 2022-2026</div>
 		</footer>
 		<script src="../static/trends.js"></script>
 	</body>

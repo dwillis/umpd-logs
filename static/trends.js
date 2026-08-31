@@ -260,7 +260,72 @@
 		});
 	}
 
+	// ── Long-view calendar (GitHub-style, one block per year) ────
+	function buildCalendar() {
+		var container = document.getElementById('calendar-container');
+		if (!container || !A.daily_by_category) return;
+
+		var D = A.daily_by_category;
+		var totals = D.total;
+		var maxVal = Math.max.apply(null, totals) || 1;
+
+		// anomaly Mondays -> quick lookup
+		var anomalyMondays = {};
+		((A.anomalies && A.anomalies.anomalous_weeks) || []).forEach(function (w) {
+			anomalyMondays[w.start] = true;
+		});
+
+		// all date math in UTC so nothing shifts across timezones
+		function parseISO(s) {
+			var p = s.split('-');
+			return new Date(Date.UTC(+p[0], +p[1] - 1, +p[2]));
+		}
+		function toISO(d) { return d.toISOString().slice(0, 10); }
+		function addDays(d, n) { return new Date(d.getTime() + n * 86400000); }
+		// Monday of the week containing d (weekly_series convention)
+		function mondayOf(d) { return addDays(d, -((d.getUTCDay() + 6) % 7)); }
+		var MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+		function fmtLabel(d) {
+			return MONTHS[d.getUTCMonth()] + ' ' + d.getUTCDate() + ', ' + d.getUTCFullYear();
+		}
+
+		var dataStart = parseISO(D.start);
+		var dataEnd = parseISO(D.coverage_end || toISO(addDays(dataStart, totals.length - 1)));
+		var startYear = dataStart.getUTCFullYear();
+		var endYear = dataEnd.getUTCFullYear();
+
+		var html = '';
+		for (var yr = startYear; yr <= endYear; yr++) {
+			var jan1 = new Date(Date.UTC(yr, 0, 1));
+			var dec31 = new Date(Date.UTC(yr, 11, 31));
+			var firstMonday = mondayOf(jan1);
+			var nCols = Math.round((mondayOf(dec31) - firstMonday) / (7 * 86400000)) + 1;
+
+			html += '<div class="cal-year"><div class="cal-year-label">' + yr + '</div>';
+			html += '<div class="cal-grid" style="grid-template-columns: repeat(' + nCols + ', 12px);">';
+			// column-major: week by week, Mon..Sun
+			for (var c = 0; c < nCols; c++) {
+				for (var r = 0; r < 7; r++) {
+					var d = addDays(firstMonday, c * 7 + r);
+					if (d < jan1 || d > dec31 || d < dataStart || d > dataEnd) {
+						html += '<div class="cal-cell cal-empty"></div>';
+						continue;
+					}
+					var idx = Math.round((d - dataStart) / 86400000);
+					var val = totals[idx] || 0;
+					var alpha = val === 0 ? 0.04 : (0.10 + (val / maxVal) * 0.84).toFixed(2);
+					var isAnomaly = anomalyMondays[toISO(mondayOf(d))] ? ' cal-anomaly' : '';
+					var title = fmtLabel(d) + ' \u2014 ' + val + ' incident' + (val !== 1 ? 's' : '');
+					html += '<div class="cal-cell' + isAnomaly + '" style="background: rgba(178,34,34,' + alpha + ');" title="' + title + '"></div>';
+				}
+			}
+			html += '</div></div>';
+		}
+		container.innerHTML = html;
+	}
+
 	buildHeatmap();
+	buildCalendar();
 	buildMonthlyChart();
 	buildSemesterChart();
 	buildYoYChart();
