@@ -132,10 +132,17 @@
 		var ctx = document.getElementById('yoy-chart');
 		if (!ctx || !A.yoy_totals || !A.yoy_totals.labels.length) return;
 
+		// Only chart 2015 onward; earlier years have a handful of stray
+		// records that render as empty bars.
+		var labels = A.yoy_totals.labels;
+		var start = 0;
+		while (start < labels.length && parseInt(labels[start], 10) < 2015) start++;
+		labels = labels.slice(start);
+
 		var datasets = CATS.map(function (cat) {
 			return {
 				label: CAT_LABELS[cat],
-				data: A.yoy_totals.series[cat] || [],
+				data: (A.yoy_totals.series[cat] || []).slice(start),
 				backgroundColor: COLORS[cat].bg,
 				borderColor: COLORS[cat].border,
 				borderWidth: 1,
@@ -144,7 +151,7 @@
 
 		new Chart(ctx, {
 			type: 'bar',
-			data: { labels: A.yoy_totals.labels, datasets: datasets },
+			data: { labels: labels, datasets: datasets },
 			options: {
 				responsive: true,
 				maintainAspectRatio: false,

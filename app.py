@@ -264,7 +264,9 @@ def compute_analytics(valid_activities, arrest_list, include_daily=False):
         dt = parse_dt(r)
         if dt:
             year_counts[str(dt.year)][categorize_crime(activity_type(r))] += 1
-    years = sorted(year_counts)
+    # Only chart 2015 onward; earlier years have a handful of stray records
+    # that render as empty bars.
+    years = [yr for yr in sorted(year_counts) if int(yr) >= 2015]
     yoy_totals = {
         'labels': years,
         'series': {cat: [year_counts[yr].get(cat, 0) for yr in years] for cat in cats},
