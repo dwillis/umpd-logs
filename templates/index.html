@@ -270,7 +270,7 @@
 				for (let i = 0; i < data.length; i++) {
 					const row = data[i];
 					const crimeType = cellText(row[3]);
-					const dateOccurred = moment(cellText(row[1]), 'MMM D, YYYY, h:mma');
+					const dateOccurred = moment(cellText(row[1]), 'YYYY-MM-DD HH:mm:ss');
 
 					if (!crimeTypes[crimeType] || dateOccurred.isAfter(crimeTypes[crimeType])) {
 						crimeTypes[crimeType] = dateOccurred;
