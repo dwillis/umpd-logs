@@ -335,8 +335,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00063012,2025-03-14 21:00:00,2025-03-16 12:52:00,Assist Other Agency,CBE,4300 block of Knox Rd
 2025-00063172,2025-03-16 16:04:00,2025-03-16 16:04:00,Recovered Stolen Property,Arrest,7500 block of Mowatt Ln
 2025-00063422,2025-03-16 21:24:00,2025-03-16 23:10:00,Dept Property Damage/Loss,CBE,Stanley R. Zupnick Hall at 8184 Paint Branch Dr
-2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
 2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
+2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
 2025-00063978,2025-03-17 12:43:00,2025-03-17 12:43:00,Damage to State Property,CBE,7500 block of Baltimore Ave
 2025-00064495,2025-03-17 22:54:00,2025-03-17 22:54:00,DWI/DUI,Arrest,University Blvd
 2025-00065844,2025-03-19 11:38:00,2025-03-19 11:41:00,Injured/Sick Person,CBE,7300 block of Baltimore Ave
@@ -682,8 +682,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00120365,2025-05-18 10:00:00,2025-05-19 09:20:00,Theft,Investigation Pending,4600 block of Rossborough Ln
 2025-00103454,2025-05-17 12:00:00,2025-05-19 14:21:00,Theft,Active/Pending,4300 block of Chapel Ln
 2025-00103455,2025-05-19 08:00:00,2025-05-19 14:33:00,Theft,Active/Pending,Lot 1b
-2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
 2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
+2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
 2025-00120934,2025-05-10 00:00:00,2025-05-19 23:03:00,Damage to State Property,CBE,3900 block of Campus Dr
 2025-00121280,2025-05-20 03:13:00,2025-05-20 06:56:00,Theft,Investigation Pending,Lot 4a
 2025-00121421,2023-06-08 12:00:00,2025-05-20 09:51:00,Fraud,Active/Pending,5600 block of Rivertech Ct
@@ -2978,6 +2978,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00230024,2026-08-26 01:04:00,2026-08-26 01:04:00,DWI/DUI,Arrest,Baltimore Ave
 2026-00230035,2026-08-26 01:23:00,2026-08-26 01:23:00,DWI/DUI,Arrest,University Blvd
 2026-00230537,2026-08-26 14:45:00,2026-08-26 16:37:00,Assist Other Agency,CBE,Lakeland Rd
+2026-00230598,2026-08-26 20:15:00,2026-08-26 20:19:00,Indecent Exposure,Arrest,4800 block of Norwich Rd
 2026-00230599,2026-08-26 21:54:00,2026-08-26 21:54:00,Vandalism,Active/Pending,4200 block of Farm Dr
 2026-00230970,2026-08-27 07:51:00,2026-08-27 07:51:00,Accident - Departmental,CBE,Farm Dr
 2026-00231007,2026-08-26 08:30:00,2026-08-27 08:19:00,Vandalism,Active/Pending,Lot Z
@@ -3020,7 +3021,19 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00234444,2026-08-29 23:30:00,2026-08-30 22:06:00,Suspicious Activity,Active/Pending,Lehigh Rd
 2026-00234509,2026-08-30 05:00:00,2026-08-30 23:58:00,Burglary,Active/Pending,3800 block of Stadium Dr
 2026-00234733,2026-08-29 12:00:00,2026-08-31 04:42:00,Dept Property Damage/Loss,CBE,7500 block of Baltimore Ave
+2026-00235149,2026-08-29 09:30:00,2026-08-31 14:25:00,Theft,Active/Pending,3500 block of University Blvd
 2026-00235150,2026-08-31 14:44:00,2026-08-31 14:44:00,Other Incident,Active/Pending,"Hornbake Mall, Hornbake Plaza"
+2026-00235555,2026-08-31 23:02:00,2026-08-31 23:02:00,Injured/Sick Person,CBE,7600 block of Library Ln
+2026-00235780,2026-09-01 02:48:00,2026-09-01 02:48:00,DWI/DUI,Arrest,Adelphi Rd
+2026-00236019,2026-09-01 09:10:00,2026-09-01 11:26:00,Theft,Active/Pending,8100 block of Paint Branch Dr
+2026-00236065,2026-09-01 12:33:00,2026-09-01 12:33:00,Injured/Sick Person,CBE,3900 block of Campus Dr
+2026-00236148,2026-09-01 14:33:00,2026-09-01 14:33:00,Injured/Sick Person,CBE,3900 block of Campus Dr
+2026-00236160,2026-08-31 01:00:00,2026-09-01 15:14:00,Lost Property,CBE,7500 block of Baltimore Ave
+2026-00236569,2026-09-01 22:43:00,2026-09-01 22:43:00,Alcohol Violation,Arrest,4600 block of College Ave
+2026-00236585,2026-09-01 22:54:00,2026-09-01 22:54:00,Alcohol Violation,Arrest,College Ave
+2026-00236586,2026-09-01 22:56:00,2026-09-01 22:56:00,Alcohol Violation,Arrest,College Ave
+2026-00236649,2026-09-01 23:29:00,2026-09-01 23:29:00,Alcohol Violation,Arrest,Norwich Rd
+2026-00236886,2026-09-02 08:37:00,2026-09-02 08:37:00,Injured/Sick Person,CBE,4200 block of Farm Dr
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
