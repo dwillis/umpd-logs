@@ -335,8 +335,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00063012,2025-03-14 21:00:00,2025-03-16 12:52:00,Assist Other Agency,CBE,4300 block of Knox Rd
 2025-00063172,2025-03-16 16:04:00,2025-03-16 16:04:00,Recovered Stolen Property,Arrest,7500 block of Mowatt Ln
 2025-00063422,2025-03-16 21:24:00,2025-03-16 23:10:00,Dept Property Damage/Loss,CBE,Stanley R. Zupnick Hall at 8184 Paint Branch Dr
-2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
 2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
+2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
 2025-00063978,2025-03-17 12:43:00,2025-03-17 12:43:00,Damage to State Property,CBE,7500 block of Baltimore Ave
 2025-00064495,2025-03-17 22:54:00,2025-03-17 22:54:00,DWI/DUI,Arrest,University Blvd
 2025-00065844,2025-03-19 11:38:00,2025-03-19 11:41:00,Injured/Sick Person,CBE,7300 block of Baltimore Ave
@@ -682,8 +682,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00120365,2025-05-18 10:00:00,2025-05-19 09:20:00,Theft,Investigation Pending,4600 block of Rossborough Ln
 2025-00103454,2025-05-17 12:00:00,2025-05-19 14:21:00,Theft,Active/Pending,4300 block of Chapel Ln
 2025-00103455,2025-05-19 08:00:00,2025-05-19 14:33:00,Theft,Active/Pending,Lot 1b
-2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
 2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
+2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
 2025-00120934,2025-05-10 00:00:00,2025-05-19 23:03:00,Damage to State Property,CBE,3900 block of Campus Dr
 2025-00121280,2025-05-20 03:13:00,2025-05-20 06:56:00,Theft,Investigation Pending,Lot 4a
 2025-00121421,2023-06-08 12:00:00,2025-05-20 09:51:00,Fraud,Active/Pending,5600 block of Rivertech Ct
@@ -2888,8 +2888,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00198016,2026-07-25 00:29:00,2026-07-25 00:29:00,DWI/DUI,Arrest,University Blvd
 2026-00198197,2026-07-25 03:52:00,2026-07-25 03:52:00,DWI/DUI,Arrest,7600 block of Baltimore Ave
 2026-00198882,2026-07-26 00:19:00,2026-07-26 00:19:00,DWI/DUI,Arrest,Metzerott Rd
-2026-00200996,2026-07-26 01:45:00,2026-07-26 01:45:00,Disorderly Conduct,Arrest,University Blvd
 2026-00198970,2026-07-26 01:45:00,2026-07-26 01:45:00,DWI/DUI,Arrest,University Blvd
+2026-00200996,2026-07-26 01:45:00,2026-07-26 01:45:00,Disorderly Conduct,Arrest,University Blvd
 2026-00199411,2026-07-26 14:30:00,2026-07-26 14:39:00,Fire,CBE,UMGC Hotel at 348 Ehrensberger Dr
 2026-00200065,2026-07-27 02:41:00,2026-07-27 02:41:00,DWI/DUI,Arrest,University Blvd
 2026-00201010,2026-07-27 21:00:00,2026-07-27 22:13:00,Other Incident,CBE,3800 block of Stadium Dr
@@ -2956,7 +2956,9 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00221549,2026-08-17 11:52:00,2026-08-17 12:00:00,Injured/Sick Person,CBE,5800 block of University Research Ct
 2026-00222491,2026-08-16 21:30:00,2026-08-18 11:50:00,Theft,Investigation Pending,4300 block of Knox Rd
 2026-00222904,2026-08-18 18:01:00,2026-08-18 23:01:00,Telephone/EMail Misuse,Active/Pending,7500 block of Baltimore Ave
+2026-00223271,2026-08-18 11:15:00,2026-08-19 08:41:00,Burglary,Investigation Pending,2  Fraternity Row
 2026-00223602,2026-08-19 14:49:00,2026-08-19 17:38:00,Other Incident,CBE,7600 block of Library Ln
+2026-00224348,2026-08-20 15:55:00,2026-08-20 15:55:00,Assist Other Agency,CBE,Veterans Pky
 2026-00224453,2026-08-20 19:25:00,2026-08-20 19:25:00,Hazardous Condition,CBE,3400 block of Tulane Dr
 2026-00224484,2026-08-20 21:13:00,2026-08-20 21:13:00,Assist Other Agency,CBE,College Ave
 2026-00224738,2026-08-21 00:38:00,2026-08-21 00:38:00,DWI/DUI,Arrest,Adelphi Rd
@@ -2989,6 +2991,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00231757,2026-08-28 00:55:00,2026-08-28 00:55:00,DWI/DUI,Arrest,4300 block of Knox Rd
 2026-00231787,2026-08-28 01:38:00,2026-08-28 01:38:00,DWI/DUI,Arrest,Greenbelt Rd
 2026-00231822,2026-08-28 02:50:00,2026-08-28 02:50:00,DWI/DUI,Arrest,University Blvd
+2026-00232129,2026-08-27 15:35:00,2026-08-28 08:57:00,Theft,Active/Pending,4000 block of Valley Dr
 2026-00232132,2026-08-28 09:03:00,2026-08-28 09:03:00,Injured/Sick Person,CBE,3900 block of Campus Dr
 2026-00232208,2026-08-01 00:00:00,2026-08-28 11:15:00,Dept Property Damage/Loss,CBE,7500 block of Baltimore Ave
 2026-00232236,2026-08-28 12:07:00,2026-08-28 12:07:00,Injured/Sick Person,CBE,3900 block of Campus Dr
@@ -2996,13 +2999,16 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00232394,2026-08-28 17:00:00,2026-08-28 17:11:00,Alcohol Violation,Arrest,4500 block of College Ave
 2026-00232491,2026-08-23 10:15:00,2026-08-28 17:51:00,Theft,Active/Pending,Lot U1
 2026-00232638,2026-08-28 19:30:00,2026-08-28 19:35:00,Alcohol Violation,Arrest,College Ave
+2026-00232714,2026-08-27 14:00:00,2026-08-28 20:07:00,Lost Property,Active/Pending,4400 block of Rossborough Ln
 2026-00232735,2026-08-28 20:24:00,2026-08-28 20:24:00,Injured/Sick Person,CBE,7500 block of Yale Ave
 2026-00232770,2026-08-28 20:48:00,2026-08-28 20:48:00,Injured/Sick Person,CBE,Regents Dr
 2026-00232947,2026-08-28 22:56:00,2026-08-28 23:01:00,Alcohol Violation,Arrest,Baltimore Ave
 2026-00233083,2026-08-28 20:00:00,2026-08-29 00:09:00,Theft,Active/Pending,7500 block of Mowatt Ln
 2026-00233158,2026-08-29 01:16:00,2026-08-29 01:16:00,Injured/Sick Person,CBE,7500 block of Regents Dr
 2026-00233166,2026-08-29 01:40:00,2026-08-29 01:40:00,Injured/Sick Person,CBE,4200 block of Farm Dr
+2026-00233193,2026-08-29 02:30:00,2026-08-29 02:36:00,Theft,Active/Pending,"Capital One Field, Football Stadium, SECU Stadium"
 2026-00233390,2026-08-24 16:26:00,2026-08-29 10:23:00,Fraud,Active/Pending,7700 block of Adelphi Rd
+2026-00233534,2026-08-29 15:59:00,2026-08-29 15:59:00,Injured/Sick Person,CBE,4600 block of Rossborough Ln
 2026-00233749,2026-08-27 22:15:00,2026-08-29 19:42:00,Theft,Active/Pending,7500 block of Mowatt Ln
 2026-00233806,2026-08-29 22:10:00,2026-08-29 22:10:00,Injured/Sick Person,CBE,7500 block of Mowatt Ln
 2026-00233900,2026-08-29 23:50:00,2026-08-29 23:50:00,Theft,Arrest,Regents Dr
@@ -3012,10 +3018,10 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00233981,2026-08-30 01:43:00,2026-08-30 01:43:00,DWI/DUI,Arrest,8600 block of Baltimore Ave
 2026-00233992,2026-08-30 01:45:00,2026-08-30 01:54:00,Injured/Sick Person,CBE,3900 block of Denton Service Ln
 2026-00234088,2026-08-30 05:28:00,2026-08-30 05:28:00,DWI/DUI,Arrest,Baltimore Ave
-2026-00234302,2026-08-15 21:00:00,2026-08-30 15:56:00,Theft,Active/Pending,4600 block of Rossborough Ln
+2026-00234302,2026-08-15 21:00:00,2026-08-30 15:56:00,Theft,Investigation Pending,4600 block of Rossborough Ln
 2026-00234355,2026-08-20 16:50:00,2026-08-30 17:03:00,Injured/Sick Person,CBE,7800 block of Regents Dr
 2026-00234362,2026-08-30 17:21:00,2026-08-30 17:21:00,Injured/Sick Person,CBE,4600 block of College Ave
-2026-00234373,2026-07-01 00:00:00,2026-08-30 17:53:00,Theft,Active/Pending,4300 block of Knox Rd
+2026-00234373,2026-07-01 00:00:00,2026-08-30 17:53:00,Theft,Investigation Pending,4300 block of Knox Rd
 2026-00234374,2026-08-30 16:30:00,2026-08-30 18:04:00,Theft,Arrest,3900 block of Campus Dr
 2026-00234377,2026-08-30 05:00:00,2026-08-30 18:19:00,Other Incident,CBE,3800 block of Stadium Dr
 2026-00234444,2026-08-29 23:30:00,2026-08-30 22:06:00,Suspicious Activity,Active/Pending,Lehigh Rd
@@ -3023,6 +3029,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00234733,2026-08-29 12:00:00,2026-08-31 04:42:00,Dept Property Damage/Loss,CBE,7500 block of Baltimore Ave
 2026-00235149,2026-08-29 09:30:00,2026-08-31 14:25:00,Theft,Active/Pending,3500 block of University Blvd
 2026-00235150,2026-08-31 14:44:00,2026-08-31 14:44:00,Other Incident,Active/Pending,"Hornbake Mall, Hornbake Plaza"
+2026-00235478,2026-08-26 14:00:00,2026-08-31 20:29:00,Theft,Active/Pending,6800 block of Preinkert Dr
 2026-00235555,2026-08-31 23:02:00,2026-08-31 23:02:00,Injured/Sick Person,CBE,7600 block of Library Ln
 2026-00235553,2026-08-31 23:04:00,2026-08-31 23:04:00,Alcohol Violation,Arrest,Knox Rd
 2026-00235780,2026-09-01 02:48:00,2026-09-01 02:48:00,DWI/DUI,Arrest,Adelphi Rd
@@ -3031,17 +3038,48 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00236148,2026-09-01 14:33:00,2026-09-01 14:33:00,Injured/Sick Person,CBE,3900 block of Campus Dr
 2026-00236160,2026-08-31 01:00:00,2026-09-01 15:14:00,Lost Property,CBE,7500 block of Baltimore Ave
 2026-00236170,2026-08-30 18:30:00,2026-09-01 15:30:00,Theft,Active/Pending,Washington Quad
+2026-00236186,2026-09-01 15:00:00,2026-09-01 16:00:00,Lost Property,CBE,8000 block of Boteler Ln
 2026-00236429,2026-09-01 20:30:00,2026-09-01 20:36:00,Injured/Sick Person,CBE,6900 block of Preinkert Dr
 2026-00236569,2026-09-01 22:43:00,2026-09-01 22:43:00,Alcohol Violation,Arrest,4600 block of College Ave
 2026-00236585,2026-09-01 22:54:00,2026-09-01 22:54:00,Alcohol Violation,Arrest,College Ave
 2026-00236586,2026-09-01 22:56:00,2026-09-01 22:56:00,Alcohol Violation,Arrest,College Ave
+2026-00236640,2026-09-01 23:24:00,2026-09-01 23:24:00,Alcohol Violation,Arrest,7400 block of Hopkins Ave
 2026-00236649,2026-09-01 23:29:00,2026-09-01 23:29:00,Alcohol Violation,Arrest,Norwich Rd
+2026-00236700,2026-09-02 00:13:00,2026-09-02 00:13:00,DWI/DUI,Arrest,Adelphi Rd
 2026-00236724,2026-09-02 00:20:00,2026-09-02 01:19:00,Assist Other Agency,CBE,8100 block of Baltimore Ave
+2026-00236725,2026-09-02 01:22:00,2026-09-02 01:22:00,DWI/DUI,Arrest,University Blvd
 2026-00236726,2026-09-02 01:35:00,2026-09-02 01:35:00,DWI/DUI,Arrest,5200 block of Greenbelt Rd
 2026-00236886,2026-09-02 08:37:00,2026-09-02 08:37:00,Injured/Sick Person,CBE,4200 block of Farm Dr
 2026-00237155,2026-09-02 13:04:00,2026-09-02 16:10:00,Theft,Unfounded,4700 block of Pontiac St
 2026-00237441,2026-09-02 18:45:00,2026-09-02 21:02:00,Theft,Active/Pending,7700 block of Alumni Dr
+2026-00237991,2026-09-03 08:47:00,2026-09-03 08:47:00,Injured/Sick Person,CBE,Campus Dr
+2026-00238068,2026-09-03 11:00:00,2026-09-03 11:00:00,Accident,CBE,8200 block of Paint Branch Dr
+2026-00238162,2026-09-03 16:18:00,2026-09-03 16:18:00,Assist Other Agency,CBE,4600 block of College Ave
 2026-00238171,2026-09-03 17:03:00,2026-09-03 17:03:00,Injured/Sick Person,CBE,3900 block of Campus Dr
+2026-00238241,2026-09-03 18:45:00,2026-09-03 18:45:00,Assist Other Agency,CBE,4100 block of Guilford Dr
+2026-00238801,2026-09-03 18:00:00,2026-09-04 07:53:00,Damaged Property,CBE,Norwich Rd
+2026-00239348,2026-09-04 18:45:00,2026-09-04 19:47:00,Injured/Sick Person,CBE,4200 block of Valley Dr
+2026-00239488,2026-09-05 00:18:00,2026-09-05 00:18:00,Assist Other Agency,CBE,4500 block of Knox Rd
+2026-00239511,2026-09-05 00:59:00,2026-09-05 00:59:00,Assist Other Agency,CBE,Knox Rd
+2026-00239536,2026-09-05 01:18:00,2026-09-05 01:31:00,Trespassing,CBE,4200 block of Farm Dr
+2026-00239577,2026-09-05 02:43:00,2026-09-05 02:43:00,DWI/DUI,Arrest,University Blvd
+2026-00240087,2026-09-05 17:43:00,2026-09-05 17:48:00,Alcohol Violation,Arrest,4300 block of Stadium Dr
+2026-00240110,2026-09-04 22:06:00,2026-09-05 19:07:00,Assist Other Agency,CBE,7500 block of Girard Ave
+2026-00240123,2026-09-05 19:36:00,2026-09-05 19:43:00,Weapon Violation,CBE,4100 block of Terrapin Trl
+2026-00240134,2026-09-05 20:21:00,2026-09-05 20:26:00,Alcohol Violation,Arrest,7900 block of Regents Dr
+2026-00240147,2026-09-05 21:14:00,2026-09-05 21:19:00,Alcohol Violation,Arrest,7900 block of Regents Dr
+2026-00240152,2026-09-05 21:42:00,2026-09-05 21:42:00,Emergency Petition,CBE,3800 block of Stadium Dr
+2026-00240178,2026-09-05 22:37:00,2026-09-05 22:37:00,DWI/DUI,Arrest,Paint Branch Dr
+2026-00240185,2026-09-05 22:48:00,2026-09-05 22:48:00,Injured/Sick Person,CBE,"Capital One Field, Football Stadium, SECU Stadium"
+2026-00240213,2026-09-05 23:19:00,2026-09-05 23:19:00,DWI/DUI,Arrest,7300 block of Baltimore Ave
+2026-00240240,2026-09-06 00:00:00,2026-09-06 00:41:00,Injured/Sick Person,CBE,8100 block of La Plata Dr
+2026-00240313,2026-09-05 11:30:00,2026-09-06 03:12:00,Injured/Sick Person,CBE,4200 block of Valley Dr
+2026-00240404,2026-09-06 04:30:00,2026-09-06 05:18:00,Assist Other Agency,CBE,7500 block of Hopkins Ave
+2026-00240519,2026-09-06 00:00:00,2026-09-06 10:08:00,Theft,Active/Pending,Baltimore Ave
+2026-00240891,2026-09-06 22:17:00,2026-09-06 22:17:00,Injured/Sick Person,CBE,4400 block of Lehigh Rd
+2026-00241091,2026-09-07 01:20:00,2026-09-07 01:22:00,Emergency Petition,CBE,7300 block of Baltimore Ave
+2026-00241772,2026-09-07 19:20:00,2026-09-07 19:24:00,Injured/Sick Person,CBE,4100 block of Valley Dr
+2026-00242068,2026-09-08 01:55:00,2026-09-08 01:55:00,Injured/Sick Person,CBE,"Frat 5, Phi Kappa Tau Fraternity at 5 Fraternity Row"
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
