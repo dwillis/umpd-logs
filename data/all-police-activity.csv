@@ -335,8 +335,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00063012,2025-03-14 21:00:00,2025-03-16 12:52:00,Assist Other Agency,CBE,4300 block of Knox Rd
 2025-00063172,2025-03-16 16:04:00,2025-03-16 16:04:00,Recovered Stolen Property,Arrest,7500 block of Mowatt Ln
 2025-00063422,2025-03-16 21:24:00,2025-03-16 23:10:00,Dept Property Damage/Loss,CBE,Stanley R. Zupnick Hall at 8184 Paint Branch Dr
-2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
 2025-00063612,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,University Blvd
+2025-00063613,2025-03-17 01:29:00,2025-03-17 01:29:00,DWI/DUI,Arrest,Adelphi Rd
 2025-00063978,2025-03-17 12:43:00,2025-03-17 12:43:00,Damage to State Property,CBE,7500 block of Baltimore Ave
 2025-00064495,2025-03-17 22:54:00,2025-03-17 22:54:00,DWI/DUI,Arrest,University Blvd
 2025-00065844,2025-03-19 11:38:00,2025-03-19 11:41:00,Injured/Sick Person,CBE,7300 block of Baltimore Ave
@@ -2888,8 +2888,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00198016,2026-07-25 00:29:00,2026-07-25 00:29:00,DWI/DUI,Arrest,University Blvd
 2026-00198197,2026-07-25 03:52:00,2026-07-25 03:52:00,DWI/DUI,Arrest,7600 block of Baltimore Ave
 2026-00198882,2026-07-26 00:19:00,2026-07-26 00:19:00,DWI/DUI,Arrest,Metzerott Rd
-2026-00198970,2026-07-26 01:45:00,2026-07-26 01:45:00,DWI/DUI,Arrest,University Blvd
 2026-00200996,2026-07-26 01:45:00,2026-07-26 01:45:00,Disorderly Conduct,Arrest,University Blvd
+2026-00198970,2026-07-26 01:45:00,2026-07-26 01:45:00,DWI/DUI,Arrest,University Blvd
 2026-00199411,2026-07-26 14:30:00,2026-07-26 14:39:00,Fire,CBE,UMGC Hotel at 348 Ehrensberger Dr
 2026-00200065,2026-07-27 02:41:00,2026-07-27 02:41:00,DWI/DUI,Arrest,University Blvd
 2026-00201010,2026-07-27 21:00:00,2026-07-27 22:13:00,Other Incident,CBE,3800 block of Stadium Dr
@@ -3052,7 +3052,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00236726,2026-09-02 01:35:00,2026-09-02 01:35:00,DWI/DUI,Arrest,5200 block of Greenbelt Rd
 2026-00236886,2026-09-02 08:37:00,2026-09-02 08:37:00,Injured/Sick Person,CBE,4200 block of Farm Dr
 2026-00237155,2026-09-02 13:04:00,2026-09-02 16:10:00,Theft,Unfounded,4700 block of Pontiac St
-2026-00237441,2026-09-02 18:45:00,2026-09-02 21:02:00,Theft,Active/Pending,7700 block of Alumni Dr
+2026-00237441,2026-09-02 18:45:00,2026-09-02 21:02:00,Theft,Investigation Pending,7700 block of Alumni Dr
+2026-00237941,2026-09-03 07:49:00,2026-09-03 07:49:00,Injured/Sick Person,CBE,4200 block of Knox Rd
 2026-00237991,2026-09-03 08:47:00,2026-09-03 08:47:00,Injured/Sick Person,CBE,Campus Dr
 2026-00238068,2026-09-03 11:00:00,2026-09-03 11:00:00,Accident,CBE,8200 block of Paint Branch Dr
 2026-00238162,2026-09-03 16:18:00,2026-09-03 16:18:00,Assist Other Agency,CBE,4600 block of College Ave
@@ -3070,6 +3071,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00240110,2026-09-04 22:06:00,2026-09-05 19:07:00,Assist Other Agency,CBE,7500 block of Girard Ave
 2026-00240123,2026-09-05 19:36:00,2026-09-05 19:43:00,Weapon Violation,CBE,4100 block of Terrapin Trl
 2026-00240134,2026-09-05 20:21:00,2026-09-05 20:26:00,Alcohol Violation,Arrest,7900 block of Regents Dr
+2026-00240136,2026-09-05 20:22:00,2026-09-05 20:32:00,Injured/Sick Person,CBE,4100 block of Stadium Dr
 2026-00240147,2026-09-05 21:14:00,2026-09-05 21:19:00,Alcohol Violation,Arrest,7900 block of Regents Dr
 2026-00240152,2026-09-05 21:42:00,2026-09-05 21:42:00,Emergency Petition,CBE,3800 block of Stadium Dr
 2026-00240178,2026-09-05 22:37:00,2026-09-05 22:37:00,DWI/DUI,Arrest,Paint Branch Dr
@@ -3089,6 +3091,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00242068,2026-09-08 01:55:00,2026-09-08 01:55:00,Injured/Sick Person,CBE,"Frat 5, Phi Kappa Tau Fraternity at 5 Fraternity Row"
 2026-00242079,2026-09-08 02:19:00,2026-09-08 02:19:00,DWI/DUI,Arrest,Adelphi Rd
 2026-00242470,2026-09-07 10:30:00,2026-09-08 15:39:00,Fraud,Active/Pending,Chapel Field
+2026-00242578,2026-09-08 16:45:00,2026-09-08 17:30:00,Injured/Sick Person,CBE,3900 block of Campus Dr
 2026-00242694,2026-09-08 19:54:00,2026-09-08 19:54:00,Injured/Sick Person,CBE,4100 block of Stadium Dr
 2026-00242715,2026-09-08 19:20:00,2026-09-08 20:33:00,Vandalism,Active/Pending,3800 block of Stadium Dr
 2026-00242862,2026-09-08 23:00:00,2026-09-08 23:28:00,Injured/Sick Person,CBE,8000 block of Hagerstown Dr
