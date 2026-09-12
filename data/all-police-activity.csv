@@ -2888,8 +2888,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00198016,2026-07-25 00:29:00,2026-07-25 00:29:00,DWI/DUI,Arrest,University Blvd
 2026-00198197,2026-07-25 03:52:00,2026-07-25 03:52:00,DWI/DUI,Arrest,7600 block of Baltimore Ave
 2026-00198882,2026-07-26 00:19:00,2026-07-26 00:19:00,DWI/DUI,Arrest,Metzerott Rd
-2026-00200996,2026-07-26 01:45:00,2026-07-26 01:45:00,Disorderly Conduct,Arrest,University Blvd
 2026-00198970,2026-07-26 01:45:00,2026-07-26 01:45:00,DWI/DUI,Arrest,University Blvd
+2026-00200996,2026-07-26 01:45:00,2026-07-26 01:45:00,Disorderly Conduct,Arrest,University Blvd
 2026-00199411,2026-07-26 14:30:00,2026-07-26 14:39:00,Fire,CBE,UMGC Hotel at 348 Ehrensberger Dr
 2026-00200065,2026-07-27 02:41:00,2026-07-27 02:41:00,DWI/DUI,Arrest,University Blvd
 2026-00201010,2026-07-27 21:00:00,2026-07-27 22:13:00,Other Incident,CBE,3800 block of Stadium Dr
@@ -3078,6 +3078,9 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00240185,2026-09-05 22:48:00,2026-09-05 22:48:00,Injured/Sick Person,CBE,"Capital One Field, Football Stadium, SECU Stadium"
 2026-00240213,2026-09-05 23:19:00,2026-09-05 23:19:00,DWI/DUI,Arrest,7300 block of Baltimore Ave
 2026-00240240,2026-09-06 00:00:00,2026-09-06 00:41:00,Injured/Sick Person,CBE,8100 block of La Plata Dr
+2026-00240247,2026-09-06 01:17:00,2026-09-06 01:17:00,Injured/Sick Person,CBE,7300 block of Baltimore Ave
+2026-00240250,2026-09-06 01:35:00,2026-09-06 01:35:00,Injured/Sick Person,CBE,815 at 7401 Baltimore Ave
+2026-00240311,2026-09-06 02:50:00,2026-09-06 02:51:00,Injured/Sick Person,CBE,4300 block of Hartwick Rd
 2026-00240313,2026-09-05 11:30:00,2026-09-06 03:12:00,Injured/Sick Person,CBE,4200 block of Valley Dr
 2026-00240404,2026-09-06 04:30:00,2026-09-06 05:18:00,Assist Other Agency,CBE,7500 block of Hopkins Ave
 2026-00240519,2026-09-06 00:00:00,2026-09-06 10:08:00,Theft,Active/Pending,Baltimore Ave
@@ -3086,6 +3089,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00240891,2026-09-06 22:17:00,2026-09-06 22:17:00,Injured/Sick Person,CBE,4400 block of Lehigh Rd
 2026-00241091,2026-09-07 01:20:00,2026-09-07 01:22:00,Emergency Petition,CBE,7300 block of Baltimore Ave
 2026-00241093,2026-09-07 01:19:00,2026-09-07 01:46:00,Assist Other Agency,CBE,Regents Dr
+2026-00241095,2026-09-07 02:08:00,2026-09-07 02:08:00,Injured/Sick Person,CBE,7400 block of Baltimore Ave
 2026-00241678,2026-08-24 08:00:00,2026-09-07 17:53:00,Damage to State Property,CBE,4000 block of Campus Dr
 2026-00241772,2026-09-07 19:20:00,2026-09-07 19:24:00,Injured/Sick Person,CBE,4100 block of Valley Dr
 2026-00242068,2026-09-08 01:55:00,2026-09-08 01:55:00,Injured/Sick Person,CBE,"Frat 5, Phi Kappa Tau Fraternity at 5 Fraternity Row"
@@ -3095,6 +3099,10 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00242694,2026-09-08 19:54:00,2026-09-08 19:54:00,Injured/Sick Person,CBE,4100 block of Stadium Dr
 2026-00242715,2026-09-08 19:20:00,2026-09-08 20:33:00,Vandalism,Active/Pending,3800 block of Stadium Dr
 2026-00242862,2026-09-08 23:00:00,2026-09-08 23:28:00,Injured/Sick Person,CBE,8000 block of Hagerstown Dr
+2026-00243114,2026-09-09 08:52:00,2026-09-09 08:52:00,Emergency Petition,CBE,7000 block of Preinkert Dr
+2026-00243196,2026-09-09 14:04:00,2026-09-09 14:04:00,Injured/Sick Person,CBE,7700 block of Alumni Dr
+2026-00243661,2026-09-10 00:13:00,2026-09-10 00:13:00,Injured/Sick Person,CBE,8100 block of La Plata Dr
+2026-00244681,2026-09-11 02:06:00,2026-09-11 02:06:00,DWI/DUI,Arrest,Baltimore Ave
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
