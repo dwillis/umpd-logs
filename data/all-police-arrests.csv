@@ -75,8 +75,8 @@ Arrest Number,Arrested Date Time,UMPD Case Number,Age,Race,Sex,Arrested Charge,D
 24487,05/19/2025 - 00:12,2025-00119966,,White,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se",24474
 24503,05/20/2025 - 12:00,2024-00181868,,Black,Male,"THEFT: $100 TO UNDER $1,500-All Other",24506
 24504,05/20/2025 - 12:00,2024-00190029,,Black,Male,"THEFT: $100 TO UNDER $1,500-All Other",24507
-24542,05/20/2025 - 12:00,2025-00001764,,White,Male,School Trespassing On Ground,24769
-24506,05/20/2025 - 12:00,2024-00195208,,Black,Male,Malicious Destruction Property/Value -$1000,24505
+24542,05/20/2025 - 12:00,2025-00001764,,White,Male,School Trespassing On Ground,24506
+24769,05/20/2025 - 12:00,2025-00020104,,Black,Male,"THEFT SCHEME: $100 TO UNDER $1,500-Bicycle",24505
 24489,05/21/2025 - 00:54,2025-00121875,,Black,Male,"(Driving, Attempting to drive) veh. while under the influence of alcohol per se",24476
 24475,05/21/2025 - 22:10,2025-00103457,,Black,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol while transporting a minor",24490
 24491,05/23/2025 - 22:27,2025-00124063,,Black,Male,"(Driving, Attempting to drive) veh. while under the influence of alcohol",24500
@@ -397,6 +397,7 @@ Arrest Number,Arrested Date Time,UMPD Case Number,Age,Race,Sex,Arrested Charge,D
 25126,09/18/2026 - 01:28,2026-00250913,,Black,Male,"(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se; Reckless driving veh. in wanton and willfull disregard for safety of persons and property",25128
 25129,09/18/2026 - 21:46,2026-00252066,,White,Male,Urinating or Defecating in Public,25130
 25131,09/18/2026 - 22:07,2026-00252109,,White,Male,Consuming/Possessing Open Alcoholic Beverage in Public,25132
+24506,05/20/2025 - 12:00,2024-00195208,,Black,Male,Malicious Destruction Property/Value -$1000,24505
 24766,01/01/2026 - 12:00,2025-00260357,,White,Male,FRAUD-PER. IDENT. AVOID PROS,24765
 24784,01/15/2026 - 12:00,2025-00280669,,White,Male,Electronic Mail Harassment,24799
 24857,01/20/2026 - 12:00,2024-00097219,,White,Male,"THEFT: $100 TO UNDER $1,500-Bicycle",24793
@@ -413,7 +414,6 @@ Arrest Number,Arrested Date Time,UMPD Case Number,Age,Race,Sex,Arrested Charge,D
 24346,01/08/2025 - 12:00,2024-00061743,,White,Male,"THEFT SCHEME: $1,500 TO UNDER $25,000-All Other",24349
 24371,01/08/2025 - 12:00,2023-00079735,,White,Male,"THEFT: $100 TO UNDER $1,500-All Other",24363
 24399,02/25/2025 - 14:55,2025-00046715,,Black,Male,School Trespassing On Ground; School: Disturb Operation; Sex Offense- 4TH Degree-Sex Contact,24398
-24769,05/20/2025 - 12:00,2025-00020104,,Black,Male,"THEFT SCHEME: $100 TO UNDER $1,500-Bicycle",24505
 945,09/16/2025 - 12:00,2025-00176960,,Black,Male,Malicious Destruction Property/Value -$1000,941
 24764,01/02/2026 - 12:00,2025-00235996,,White,Male,"THEFT: $100 TO UNDER $1,500-All Other",24752
 24845,01/23/2026 - 12:00,2025-00223091,,Black,Male,"THEFT SCHEME: $100 TO UNDER $1,500-All Other",24801
