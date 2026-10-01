@@ -2888,8 +2888,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00198016,2026-07-25 00:29:00,2026-07-25 00:29:00,DWI/DUI,Arrest,University Blvd
 2026-00198197,2026-07-25 03:52:00,2026-07-25 03:52:00,DWI/DUI,Arrest,7600 block of Baltimore Ave
 2026-00198882,2026-07-26 00:19:00,2026-07-26 00:19:00,DWI/DUI,Arrest,Metzerott Rd
-2026-00198970,2026-07-26 01:45:00,2026-07-26 01:45:00,DWI/DUI,Arrest,University Blvd
 2026-00200996,2026-07-26 01:45:00,2026-07-26 01:45:00,Disorderly Conduct,Arrest,University Blvd
+2026-00198970,2026-07-26 01:45:00,2026-07-26 01:45:00,DWI/DUI,Arrest,University Blvd
 2026-00199411,2026-07-26 14:30:00,2026-07-26 14:39:00,Fire,CBE,UMGC Hotel at 348 Ehrensberger Dr
 2026-00200065,2026-07-27 02:41:00,2026-07-27 02:41:00,DWI/DUI,Arrest,University Blvd
 2026-00201010,2026-07-27 21:00:00,2026-07-27 22:13:00,Other Incident,CBE,3800 block of Stadium Dr
@@ -2938,6 +2938,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00214301,2026-08-10 14:00:00,2026-08-10 14:19:00,Injured/Sick Person,CBE,4000 block of Union Dr
 2026-00214523,2026-08-10 18:15:00,2026-08-10 18:15:00,Warrant/Summons Service,Arrest,Lot 1b
 2026-00214622,2026-08-10 18:50:00,2026-08-10 20:44:00,Assault,Summons Issued,4000 block of Campus Dr
+2026-00215072,2026-08-11 11:17:00,2026-08-11 11:17:00,Assist Other Agency,CBE,4600 block of Hartwick Rd
 2026-00215825,2026-08-12 11:16:00,2026-08-12 11:16:00,Other Incident,CBE,4600 block of Hotel Dr
 2026-00216123,2026-08-12 19:21:00,2026-08-12 19:21:00,Trespassing,Arrest,4100 block of Campus Dr
 2026-00216142,2026-08-12 21:35:00,2026-08-12 21:35:00,Suspicious Activity,CBE,8100 block of Paint Branch Dr
@@ -3249,8 +3250,10 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00256461,2026-09-23 17:11:00,2026-09-23 17:17:00,Injured/Sick Person,CBE,8000 block of Hagerstown Dr
 2026-00256546,2026-09-23 20:35:00,2026-09-23 20:39:00,Injured/Sick Person,CBE,"Capital One Field, Football Stadium, SECU Stadium"
 2026-00256571,2026-09-23 21:32:00,2026-09-23 21:32:00,Emergency Petition,CBE,McKeldin Mall
+2026-00257112,2026-09-24 09:10:00,2026-09-24 09:10:00,Injured/Sick Person,CBE,8400 block of Paint Branch Dr
 2026-00257242,2026-09-24 11:18:00,2026-09-24 11:18:00,Assist Other Agency,CBE,5000 block of Berwyn Rd
 2026-00257316,2026-09-24 08:00:00,2026-09-24 13:44:00,Dept Property Damage/Loss,Active/Pending,7500 block of Baltimore Ave
+2026-00257391,2026-09-24 13:00:00,2026-09-24 16:15:00,Theft,Active/Pending,7600 block of Mowatt Ln
 2026-00257445,2026-09-24 18:06:00,2026-09-24 18:06:00,Fire,CBE,8100 block of Regents Dr
 2026-00257468,2026-09-24 18:47:00,2026-09-24 18:47:00,Emergency Petition,CBE,4000 block of Stadium Dr
 2026-00257493,2026-09-24 19:40:00,2026-09-24 19:44:00,Injured/Sick Person,CBE,4100 block of Valley Dr
@@ -3282,6 +3285,12 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00261169,2026-09-28 13:50:00,2026-09-28 14:50:00,Accident,Active/Pending,4000 block of Union Dr
 2026-00261204,2026-09-28 13:30:00,2026-09-28 16:09:00,Theft,Active/Pending,4300 block of Stadium Dr
 2026-00261370,2026-09-28 22:15:00,2026-09-28 22:44:00,Assist Other Agency,CBE,4500 block of College Ave
+2026-00261737,2026-09-28 20:45:00,2026-09-29 07:55:00,Theft,Active/Pending,Discovery House at 4646 Graduate Way
+2026-00261880,2026-09-22 11:00:00,2026-09-29 09:56:00,Damage to State Property,CBE,7100 block of Preinkert Dr
+2026-00261892,2026-09-29 11:16:00,2026-09-29 11:16:00,Emergency Petition,CBE,4200 block of Chapel Ln
+2026-00261900,2026-09-29 13:53:00,2026-09-29 12:04:00,Trespassing,CBE,8000 block of Boteler Ln
+2026-00261901,2026-09-29 12:15:00,2026-09-29 12:34:00,Injured Officer,CBE,7000 block of 52nd Ave
+2026-00261905,2026-09-28 20:05:00,2026-09-29 13:11:00,Theft,Active/Pending,4100 block of Stadium Dr
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
