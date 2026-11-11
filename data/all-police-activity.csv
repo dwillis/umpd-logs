@@ -682,8 +682,8 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2025-00120365,2025-05-18 10:00:00,2025-05-19 09:20:00,Theft,Investigation Pending,4600 block of Rossborough Ln
 2025-00103454,2025-05-17 12:00:00,2025-05-19 14:21:00,Theft,Active/Pending,4300 block of Chapel Ln
 2025-00103455,2025-05-19 08:00:00,2025-05-19 14:33:00,Theft,Active/Pending,Lot 1b
-2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
 2025-00103457,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,University Blvd / Stadium Dr
+2025-00103456,2025-05-19 14:56:00,2025-05-19 14:56:00,DWI/DUI,Arrest,Baltimore Ave
 2025-00120934,2025-05-10 00:00:00,2025-05-19 23:03:00,Damage to State Property,CBE,3900 block of Campus Dr
 2025-00121280,2025-05-20 03:13:00,2025-05-20 06:56:00,Theft,Investigation Pending,Lot 4a
 2025-00121421,2023-06-08 12:00:00,2025-05-20 09:51:00,Fraud,Active/Pending,5600 block of Rivertech Ct
@@ -3557,7 +3557,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00289287,2026-11-01 02:54:00,2026-11-01 02:54:00,DWI/DUI,Arrest,5200 block of Greenbelt Rd
 2026-00289290,2026-11-01 02:58:00,2026-11-01 02:58:00,DWI/DUI,Arrest,Metzerott Rd
 2026-00289734,2026-11-01 16:40:00,2026-11-01 16:46:00,Assist Fire Department,CBE,4600 block of College Ave
-2026-00289743,2026-10-29 10:00:00,2026-11-01 17:19:00,Theft,Active/Pending,7500 block of Calvert Service Ln
+2026-00289743,2026-10-29 10:00:00,2026-11-01 17:19:00,Theft,Investigation Pending,7500 block of Calvert Service Ln
 2026-00289765,2026-11-01 02:00:00,2026-11-01 18:11:00,Theft,Active/Pending,Chapel Field
 2026-00290554,2026-09-21 14:23:00,2026-11-02 10:12:00,Hate Bias Incident,CBE,"Hillel, Maryland Hillel, Rosenbloom Hillel Center at 7505 Yale Ave"
 2026-00290656,2026-11-02 12:11:00,2026-11-02 12:11:00,Emergency Petition,CBE,8000 block of Hagerstown Dr
@@ -3565,7 +3565,7 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00290701,2026-11-02 13:15:00,2026-11-02 13:31:00,Injured/Sick Person,CBE,8200 block of Alumni Dr
 2026-00290738,2026-10-19 13:30:00,2026-11-02 15:08:00,Injured Officer,CBE,11765 Saint Linus Dr
 2026-00290870,2026-11-02 12:55:00,2026-11-02 17:29:00,Harassment/Stalking,Active/Pending,8100 block of Paint Branch Dr
-2026-00290875,2026-11-02 17:07:00,2026-11-02 17:45:00,Theft,Active/Pending,6800 block of Preinkert Dr
+2026-00290875,2026-11-02 17:07:00,2026-11-02 17:45:00,Theft,Unfounded,6800 block of Preinkert Dr
 2026-00290897,2026-11-02 19:48:00,2026-11-02 19:48:00,Injured/Sick Person,CBE,7500 block of Calvert Service Ln
 2026-00290898,2026-11-02 20:07:00,2026-11-02 20:07:00,Hazardous Condition,Active/Pending,7800 block of Regents Dr
 2026-00290913,2026-11-01 00:00:00,2026-11-02 20:57:00,Suspicious Person/Auto,Active/Pending,8000 block of La Plata Dr
@@ -3581,18 +3581,31 @@ UMPD Case Number,Date Occurred,Report Date,Crime Type,Disposition,LOCATION
 2026-00292665,2026-11-04 01:45:00,2026-11-04 19:58:00,Theft,Active/Pending,4200 block of Farm Dr
 2026-00292689,2026-11-04 20:57:00,2026-11-04 20:57:00,Injured/Sick Person,CBE,8500 block of Paint Branch Dr
 2026-00293058,2026-11-05 06:25:00,2026-11-05 06:28:00,Accident,CBE,Campus Dr
+2026-00293159,2026-11-05 12:45:00,2026-11-05 12:45:00,Injured/Sick Person,CBE,4100 block of Valley Dr
 2026-00293335,2026-11-05 05:38:00,2026-11-05 18:39:00,Theft,Active/Pending,4500 block of College Ave
 2026-00293423,2026-11-05 18:40:00,2026-11-05 22:11:00,Theft,Active/Pending,7600 block of Baltimore Ave
 2026-00293613,2026-11-06 00:30:00,2026-11-06 00:30:00,Injured/Sick Person,CBE,8400 block of Baltimore Ave
 2026-00294027,2026-11-06 06:37:00,2026-11-06 06:37:00,Assist Other Agency,CBE,7500 block of Baltimore Ave
 2026-00294339,2026-11-06 11:00:00,2026-11-06 14:03:00,Police Information,CBE,Anacostia Building at 1 Physics Ellipse
 2026-00294342,2026-11-06 14:18:00,2026-11-06 14:18:00,Injured/Sick Person,CBE,4100 block of Campus Dr
+2026-00294353,2026-11-06 10:00:00,2026-11-06 15:19:00,Theft,Active/Pending,4100 block of Stadium Dr
+2026-00294357,2026-11-06 11:00:00,2026-11-06 15:54:00,Fraud,Active/Pending,3900 block of Campus Dr
+2026-00294708,2026-11-06 20:35:00,2026-11-06 20:35:00,Warrant/Summons Service,Arrest,7500 block of Baltimore Ave
 2026-00295024,2026-11-07 01:35:00,2026-11-07 01:35:00,DWI/DUI,Arrest,University Blvd
+2026-00295027,2026-11-07 01:45:00,2026-11-07 01:45:00,Damaged Property,CBE,8200 block of Boteler Ln
 2026-00295349,2026-11-07 11:06:00,2026-11-07 11:06:00,Injured/Sick Person,CBE,7500 block of Yale Ave
 2026-00295383,2026-11-07 13:29:00,2026-11-07 13:29:00,Injured/Sick Person,CBE,"Recreation Artificial Turf Field, Turf Field, Turf Fields"
+2026-00295417,2026-11-07 02:00:00,2026-11-07 15:45:00,Assist Other Agency,CBE,7300 block of Baltimore Ave
+2026-00295560,2026-11-07 18:00:00,2026-11-07 18:57:00,Other Incident,Active/Pending,14  Fraternity Row
 2026-00295916,2026-11-08 04:09:00,2026-11-08 04:09:00,DWI/DUI,Arrest,University Blvd
 2026-00295927,2026-11-08 04:46:00,2026-11-08 04:46:00,Emergency Petition,CBE,4200 block of Farm Dr
+2026-00296419,2026-11-08 16:53:00,2026-11-08 16:53:00,Suspicious Person/Auto,CBE,4200 block of Farm Dr
+2026-00296523,2026-11-08 20:19:00,2026-11-08 20:19:00,Damage to State Property,CBE,8400 block of Paint Branch Dr
 2026-00296753,2026-11-09 02:04:00,2026-11-09 02:04:00,DWI/DUI,Arrest,Paint Branch Dr
+2026-00297082,2026-09-26 17:30:00,2026-11-09 08:42:00,Dept Property Damage/Loss,Active/Pending,7100 block of 51st Ave
+2026-00297535,2026-11-09 20:35:00,2026-11-09 20:35:00,Injured/Sick Person,CBE,4000 block of Stadium Dr
+2026-00297596,2026-11-09 22:28:00,2026-11-09 23:25:00,Damage to State Property,Active/Pending,7500 block of Mowatt Ln
+2026-00297767,2026-11-10 01:17:00,2026-11-10 01:17:00,DWI/DUI,Arrest,University Blvd
 2024-00000014,2024-01-01 00:18:00,2024-01-01 00:18:00,Recovered Stolen Property,Arrest,8700 block of Baltimore Ave
 2024-00000081,2024-01-01 02:43:00,2024-01-01 02:43:00,Injured/Sick Person,CBE,Knox Rd
 2024-00000092,2024-01-01 02:45:00,2024-01-01 02:56:00,Injured/Sick Person,CBE,Knox Rd
